@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5つのご相談 | STYLE OF TOKYO</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.8;
+    }
+
+    /* ヘッダー */
+    .header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+
+    .header .catchcopy {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+    }
+
+    /* 5つのご相談バナー */
+    .section-banner {
+      background: #2c5aa0;
+      color: #fff;
+      text-align: center;
+      padding: 24px 20px;
+      margin: 0 auto 50px;
+      max-width: 1100px;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      border-radius: 4px;
+    }
+
+    /* カテゴリーカード */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .category-card {
+      background: #a8d08d;
+      border: 3px solid #6b9e45;
+      border-radius: 6px;
+      padding: 30px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 200px;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .category-card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .category-card p {
+      font-size: 13px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    /* レスポンシブ */
+    @media (max-width: 900px) {
+      .categories {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .header h1 {
+        font-size: 22px;
+      }
+
+      .header .catchcopy {
+        font-size: 18px;
+      }
+
+      .section-banner {
+        font-size: 18px;
+        padding: 18px 16px;
+      }
+
+      .category-card {
+        min-height: 160px;
+        padding: 20px 14px;
+      }
+
+      .category-card h2 {
+        font-size: 15px;
+      }
+
+      .category-card p {
+        font-size: 12px;
+      }
+    }
+
+    /* フッター */
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #f5f5f5;
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>STYLE OF TOKYO</h1>
+    <p class="catchcopy">「タイパ・コスパ良く住まいを取得しましょう。」</p>
+  </div>
+
+  <div class="section-banner">
+    5つのご相談にお応えできます。
+  </div>
+
+  <div class="categories">
+
+    <a href="https://www.genspark.ai/api/page_private?id=xqtfjhbh" class="category-card" target="_blank">
+      <h2>マイホーム購入サポート</h2>
+      <p>「初めての家づくりも、プロが味方につけば安心スムーズ」</p>
+    </a>
+
+    <a href="sumikae-support.html" class="category-card">
+      <h2>住み替えサポート</h2>
+      <p>「住み替えはタイミングが命。売り先・買い先も計画的に」</p>
+    </a>
+
+    <a href="https://vriuitzh.gensparkspace.com/" class="category-card" target="_blank">
+      <h2>実家の家じまいサポート</h2>
+      <p>「煩雑な手続きや調整をフルサポートします」</p>
+    </a>
+
+    <a href="kenchiku-produce.html" class="category-card">
+      <h2>建築プロデュース</h2>
+      <p>「中立の立場で建設会社選びや進め方をサポート」</p>
+    </a>
+
+    <a href="https://jygdahso.gensparkspace.com/" class="category-card" target="_blank">
+      <h2>不動産よろず相談</h2>
+      <p>「こんなこと聞いていいのかな？」と思う内容ほど、遠慮なく聞いてください。</p>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    &copy; STYLE OF TOKYO
+  </div>
+
+</body>
+</html>
