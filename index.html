@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>5つのご相談 | STYLE OF TOKYO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,116 +15,136 @@
     }
 
     body {
-      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+      font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
       color: #333;
       background: #fff;
-      line-height: 1.8;
+      line-height: 2;
     }
 
     /* ヘッダー */
     .header {
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 80px 20px 50px;
+      background: #fdfdfd;
     }
 
     .header h1 {
-      font-size: 28px;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      margin-bottom: 20px;
+      font-size: 32px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: #62595a;
+      margin-bottom: 24px;
     }
 
     .header .catchcopy {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 400;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
+      color: #62595a;
     }
 
     /* 5つのご相談バナー */
     .section-banner {
-      background: #2c5aa0;
+      background: #62595a;
       color: #fff;
       text-align: center;
-      padding: 24px 20px;
-      margin: 0 auto 50px;
-      max-width: 1100px;
-      font-size: 24px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      border-radius: 4px;
+      padding: 28px 20px;
+      margin: 0 auto 60px;
+      max-width: 1000px;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
     }
 
     /* カテゴリーカード */
     .categories {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
+      gap: 20px;
       max-width: 1100px;
-      margin: 0 auto 60px;
+      margin: 0 auto 80px;
       padding: 0 20px;
     }
 
     .category-card {
-      background: #a8d08d;
-      border: 3px solid #6b9e45;
-      border-radius: 6px;
-      padding: 30px 20px;
+      background: #fff;
+      border: 1px solid #e0d8d4;
+      padding: 36px 20px;
       text-align: center;
       text-decoration: none;
-      color: #fff;
-      transition: transform 0.2s, box-shadow 0.2s;
+      color: #62595a;
+      transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      min-height: 200px;
+      justify-content: flex-start;
+      min-height: 220px;
+      position: relative;
+    }
+
+    .category-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: #fd9227;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
     }
 
     .category-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      border-color: #fd9227;
+      box-shadow: 0 4px 20px rgba(98, 89, 90, 0.1);
+    }
+
+    .category-card:hover::before {
+      transform: scaleX(1);
     }
 
     .category-card h2 {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
+      margin-bottom: 16px;
+      line-height: 1.5;
+      color: #62595a;
     }
 
     .category-card p {
       font-size: 13px;
-      line-height: 1.6;
+      line-height: 1.8;
       font-weight: 400;
+      color: #7a7170;
     }
 
     /* レスポンシブ */
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
       .categories {
         grid-template-columns: repeat(3, 1fr);
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       .categories {
         grid-template-columns: repeat(2, 1fr);
       }
 
       .header h1 {
-        font-size: 22px;
+        font-size: 24px;
       }
 
       .header .catchcopy {
-        font-size: 18px;
+        font-size: 16px;
       }
 
       .section-banner {
         font-size: 18px;
-        padding: 18px 16px;
+        padding: 22px 16px;
       }
 
       .category-card {
-        min-height: 160px;
-        padding: 20px 14px;
+        min-height: 180px;
+        padding: 28px 16px;
       }
 
       .category-card h2 {
@@ -133,13 +156,26 @@
       }
     }
 
+    @media (max-width: 480px) {
+      .categories {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .category-card {
+        min-height: auto;
+        padding: 24px 20px;
+      }
+    }
+
     /* フッター */
     .footer {
       text-align: center;
-      padding: 40px 20px;
-      background: #f5f5f5;
-      color: #888;
+      padding: 50px 20px;
+      background: #62595a;
+      color: rgba(255,255,255,0.8);
       font-size: 13px;
+      letter-spacing: 0.1em;
     }
   </style>
 </head>
