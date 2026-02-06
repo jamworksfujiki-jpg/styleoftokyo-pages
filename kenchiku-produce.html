@@ -6,50 +6,26 @@
   <title>建築プロデュース | STYLE OF TOKYO</title>
   <link rel="stylesheet" href="styles-common.css">
   <style>
-    .matrix-section {
+    .recommend-section {
+      background: var(--color-bg-section);
+      padding: 80px 20px;
+    }
+    .recommend-list {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .recommend-item {
       background: var(--color-bg);
       border: 1px solid var(--color-border);
-      padding: 40px 32px;
-      margin-bottom: 60px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: var(--color-text);
     }
-    .matrix-section h3 {
-      font-size: 17px;
-      font-weight: 500;
-      text-align: center;
-      margin-bottom: 28px;
-      color: var(--color-main);
-    }
-    .matrix-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 16px;
-      font-size: 14px;
-    }
-    .matrix-table th {
-      background: var(--color-main);
-      color: #fff;
-      padding: 12px 10px;
-      text-align: center;
-      font-weight: 500;
-    }
-    .matrix-table td {
-      padding: 14px 10px;
-      text-align: center;
-      border-bottom: 1px solid var(--color-border);
-      background: var(--color-bg);
-    }
-    .matrix-table td:first-child {
-      font-weight: 500;
-      background: var(--color-bg-section);
-      color: var(--color-main);
-    }
-    .matrix-note {
-      font-size: 13px;
-      color: var(--color-text-light);
-      text-align: center;
+    .recommend-item::before {
+      content: '・';
+      color: var(--color-accent);
+      font-weight: bold;
     }
   </style>
 </head>
@@ -58,161 +34,107 @@
   <div class="hero">
     <h1>建築プロデュース</h1>
     <p class="subtitle">
-      土地がある／建て替えたい／リフォームしたい。<br>
-      でも、会社選びと見積比較が一番難しい。
+      建築会社を紹介するだけでは<br>
+      いい家はできません。
     </p>
     <p class="main-message">
-      私たちは中立の立場で、<br>
-      "比べられる形"に整えてから、納得して決めるプロセスをつくります。
+      私たちは、契約前の打ち合わせから同席し、<br>
+      引き渡しまでずっと間に入り続けます。<br><br>
+      どちらの味方でもなく、「住まい手にとっての最適」を判断する代理人。<br>
+      それがStyle of Tokyoの建築プロデュースです。
     </p>
     <div class="cta-buttons">
-      <a href="#contact" class="btn btn-primary">Zoom無料相談</a>
-      <a href="#contact" class="btn btn-secondary">LINEで簡単相談</a>
+      <a href="#contact" class="btn btn-primary">建築プロデュース相談（Zoom 15分）</a>
+      <a href="#contact" class="btn btn-secondary">LINEで質問</a>
     </div>
-  </div>
-
-  <div class="hero-image">
-    建築図面と見積書を広げて相談する写真（清潔感・知的）
   </div>
 
   <div class="section">
-    <h2 class="section-title">建築でよくある"疲れポイント"</h2>
-    <div class="section-divider"></div>
-    <div class="pain-grid">
-      <div class="pain-card">
-        <h3>会社が多すぎて選べない</h3>
-        <p>何を軸に選べばいいか分からない。</p>
-      </div>
-      <div class="pain-card">
-        <h3>見積が比較できない</h3>
-        <p>項目や仕様が違いすぎる。</p>
-      </div>
-      <div class="pain-card">
-        <h3>打ち合わせが整理できず、決め疲れ</h3>
-        <p>毎回話が戻る。</p>
-      </div>
-      <div class="pain-card">
-        <h3>契約してから不安が出る</h3>
-        <p>"契約前"に確認したかった…となりやすい。</p>
-      </div>
-    </div>
+    <p style="font-size: 15px; color: var(--color-text); line-height: 2.2; text-align: center; margin-bottom: 60px;">
+      建築プロデュースをうたう会社はたくさんあります。<br>
+      SUUMOカウンターのように、建築会社を紹介するサービスもあります。<br><br>
+      でも私たちは、"紹介して終わり"ではありません。<br><br>
+      契約前の打ち合わせにも同席し、設計・仕様・金額・スケジュールを一緒に整理。<br>
+      引き渡しまで、常に間に入ります。<br><br>
+      中立公平というより、<strong>住まい手にとって正しい判断をし続ける存在。</strong><br>
+      顧客の一方的なわがままで建築会社を追い込んでも、結果、誰も幸せにならないからです。
+    </p>
   </div>
 
   <div class="what-we-do">
     <div class="section">
-      <h2 class="section-title">STYLE OF TOKYOがすること</h2>
+      <h2 class="section-title">なぜ「間に入る」必要があるのか</h2>
       <div class="section-divider"></div>
 
-      <div class="point-card">
-        <h3>POINT 01　会社選びの"比較軸"をつくります</h3>
-        <p>
-          デザイン、性能、施工、コスト、担当者。<br>
-          どこを重視するかを先に決めると、選択がラクになります。
-        </p>
-      </div>
-
-      <div class="point-card">
-        <h3>POINT 02　見積を"翻訳"して、比較できる形にします</h3>
-        <p>
-          同じ言葉でも中身が違うことがあります。<br>
-          条件を揃え、差分が見える形に整えます。
-        </p>
-      </div>
-
-      <div class="point-card">
-        <h3>POINT 03　契約前に「詰まりやすいポイント」を先に共有します</h3>
-        <p>
-          どこで追加費用が出やすいか。<br>
-          どこで認識ズレが起きやすいか。<br>
-          先に知っているだけで、ストレスが大きく減ります。
-        </p>
-      </div>
+      <p style="font-size: 15px; color: var(--color-text); line-height: 2.2; margin-bottom: 40px;">
+        建築は、楽しくて、ものすごく難しい。<br><br>
+        建築会社は"ものづくりの会社"。大手は現場を混乱させないため、選択肢を限定しています。<br>
+        中小は柔軟ですが、そもそも意思疎通が難しいことも多い。<br><br>
+        そこに、工法・性能・価格・仕様・デザイン・人・お金<br>
+        ものすごい数の要素が一気に押し寄せます。<br><br>
+        しかも多くの人は、「何が分からないか」さえ分からない状態で人生最大級の買い物をする。<br><br>
+        ここに<strong>住まい手と作り手のリテラシーギャップ</strong>が生まれます。
+      </p>
     </div>
   </div>
 
   <div class="section" style="padding-top: 80px;">
-    <div class="matrix-section">
-      <h3>建築会社比較マトリクス（例）</h3>
-      <table class="matrix-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>デザイン</th>
-            <th>性能</th>
-            <th>コスト</th>
-            <th>施工品質</th>
-            <th>提案力</th>
-            <th>相性</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>会社A</td>
-            <td>○</td>
-            <td>◎</td>
-            <td>△</td>
-            <td>◎</td>
-            <td>○</td>
-            <td>○</td>
-          </tr>
-          <tr>
-            <td>会社B</td>
-            <td>◎</td>
-            <td>○</td>
-            <td>○</td>
-            <td>○</td>
-            <td>◎</td>
-            <td>△</td>
-          </tr>
-          <tr>
-            <td>会社C</td>
-            <td>○</td>
-            <td>○</td>
-            <td>◎</td>
-            <td>△</td>
-            <td>○</td>
-            <td>◎</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="matrix-note">※あなたの優先順位に合わせて「重み」を変える</p>
+    <h2 class="section-title">STYLE OF TOKYOの役割</h2>
+    <div class="section-divider"></div>
+
+    <p style="font-size: 15px; color: var(--color-text); line-height: 2.2; margin-bottom: 50px; text-align: center;">
+      私たちは長年、住宅業界を研究し、現場に入り続けてきました。<br>
+      だから、住まい手の感情・建築会社の現実・設計の限界・コスト構造<br>
+      すべてを理解した上で、両者の間に立つことができます。<br><br>
+      私たちの役割は、<strong>「通訳」「整理役」「判断の代理人」</strong><br>
+      本当に住まい手と作り手をつなぐこと。
+    </p>
+
+    <div class="point-card" style="border-top: 1px solid var(--color-border); padding-top: 36px;">
+      <h3>POINT 01　契約前から打ち合わせに同席</h3>
+      <p>
+        建築会社選びだけでなく、初期の打ち合わせから入り、<br>
+        要望整理・優先順位決定・現実的な落とし所を一緒につくります。
+      </p>
+    </div>
+
+    <div class="point-card">
+      <h3>POINT 02　引渡しまでプロジェクトとして伴走</h3>
+      <p>
+        設計・仕様・見積・工程。すべてを「住まいづくりプロジェクト」として管理。<br>
+        途中で迷子にならないよう支えます。
+      </p>
+    </div>
+
+    <div class="point-card">
+      <h3>POINT 03　感情ではなく構造で判断</h3>
+      <p>
+        「なんとなく不安」「なんとなく好き」を、根拠ある判断材料に変換。<br>
+        住まい手が納得して決断できる状態をつくります。
+      </p>
     </div>
   </div>
 
-  <div class="flow-section">
-    <h2 class="section-title">進め方（FLOW）</h2>
+  <div class="recommend-section">
+    <h2 class="section-title">こんな方におすすめ</h2>
     <div class="section-divider"></div>
-    <div class="step-list">
-      <div class="step-item">
-        <div class="step-label">STEP 01</div>
-        <div class="step-text">要望と予算の整理（優先順位を確定）</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 02</div>
-        <div class="step-text">会社候補の整理（比較軸づくり）</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 03</div>
-        <div class="step-text">見積・仕様の比較（翻訳して差分を可視化）</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 04</div>
-        <div class="step-text">合意形成（家族・会社間の認識を揃える）</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 05</div>
-        <div class="step-text">契約前チェック（不安を残さない）</div>
-      </div>
+    <div class="recommend-list">
+      <div class="recommend-item">住宅会社選びで迷っている</div>
+      <div class="recommend-item">設計や見積の妥当性が分からない</div>
+      <div class="recommend-item">要望がうまく伝えられない</div>
+      <div class="recommend-item">営業トークではなく本音で話したい</div>
+      <div class="recommend-item">後悔しない家づくりをしたい</div>
     </div>
   </div>
 
   <div class="closing" id="contact">
-    <h2>建てる前に、相談してよかった。</h2>
-    <p>そのための"整理役"としてご利用ください。</p>
+    <h2>家づくりは、楽しくもあり、とても大変なプロジェクトです。</h2>
+    <p>だからこそ、ひとりで抱えなくていい。<br>私たちは「住まいの代理人」として、あなたの意思決定に最後まで伴走します。</p>
     <div class="cta-buttons">
-      <a href="https://styleoftokyo.jp/contact/" class="btn btn-primary">お問い合わせフォーム</a>
-      <a href="#" class="btn btn-secondary">LINEでお問い合わせ</a>
+      <a href="https://styleoftokyo.jp/contact/" class="btn btn-primary">建築プロデュース相談（Zoom 15分）</a>
+      <a href="#" class="btn btn-secondary">LINEで質問</a>
     </div>
+    <p class="cta-note">※建築会社が決まっていなくても大丈夫です。</p>
   </div>
 
   <div class="footer">

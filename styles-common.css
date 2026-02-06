@@ -274,6 +274,14 @@ body {
   margin-bottom: 50px;
 }
 
+.closing .cta-note,
+.cta-note {
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
 /* フッター */
 .footer {
   text-align: center;

@@ -6,63 +6,66 @@
   <title>不動産のよろず相談 | STYLE OF TOKYO</title>
   <link rel="stylesheet" href="styles-common.css">
   <style>
-    .theme-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 24px;
+    .example-section {
+      background: var(--color-bg-section);
+      padding: 80px 20px;
     }
-    .theme-card {
+    .example-list {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .example-item {
       background: var(--color-bg);
       border: 1px solid var(--color-border);
-      padding: 28px 24px;
-    }
-    .theme-card h3 {
-      font-size: 16px;
-      font-weight: 700;
+      padding: 18px 24px;
       margin-bottom: 10px;
-      color: var(--color-main);
-    }
-    .theme-card p {
-      font-size: 14px;
-      color: var(--color-text-light);
-    }
-    .theme-note {
-      text-align: center;
-      font-size: 14px;
-      color: var(--color-text-light);
-      margin-bottom: 40px;
-    }
-    .theme-note strong {
-      color: var(--color-main);
-    }
-
-    .goal-section { padding: 80px 20px; }
-    .goal-flow { max-width: 500px; margin: 0 auto; }
-    .goal-step {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      padding: 20px 24px;
-      text-align: center;
-      margin-bottom: 0;
       font-size: 15px;
       color: var(--color-text);
     }
-    .goal-step.highlight {
-      background: var(--color-accent);
-      color: #fff;
-      font-weight: 500;
-      border-color: var(--color-accent);
+    .example-item::before {
+      content: '・';
+      color: var(--color-accent);
+      font-weight: bold;
     }
-    .goal-arrow {
+    .example-note {
       text-align: center;
-      font-size: 18px;
-      color: var(--color-border);
-      padding: 8px 0;
+      font-size: 15px;
+      color: var(--color-main);
+      margin-top: 30px;
+      font-weight: 500;
     }
-
-    @media (max-width: 600px) {
-      .theme-grid { grid-template-columns: 1fr; }
+    .keyword-box {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      padding: 32px;
+      max-width: 700px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .keyword-box p {
+      font-size: 16px;
+      color: var(--color-main);
+      line-height: 2;
+    }
+    .keyword-box strong {
+      color: var(--color-accent);
+    }
+    .safe-box {
+      background: var(--color-bg-section);
+      padding: 40px 32px;
+      max-width: 700px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
+    .safe-box h3 {
+      font-size: 18px;
+      color: var(--color-main);
+      margin-bottom: 16px;
+    }
+    .safe-box p {
+      font-size: 15px;
+      color: var(--color-text-light);
+      line-height: 2;
     }
   </style>
 </head>
@@ -71,124 +74,93 @@
   <div class="hero">
     <h1>不動産のよろず相談</h1>
     <p class="subtitle">
-      答えが一つじゃない相談こそ、どうぞ。<br>
-      「何が不安か分からない」状態からでも大丈夫です。
+      不動産のこと、どこに相談したらいいか分からない時に。
     </p>
     <p class="main-message">
-      このページは、"伴走"ではなく、まず論点を整理して<br>
-      「次の一手」を決めるためのスポット相談です。
+      売るかどうかも決まっていない。相続の話がまとまらない。親族と意見が割れている。<br>
+      そんな「まだ形になっていない問題」を、そのまま持ってきて大丈夫です。<br><br>
+      よろず相談は、不動産が絡む複雑な状況を整理するための窓口です。
     </p>
     <div class="cta-buttons">
-      <a href="#contact" class="btn btn-primary">Zoomで相談する</a>
-      <a href="#contact" class="btn btn-secondary">LINEで相談する</a>
+      <a href="#contact" class="btn btn-primary">Zoomでよろず相談（15分）</a>
+      <a href="#contact" class="btn btn-secondary">LINEで状況を送る</a>
     </div>
   </div>
 
-  <div class="hero-image">
-    ノートに不安点を書き出している手元の写真（ミニマル）
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">よくある相談テーマ</h2>
+  <div class="example-section">
+    <h2 class="section-title">こんな相談が多いです</h2>
     <div class="section-divider"></div>
-    <div class="theme-grid">
-      <div class="theme-card">
-        <h3>契約前の不安</h3>
-        <p>条件、説明、重要事項…確認ポイントを整理したい。</p>
-      </div>
-      <div class="theme-card">
-        <h3>ローンや資金の迷い</h3>
-        <p>借り方・組み方・不安点を整理したい。</p>
-      </div>
-      <div class="theme-card">
-        <h3>物件の比較が進まない</h3>
-        <p>判断軸を作りたい。</p>
-      </div>
-      <div class="theme-card">
-        <h3>家族の意見が割れている</h3>
-        <p>論点と優先順位を整理したい。</p>
-      </div>
+    <div class="example-list">
+      <div class="example-item">親の家をどうするか決まっていない</div>
+      <div class="example-item">売るか貸すかも分からない</div>
+      <div class="example-item">相続人が複数いて連絡が取れない</div>
+      <div class="example-item">離婚の財産分与で揉めている</div>
+      <div class="example-item">親戚から土地を引き取ってほしいと言われている</div>
+      <div class="example-item">不動産会社に行くほど話が固まっていない</div>
     </div>
-    <p class="theme-note">"情報を足す"のではなく、<strong>整理して軽くする</strong>相談です。</p>
+    <p class="example-note">「これ、どこに聞けばいいの？」<br>そう感じた時点で、ここが入口です。</p>
+  </div>
+
+  <div class="section" style="padding-top: 80px;">
+    <h2 class="section-title">なぜ"よろず相談"が必要なのか</h2>
+    <div class="section-divider"></div>
+
+    <p style="font-size: 15px; color: var(--color-text); line-height: 2.2; margin-bottom: 40px;">
+      不動産の問題には、<br>
+      ・法務（名義・相続）<br>
+      ・税務（譲渡・相続税）<br>
+      ・建築（建物・再建築）<br>
+      ・取引（売買・賃貸）<br>
+      必ず複数の専門領域が関わります。<br><br>
+      でも、弁護士は査定をしない。税理士は売買実務をしない。建築士は不動産が得意とは限らない。<br>
+      それぞれは専門家でも、<strong>全体をつなぐ人がいない。</strong><br><br>
+      さらに、意見が割れると感情が先行し、話は分裂します。<br><br>
+      だから必要なのは、<br>
+      <strong>中立な立場で事実を調査し、構造を整理し、プロとして判断を出す存在。</strong><br>
+      それが、Style of Tokyoのよろず相談です。
+    </p>
   </div>
 
   <div class="what-we-do">
     <div class="section">
-      <h2 class="section-title">相談で得られること</h2>
+      <h2 class="section-title">STYLE OF TOKYOがやっていること</h2>
       <div class="section-divider"></div>
 
-      <div class="point-card">
-        <h3>POINT 01　迷いの正体を言語化</h3>
-        <p>
-          モヤモヤのまま進めると、判断がブレます。<br>
-          まず論点を切り分けます。
-        </p>
-      </div>
+      <p style="font-size: 15px; color: var(--color-text); line-height: 2.2; margin-bottom: 40px;">
+        私たちはまず、不動産の現状・法的な状態・物理条件・市場性を整理し、<br>
+        感情ではなく根拠のある材料をつくります。<br><br>
+        その上で、選択肢を可視化・課題を言語化・現実的な落としどころを提示。<br>
+        単なる相談ではなく、"次に何をすればいいか"まで一緒に考えます。
+      </p>
 
-      <div class="point-card">
-        <h3>POINT 02　注意点の優先順位づけ</h3>
+      <div class="keyword-box">
         <p>
-          全部を確認するのは不可能。<br>
-          今の段階で必要な確認だけに絞ります。
-        </p>
-      </div>
-
-      <div class="point-card">
-        <h3>POINT 03　次の一手（ToDo）を明確化</h3>
-        <p>
-          相談後に「結局どうしたら？」を残しません。<br>
-          やることを具体化します。
+          課題を<strong>可視化</strong>し、選択肢を<strong>具現化</strong>し、現実的な解決へ<strong>つなげる</strong>。<br>
+          それが、私たちの役割です。
         </p>
       </div>
     </div>
   </div>
 
-  <div class="goal-section">
-    <div class="section" style="padding-bottom: 40px;">
-      <h2 class="section-title">よろず相談のゴール</h2>
-      <div class="section-divider"></div>
-      <div class="goal-flow">
-        <div class="goal-step">モヤモヤ（不安の塊）</div>
-        <div class="goal-arrow">↓</div>
-        <div class="goal-step">論点整理（何が問題？優先順位は？）</div>
-        <div class="goal-arrow">↓</div>
-        <div class="goal-step">判断材料（確認ポイント・比較軸）</div>
-        <div class="goal-arrow">↓</div>
-        <div class="goal-step highlight">次の一手（ToDoリスト）</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="flow-section">
-    <h2 class="section-title">進め方（FLOW）</h2>
-    <div class="section-divider"></div>
-    <div class="step-list">
-      <div class="step-item">
-        <div class="step-label">STEP 01</div>
-        <div class="step-text">事前ヒアリング（資料があれば共有）</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 02</div>
-        <div class="step-text">相談（Zoom / LINE）</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 03</div>
-        <div class="step-text">論点整理と優先順位づけ</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 04</div>
-        <div class="step-text">次の一手（ToDo）の提示</div>
-      </div>
+  <div class="section">
+    <div class="safe-box">
+      <h3>「こんなこと聞いていいのかな？」</h3>
+      <p>
+        大丈夫です。<br>
+        売る前提でなくてもいい。話がまとまっていなくてもいい。<br>
+        不動産のことなら、なんでも聞いてください。
+      </p>
     </div>
   </div>
 
   <div class="closing" id="contact">
-    <h2>"まず整理したい"なら、ここから。</h2>
-    <p>押し売りはしません。判断のための相談です。</p>
+    <h2>不動産は、資産であり、感情であり、人生そのものでもあります。</h2>
+    <p>だからこそ、一人で抱えなくていい。<br>よろず相談は、あなたの状況を整理する最初の一歩です。</p>
     <div class="cta-buttons">
-      <a href="https://styleoftokyo.jp/contact/" class="btn btn-primary">お問い合わせフォーム</a>
-      <a href="#" class="btn btn-secondary">LINEでお問い合わせ</a>
+      <a href="https://styleoftokyo.jp/contact/" class="btn btn-primary">Zoomでよろず相談（15分）</a>
+      <a href="#" class="btn btn-secondary">LINEで状況を送る</a>
     </div>
+    <p class="cta-note">※売却前提ではありません。※話がまとまっていなくてもOKです。</p>
   </div>
 
   <div class="footer">
