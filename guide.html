@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>どれに相談すればいい？かんたんガイド | STYLE OF TOKYO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+      color: #333;
+      background: #fff;
+      line-height: 2;
+    }
+
+    /* ヘッダー */
+    .guide-header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: #fdfdfd;
+    }
+
+    .guide-header h1 {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: #62595a;
+      margin-bottom: 16px;
+    }
+
+    .guide-header p {
+      font-size: 15px;
+      color: #7a7170;
+    }
+
+    /* イントロ */
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px 50px;
+    }
+
+    .intro .big-question {
+      font-size: 22px;
+      font-weight: 700;
+      color: #62595a;
+      margin-bottom: 16px;
+    }
+
+    .intro p {
+      font-size: 15px;
+      color: #7a7170;
+      line-height: 2;
+    }
+
+    /* フローチャート */
+    .flowchart {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    .flow-question {
+      background: #62595a;
+      color: #fff;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      margin-bottom: 0;
+    }
+
+    .flow-answers {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 50px;
+    }
+
+    .flow-answer {
+      display: flex;
+      align-items: stretch;
+      text-decoration: none;
+      border: 1px solid #e0d8d4;
+      border-top: none;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .flow-answer:first-child {
+      border-top: 1px solid #e0d8d4;
+    }
+
+    .flow-answer:hover {
+      border-color: #fd9227;
+      background: #fffbf7;
+      z-index: 1;
+    }
+
+    .flow-answer:hover + .flow-answer {
+      border-top-color: #fd9227;
+    }
+
+    .flow-emoji {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 70px;
+      font-size: 28px;
+      background: #f8f6f5;
+      border-right: 1px solid #e0d8d4;
+    }
+
+    .flow-content {
+      flex: 1;
+      padding: 20px 24px;
+    }
+
+    .flow-situation {
+      font-size: 16px;
+      font-weight: 700;
+      color: #62595a;
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+
+    .flow-desc {
+      font-size: 13px;
+      color: #7a7170;
+      line-height: 1.8;
+    }
+
+    .flow-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 50px;
+      color: #fd9227;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* セクション区切り */
+    .section-sep {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .section-sep h2 {
+      font-size: 22px;
+      font-weight: 500;
+      color: #62595a;
+      letter-spacing: 0.08em;
+    }
+
+    .section-sep .divider {
+      width: 60px;
+      height: 1px;
+      background: #62595a;
+      margin: 16px auto 0;
+    }
+
+    /* ユースケースカード */
+    .usecase-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 30px;
+    }
+
+    .usecase-card {
+      background: #f8f6f5;
+      padding: 36px 32px;
+      margin-bottom: 24px;
+    }
+
+    .usecase-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #62595a;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #fd9227;
+    }
+
+    .usecase-card h3 .tag {
+      display: inline-block;
+      background: #fd9227;
+      color: #fff;
+      font-size: 12px;
+      padding: 3px 12px;
+      margin-right: 10px;
+      vertical-align: middle;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+    }
+
+    .person-box {
+      background: #fff;
+      border: 1px solid #e0d8d4;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+
+    .person-label {
+      font-size: 12px;
+      color: #fd9227;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: 0.05em;
+    }
+
+    .person-situation {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.9;
+    }
+
+    .person-situation strong {
+      color: #62595a;
+    }
+
+    .usecase-result {
+      background: #fff;
+      border-left: 3px solid #fd9227;
+      padding: 16px 24px;
+      margin-top: 16px;
+    }
+
+    .usecase-result .result-label {
+      font-size: 12px;
+      color: #fd9227;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: 0.05em;
+    }
+
+    .usecase-result p {
+      font-size: 14px;
+      color: #62595a;
+      line-height: 1.9;
+    }
+
+    .usecase-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 40px;
+      background: #fd9227;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      transition: background 0.3s ease;
+    }
+
+    .usecase-link:hover {
+      background: #e58220;
+    }
+
+    /* まとめ表 */
+    .summary-section {
+      background: #f8f6f5;
+      padding: 60px 20px;
+    }
+
+    .summary-section h2 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 500;
+      color: #62595a;
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .summary-divider {
+      width: 60px;
+      height: 1px;
+      background: #62595a;
+      margin: 0 auto 40px;
+    }
+
+    .summary-table {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .summary-table th {
+      background: #62595a;
+      color: #fff;
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+
+    .summary-table td {
+      padding: 16px;
+      border-bottom: 1px solid #e0d8d4;
+      background: #fff;
+      vertical-align: top;
+    }
+
+    .summary-table td:first-child {
+      font-weight: 700;
+      color: #62595a;
+      white-space: nowrap;
+    }
+
+    .summary-table td:last-child a {
+      color: #fd9227;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .summary-table td:last-child a:hover {
+      text-decoration: underline;
+    }
+
+    /* CTA */
+    .guide-cta {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .guide-cta p {
+      font-size: 16px;
+      color: #62595a;
+      margin-bottom: 24px;
+    }
+
+    .guide-cta .cta-btn {
+      display: inline-block;
+      padding: 18px 48px;
+      background: #fd9227;
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      transition: background 0.3s ease;
+      font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+    }
+
+    .guide-cta .cta-btn:hover {
+      background: #e58220;
+    }
+
+    /* フッター */
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: #62595a;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #fd9227;
+    }
+
+    /* 印刷用 */
+    @media print {
+      body { font-size: 12px; line-height: 1.8; }
+      .guide-header { padding: 30px 10px 20px; }
+      .guide-header h1 { font-size: 22px; }
+      .flow-answer:hover { background: none; border-color: #e0d8d4; }
+      .usecase-link { background: #fff; color: #fd9227; border: 1px solid #fd9227; }
+      .guide-cta .cta-btn { background: #fff; color: #fd9227; border: 1px solid #fd9227; }
+      .footer { display: none; }
+    }
+
+    /* レスポンシブ */
+    @media (max-width: 600px) {
+      .guide-header h1 { font-size: 22px; }
+      .intro .big-question { font-size: 18px; }
+      .flow-question { font-size: 15px; padding: 18px 16px; }
+      .flow-emoji { min-width: 50px; font-size: 22px; }
+      .flow-content { padding: 14px 16px; }
+      .flow-situation { font-size: 14px; }
+      .flow-desc { font-size: 12px; }
+      .section-sep h2 { font-size: 18px; }
+      .usecase-card { padding: 24px 20px; }
+      .usecase-card h3 { font-size: 16px; }
+      .summary-table { font-size: 12px; }
+      .summary-table th { font-size: 11px; padding: 10px 8px; }
+      .summary-table td { padding: 10px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="guide-header">
+    <h1>どれに相談すればいい？<br>かんたんガイド</h1>
+    <p>あなたの「今の状況」にぴったりの相談を見つけましょう。</p>
+  </div>
+
+  <!-- フローチャート -->
+  <div class="intro">
+    <p class="big-question">まず、あなたの状況はどれですか？</p>
+    <p>下の中から、いちばん近いものをクリックしてください。</p>
+  </div>
+
+  <div class="flowchart">
+    <div class="flow-question">あなたの「今」にいちばん近いのは？</div>
+    <div class="flow-answers">
+      <a href="#usecase-myhome" class="flow-answer">
+        <div class="flow-emoji">&#x1F3E0;</div>
+        <div class="flow-content">
+          <div class="flow-situation">はじめて家を買いたい</div>
+          <div class="flow-desc">マンション？戸建て？何から始めればいいかわからない</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+      </a>
+      <a href="#usecase-sumikae" class="flow-answer">
+        <div class="flow-emoji">&#x1F504;</div>
+        <div class="flow-content">
+          <div class="flow-situation">今の家から引っ越したい（住み替え）</div>
+          <div class="flow-desc">売って買う？先に買う？順番がわからない</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+      </a>
+      <a href="#usecase-iejimai" class="flow-answer">
+        <div class="flow-emoji">&#x1F3DA;</div>
+        <div class="flow-content">
+          <div class="flow-situation">親の家をどうするか考えたい</div>
+          <div class="flow-desc">実家が空き家になりそう。売る？貸す？まだ決まっていない</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+      </a>
+      <a href="#usecase-kenchiku" class="flow-answer">
+        <div class="flow-emoji">&#x1F3D7;</div>
+        <div class="flow-content">
+          <div class="flow-situation">家を建てたいけど、建築会社選びが不安</div>
+          <div class="flow-desc">どこに頼む？見積は妥当？間に入ってほしい</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+      </a>
+      <a href="#usecase-yorozu" class="flow-answer">
+        <div class="flow-emoji">&#x2753;</div>
+        <div class="flow-content">
+          <div class="flow-situation">上のどれにも当てはまらない／とにかく相談したい</div>
+          <div class="flow-desc">相続で揉めている、離婚の財産分与、何から始めたらいいかわからない</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ユースケース詳細 -->
+  <div class="section-sep">
+    <h2>こんな人が、こうなりました</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="usecase-section">
+
+    <!-- マイホーム購入 -->
+    <div class="usecase-card" id="usecase-myhome">
+      <h3><span class="tag">CASE 1</span>マイホーム購入サポート</h3>
+      <div class="person-box">
+        <div class="person-label">こんな人</div>
+        <div class="person-situation">
+          30代の夫婦。子どもが生まれて、そろそろマイホームがほしい。<br>
+          でも<strong>「いくらの家を買えばいいのか」</strong>も、<strong>「何から始めたらいいのか」</strong>もわからない。<br>
+          ネットで調べれば調べるほど、情報が多すぎて混乱してしまった。
+        </div>
+      </div>
+      <div class="usecase-result">
+        <div class="result-label">どうなった？</div>
+        <p>
+          まず「いくらまでの家なら安心か」を一緒に計算。<br>
+          次に「どんな条件の家がいいか」を紙に書き出して整理。<br>
+          あとは条件に合う物件だけを見ればよくなったので、<strong>迷わず決められた。</strong>
+        </p>
+      </div>
+      <a href="myhome-support.html" class="usecase-link">くわしく見る &rarr;</a>
+    </div>
+
+    <!-- 住み替え -->
+    <div class="usecase-card" id="usecase-sumikae">
+      <h3><span class="tag">CASE 2</span>住み替えサポート</h3>
+      <div class="person-box">
+        <div class="person-label">こんな人</div>
+        <div class="person-situation">
+          40代の家族。子どもが大きくなって手狭に。もっと広い家に住み替えたい。<br>
+          でも<strong>「今の家を先に売る？先に新しい家を買う？」</strong>順番がわからない。<br>
+          ローンが二重にならないか心配。引越しの段取りも複雑そう。
+        </div>
+      </div>
+      <div class="usecase-result">
+        <div class="result-label">どうなった？</div>
+        <p>
+          住宅ローンの組み方を工夫して、<strong>先に新しい家を買ってから、今の家を売る</strong>方法を提案。<br>
+          「いつまでに何をするか」のスケジュール表を一緒に作って、<br>
+          あわてずに住み替えが完了。
+        </p>
+      </div>
+      <a href="sumikae-support.html" class="usecase-link">くわしく見る &rarr;</a>
+    </div>
+
+    <!-- 家じまい -->
+    <div class="usecase-card" id="usecase-iejimai">
+      <h3><span class="tag">CASE 3</span>実家の家じまいサポート</h3>
+      <div class="person-box">
+        <div class="person-label">こんな人</div>
+        <div class="person-situation">
+          50代。親が施設に入り、実家が空き家になった。<br>
+          兄弟は3人いるけど、<strong>「売る」「残す」で意見がバラバラ。</strong><br>
+          そもそも家がいくらで売れるのかも、誰に聞けばいいのかもわからない。
+        </div>
+      </div>
+      <div class="usecase-result">
+        <div class="result-label">どうなった？</div>
+        <p>
+          まず不動産の「今の状態」を調べて、資料にまとめた。<br>
+          「売ったらいくら」「貸したらいくら」「持ち続けたらいくらかかる」を比較。<br>
+          その資料をもとに兄弟で話し合い、<strong>全員が納得して売却を決定。</strong>
+        </p>
+      </div>
+      <a href="iejimai-support.html" class="usecase-link">くわしく見る &rarr;</a>
+    </div>
+
+    <!-- 建築プロデュース -->
+    <div class="usecase-card" id="usecase-kenchiku">
+      <h3><span class="tag">CASE 4</span>建築プロデュース</h3>
+      <div class="person-box">
+        <div class="person-label">こんな人</div>
+        <div class="person-situation">
+          注文住宅を建てたい。土地は見つかった。<br>
+          でも<strong>建築会社が多すぎて選べない。</strong>見積もりが妥当なのかもわからない。<br>
+          営業マンの話が本当かどうか、判断する自信がない。
+        </div>
+      </div>
+      <div class="usecase-result">
+        <div class="result-label">どうなった？</div>
+        <p>
+          打ち合わせに最初から一緒に入り、<strong>「通訳」として間に立った。</strong><br>
+          見積もりの高い部分・削れる部分を整理。<br>
+          建築会社との関係も良好なまま、<strong>納得のいく家が完成。</strong>
+        </p>
+      </div>
+      <a href="kenchiku-produce.html" class="usecase-link">くわしく見る &rarr;</a>
+    </div>
+
+    <!-- よろず相談 -->
+    <div class="usecase-card" id="usecase-yorozu">
+      <h3><span class="tag">CASE 5</span>不動産よろず相談</h3>
+      <div class="person-box">
+        <div class="person-label">こんな人</div>
+        <div class="person-situation">
+          離婚の財産分与で家をどうするか決まらない。<br>
+          親戚から土地を引き取ってほしいと言われたが、<strong>どうすればいいかまったくわからない。</strong><br>
+          不動産屋に行くほど話がまとまっていない。
+        </div>
+      </div>
+      <div class="usecase-result">
+        <div class="result-label">どうなった？</div>
+        <p>
+          まずは状況を聞いて、「何が問題なのか」を整理。<br>
+          法律・税金・不動産の専門家をつなぎ、<strong>全体をまとめて解決の道筋をつくった。</strong><br>
+          「どこに聞けばいいかわからなかった」が「次にやることが見えた」に変わった。
+        </p>
+      </div>
+      <a href="yorozu-soudan.html" class="usecase-link">くわしく見る &rarr;</a>
+    </div>
+
+  </div>
+
+  <!-- まとめ表 -->
+  <div class="summary-section">
+    <h2>5つの相談　まとめ</h2>
+    <div class="summary-divider"></div>
+    <table class="summary-table">
+      <thead>
+        <tr>
+          <th>相談の名前</th>
+          <th>こんなときに使う</th>
+          <th>くわしく</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>マイホーム購入<br>サポート</td>
+          <td>はじめて家を買いたい</td>
+          <td><a href="myhome-support.html">見る &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>住み替え<br>サポート</td>
+          <td>今の家から新しい家に引っ越したい</td>
+          <td><a href="sumikae-support.html">見る &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>実家の家じまい<br>サポート</td>
+          <td>親の家をどうするか考えたい</td>
+          <td><a href="iejimai-support.html">見る &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>建築<br>プロデュース</td>
+          <td>家を建てるとき、間に入ってほしい</td>
+          <td><a href="kenchiku-produce.html">見る &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>不動産<br>よろず相談</td>
+          <td>どれにも当てはまらないけど困っている</td>
+          <td><a href="yorozu-soudan.html">見る &rarr;</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="guide-cta">
+    <p>「どれかわからない」でも大丈夫。<br>まずは気軽に聞いてみてください。</p>
+    <a href="https://styleoftokyo.jp/contact/" class="cta-btn">Zoom で相談する（15分・無料）</a>
+  </div>
+
+  <div class="footer">
+    <a href="index.html" class="back-link">&larr; 5つのご相談に戻る</a>
+    <p>&copy; STYLE OF TOKYO</p>
+  </div>
+
+</body>
+</html>
