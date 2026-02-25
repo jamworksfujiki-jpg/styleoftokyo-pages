@@ -5,17 +5,330 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>マイホーム購入サポート | STYLE OF TOKYO</title>
   <link rel="stylesheet" href="styles-common.css">
+  <style>
+    /* ===== ページ固有スタイル ===== */
+
+    /* 10の悩みナビ */
+    .worries-nav {
+      background: #f8f6f5;
+      padding: 56px 20px;
+    }
+
+    .worries-nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .worries-nav h2 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 500;
+      color: #62595a;
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .worries-nav .nav-sub {
+      text-align: center;
+      font-size: 14px;
+      color: #7a7170;
+      margin-bottom: 36px;
+    }
+
+    .worries-nav-divider {
+      width: 50px;
+      height: 1px;
+      background: #62595a;
+      margin: 0 auto 32px;
+    }
+
+    .worry-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      list-style: none;
+    }
+
+    .worry-list li a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      background: #fff;
+      border: 1px solid #e0d8d4;
+      text-decoration: none;
+      color: #62595a;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: all 0.25s ease;
+    }
+
+    .worry-list li a:hover {
+      border-color: #fd9227;
+      background: #fffbf7;
+    }
+
+    .worry-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      height: 32px;
+      background: #fd9227;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .worry-list li a .arrow {
+      margin-left: auto;
+      color: #fd9227;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    /* コンテンツセクション */
+    .content-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 80px 20px 40px;
+      border-bottom: 1px solid #e0d8d4;
+    }
+
+    .content-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .content-num {
+      display: inline-block;
+      background: #fd9227;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .content-section h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #62595a;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .content-section .lead {
+      font-size: 15px;
+      color: #7a7170;
+      margin-bottom: 32px;
+      line-height: 2;
+    }
+
+    /* 動画プレースホルダー */
+    .video-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: #1a1a1a;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-embed .video-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 14px;
+      gap: 12px;
+    }
+
+    .video-embed .play-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-embed .play-icon::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 22px solid rgba(255,255,255,0.7);
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      margin-left: 4px;
+    }
+
+    /* 記事本文 */
+    .article-body {
+      font-size: 15px;
+      color: #333;
+      line-height: 2.1;
+    }
+
+    .article-body h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #62595a;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0d8d4;
+    }
+
+    .article-body p {
+      margin-bottom: 20px;
+    }
+
+    .article-body .highlight {
+      background: #fffbf7;
+      border-left: 3px solid #fd9227;
+      padding: 20px 24px;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .article-body .highlight strong {
+      color: #62595a;
+    }
+
+    .article-body .quote-line {
+      font-size: 20px;
+      font-weight: 500;
+      color: #62595a;
+      text-align: center;
+      padding: 32px 20px;
+      margin: 36px 0;
+      background: #f8f6f5;
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+    }
+
+    /* チェックリスト風 */
+    .check-group {
+      margin: 24px 0;
+    }
+
+    .check-group h5 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #62595a;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .check-group h5 .icon-tag {
+      display: inline-block;
+      font-size: 12px;
+      background: #62595a;
+      color: #fff;
+      padding: 2px 10px;
+      font-weight: 500;
+    }
+
+    .check-items {
+      list-style: none;
+      padding: 0;
+    }
+
+    .check-items li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .check-items li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid #ccc;
+      border-radius: 2px;
+    }
+
+    /* セクション間CTAボタン */
+    .section-cta {
+      text-align: center;
+      margin: 48px 0 0;
+    }
+
+    .section-cta a {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 14px;
+      color: #fd9227;
+      border: 1px solid #fd9227;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      font-family: "Noto Serif JP", serif;
+    }
+
+    .section-cta a:hover {
+      background: #fd9227;
+      color: #fff;
+    }
+
+    /* レスポンシブ */
+    @media (max-width: 600px) {
+      .worry-list {
+        grid-template-columns: 1fr;
+      }
+      .worry-list li a {
+        font-size: 14px;
+        padding: 14px 16px;
+      }
+      .content-section h3 {
+        font-size: 20px;
+      }
+      .article-body .quote-line {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
 <body>
 
+  <!-- ===== ヒーロー ===== -->
   <div class="hero">
     <h1>マイホーム購入サポート</h1>
     <p class="subtitle">
-      マイホーム購入は、情報収集ではなく「判断の設計」が難しい。
+      家を買いたいけど、何から始めればいいか分からない方へ。
     </p>
     <p class="main-message">
-      物件価格・自己資金・ローンの組み方。将来の売却や住み替えまで含めて、<br>
-      あなたにとっての"最適解"を一緒に整理します。<br><br>
+      物件探しの前に、まず「自分の想い」を整理する。<br>
+      判断の軸が決まれば、家選びは迷いません。<br><br>
       私たちは「住まいの代理人」として、<br>
       営業トークではなく、根拠のある判断材料でサポートします。
     </p>
@@ -25,119 +338,624 @@
     </div>
   </div>
 
-  <div class="hero-image">
-    住宅購入の相談をしている写真（清潔感・安心感）
+  <!-- ===== 10の悩みナビ ===== -->
+  <div class="worries-nav">
+    <div class="worries-nav-inner">
+      <h2>こんなお悩みありませんか？</h2>
+      <div class="worries-nav-divider"></div>
+      <p class="nav-sub">気になる項目をクリックすると、解説と動画をご覧いただけます。</p>
+
+      <ul class="worry-list">
+        <li><a href="#q1"><span class="worry-num">1</span>マンションと戸建て、どうやって決める？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q2"><span class="worry-num">2</span>そもそも自分はいくらの家が買える？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q3"><span class="worry-num">3</span>物件を見る前にやることってある？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q4"><span class="worry-num">4</span>不動産会社ってどうやって選ぶ？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q5"><span class="worry-num">5</span>新築と中古、どっちが後悔しない？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q6"><span class="worry-num">6</span>今って家を買うタイミングとしてどう？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q7"><span class="worry-num">7</span>住宅ローンが不安で動けない<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q8"><span class="worry-num">8</span>良い物件って何を基準に判断する？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q9"><span class="worry-num">9</span>営業に流されずに家を探す方法は？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q10"><span class="worry-num">10</span>とりあえず相談だけしても大丈夫？<span class="arrow">&darr;</span></a></li>
+      </ul>
+    </div>
   </div>
 
-  <div class="section">
-    <h2 class="section-title">マイホーム購入で"つまずきやすい"ところ</h2>
-    <div class="section-divider"></div>
-    <div class="pain-grid">
-      <div class="pain-card">
-        <h3>資金計画をどう考えればいいのか分からない</h3>
-        <p>ローンが不安というよりも、「いくら借りて、いくらの物件を選ぶべきか」「自己資金はどのくらい入れるべきか」資金計画全体の組み立て方が難しい。将来の住み替えや売却（出口）まで考えると、今どんな選択がベストなのか分からない。</p>
+  <!-- ============================== -->
+  <!-- Q1: マンション vs 戸建て -->
+  <!-- ============================== -->
+  <div class="content-section" id="q1">
+    <span class="content-num">Q.01</span>
+    <h3>マンションと戸建て、どうやって決めればいい？</h3>
+    <p class="lead">条件比較はもうやめよう。あなたの"イライラ耐性"が答えです。</p>
+
+    <div class="video-embed">
+      <!-- TODO: 実際のYouTube URLに差し替え -->
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
       </div>
-      <div class="pain-card">
-        <h3>ネットで物件を見ても、良いかどうか判断できない</h3>
-        <p>ネットで確認はできるけれど、どこを見て、何を根拠に判断すればいいのかが分からない。相場の考え方、比較の軸、注意すべきポイント。「情報が多すぎる」より「見方が分からない」ことが本当の壁。</p>
+    </div>
+
+    <div class="article-body">
+      <p>
+        「マンションか戸建てか、どうやって決めればいいですか？」<br>
+        これ、めちゃくちゃ聞かれます。
+      </p>
+      <p>
+        でもね。資産性とか、広さとか、駅距離とか…<br>
+        正直それ以前の話があります。
+      </p>
+
+      <div class="highlight">
+        人は<strong>「欲しいもの」</strong>より<strong>「我慢できないこと」</strong>で引っ越します。<br>
+        だから「どっちが得か」じゃなくて、<strong>「あなたは何が嫌な人か？」</strong>を確認しましょう。
       </div>
-      <div class="pain-card">
-        <h3>専門家の意見がバラバラで、何が正しいのか分からない</h3>
-        <p>不動産営業もピンキリで、自分にとってベストな担当者に当たるか分からない。人によって言うことが違うからこそ、納得できる"判断材料"がほしい。</p>
+
+      <h4>「これ嫌ですか？」チェックリスト</h4>
+
+      <div class="check-group">
+        <h5><span class="icon-tag">マンション寄り</span>こんな人はマンション向き</h5>
+        <ul class="check-items">
+          <li>草むしりとか外回りの手入れ、絶対イヤ</li>
+          <li>建物の修繕はプロに任せたい</li>
+          <li>セキュリティが弱いのは不安</li>
+          <li>ゴミ出しルールが決まってる方が楽</li>
+          <li>将来売りやすい方が安心</li>
+          <li>多少の生活音は許容できる</li>
+          <li>管理費を毎月払うのは気にならない</li>
+        </ul>
       </div>
-      <div class="pain-card">
-        <h3>契約前に焦って不安が増える</h3>
-        <p>契約段階で「思っていたのと違う」に気づいても、キャンセルできたとしても時間は戻らない。契約直前ではなく、物件探しの段階からNG条件を外し、そもそも提案の質を上げたい。</p>
+
+      <div class="check-group">
+        <h5><span class="icon-tag">戸建て寄り</span>こんな人は戸建て向き</h5>
+        <ul class="check-items">
+          <li>隣の生活音がストレス</li>
+          <li>管理組合とか絶対面倒</li>
+          <li>自分の家は自分で決めたい</li>
+          <li>管理費を一生払い続けるのがイヤ</li>
+          <li>庭や外空間が欲しい</li>
+          <li>多少手入れが増えても自由がいい</li>
+          <li>近所付き合いは距離感ほしい</li>
+        </ul>
+      </div>
+
+      <div class="highlight">
+        チェックが多かった方があなたの"正解"。<br>
+        マンションか戸建てかは性能でも価格でもなく<br>
+        <strong>「あなたは何にイライラする人か」</strong>で決まります。
+      </div>
+
+      <h4>もう一段深い話</h4>
+      <p>
+        資産性の話もよく出るけど、<br>
+        短期で住み替えるならマンション有利。長く住むなら戸建ての自由度。<br>
+        つまり<strong>「期間 × 性格」</strong>。これが判断の軸です。
+      </p>
+
+      <div class="quote-line">
+        もし今、「どっちが正解か」で迷ってたら、<br>
+        今日からは「私は何が嫌な人か」で考えてみてください。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
       </div>
     </div>
   </div>
 
-  <div class="what-we-do">
-    <div class="section">
-      <h2 class="section-title">STYLE OF TOKYOがすること</h2>
-      <div class="section-divider"></div>
+  <!-- ============================== -->
+  <!-- Q2: いくらの家が買える？ -->
+  <!-- ============================== -->
+  <div class="content-section" id="q2">
+    <span class="content-num">Q.02</span>
+    <h3>そもそも自分はいくらの家が買えるの？</h3>
+    <p class="lead">借りられる額は簡単に出る。問題は「笑って払える額」。</p>
 
-      <div class="point-card">
-        <h3>POINT 01　「住まいの条件」を先に言語化します</h3>
-        <p>
-          エリア・広さ・予算だけでなく、暮らし方や将来の変化も整理。<br>
-          「何を優先し、何を捨てるか」が決まると、物件選びがブレなくなります。
-        </p>
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        年収＋自己資金。これで総額は見える。<br>
+        でも本当の悩みはここじゃないんです。
+      </p>
+
+      <h4>問題は3つある</h4>
+      <div class="highlight">
+        <strong>1. 借りられる額</strong><br>
+        <strong>2. 返済できる額</strong><br>
+        <strong>3. 返済してもいいと思える額</strong><br><br>
+        この3番目が一番むずかしい。
       </div>
 
-      <div class="point-card">
-        <h3>POINT 02　資金計画を"最適解"として設計します</h3>
-        <p>
-          借入可能額ではなく、家計とライフプランから「適正な総予算」を定義。<br>
-          自己資金の入れ方、ローンの組み方、金利タイプ、諸費用・引越し・予備費まで含めて<br>
-          <strong>"この価格帯ならこの買い方がベスト"</strong>を一緒に作ります。
-        </p>
+      <p>家の金額は数字の問題じゃない。<strong>価値観の問題</strong>です。</p>
+
+      <h4>夫婦の価値観を考える</h4>
+      <p>
+        共働き前提？ どちらかが働き方を変える可能性は？<br>
+        旅行は削れる？ 子どもの教育費は？ 趣味は？ 親のサポートは？<br>
+        結局、収入と支出しかない。でもそのバランスは<strong>人生観</strong>。
+      </p>
+
+      <h4>もしローンを減らしたら？</h4>
+      <p>
+        エリアを妥協する？ 広さを妥協する？ 築年数を妥協する？<br>
+        その家で納得できる？ ここで折り合いが必要になります。
+      </p>
+
+      <div class="quote-line">
+        家は"買えるかどうか"ではなく、<br>
+        "その人生で納得できるかどうか"。
       </div>
 
-      <div class="point-card">
-        <h3>POINT 03　NG条件を先に外し、契約前の落とし穴を防ぎます</h3>
-        <p>
-          重要事項説明・管理規約・ランニングコスト・周辺環境・将来リスク。<br>
-          「気になる／気にならない」の基準も含めて、物件探しの段階から"提案しない条件"を明確化し、時間のムダを減らします。
-        </p>
+      <h4>資産か負債か問題</h4>
+      <p>
+        住むために買う家は生活装置。資産にするかどうかは立地・期間・市場・戦略で決まる。<br>
+        でも一番怖いのは、家が"後悔"になること。それが一番の負債。
+      </p>
+
+      <div class="highlight">
+        借りられる額ではなく、返せる額でもなく、<br>
+        <strong>「笑って払える額」</strong>。<br>
+        そしてその金額で選ぶ家にちゃんと納得できるか。<br>
+        ここを整理せずに物件を見ると、ずっと迷います。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
       </div>
     </div>
   </div>
 
-  <div class="deliverables">
-    <div class="section" style="padding-bottom: 40px;">
-      <h2 class="section-title">判断をラクにするツール</h2>
-      <div class="section-divider"></div>
-      <table class="deliverables-table">
-        <thead>
-          <tr><th>成果物</th><th>内容</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>条件整理シート</td>
-            <td>優先順位／NG条件／判断軸を可視化</td>
-          </tr>
-          <tr>
-            <td>資金計画書</td>
-            <td>総予算・自己資金配分・ローン設計・出口も踏まえた全体像</td>
-          </tr>
-          <tr>
-            <td>物件チェックリスト</td>
-            <td>ネット閲覧／内見／契約前で見るべきポイント（共通フォーマット）</td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- ============================== -->
+  <!-- Q3: 物件を見る前にやること -->
+  <!-- ============================== -->
+  <div class="content-section" id="q3">
+    <span class="content-num">Q.03</span>
+    <h3>物件を見る前にやることってある？</h3>
+    <p class="lead">間取りでも価格でもエリアでもなく、まず「想いの整理」。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        家は条件を満たすために買うものじゃなく、楽しく暮らすために買うもの。<br>
+        だから、物件を見る前に関係者"全員"の想いを整理します。
+      </p>
+
+      <h4>なぜ整理が先なのか？</h4>
+      <p>
+        多くの人は SUUMO → 内見 → 営業 → 比較 と進みます。<br>
+        でもこれ、ほぼ確実に迷子になります。<br>
+        理由は簡単。<strong>「何のために家を買うのか」が決まっていないから。</strong>
+      </p>
+
+      <h4>想いの整理のやり方</h4>
+      <p>道具はこれだけ：<strong>A4の紙を1枚</strong>。</p>
+      <div class="highlight">
+        <strong>マトリックスを作ります</strong><br><br>
+        縦軸：上「ワクワクしている」／下「ワクワクしていない」<br>
+        横軸：右「優先順位 高い」／左「優先順位 低い」<br><br>
+        思いつくまま書き出して、位置を決める。<br>
+        「それ、絶対ほしい？」「なくてもいい？」と自分に聞きながら。
+      </div>
+
+      <h4>夫婦でやる場合の注意点</h4>
+      <p>
+        できれば、<strong>まずは"別々に"書く</strong>のがおすすめ。<br>
+        いきなり話し合うと感情が入る、正論がぶつかる、口論になる。<br>
+        まず各自で静かに書く → あとで見せ合う。これがベスト。
+      </p>
+
+      <div class="highlight">
+        大事なのは価値観を「合わせる」ことじゃない。<br>
+        お互いの価値観を<strong>"理解する"</strong>こと。<br>
+        そして<strong>どこを譲れるかを見つける</strong>こと。
+      </div>
+
+      <div class="quote-line">
+        家探しは、物件探しじゃありません。<br>
+        人生の優先順位探しです。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
     </div>
   </div>
 
-  <div class="flow-section">
-    <h2 class="section-title">進め方（FLOW）</h2>
-    <div class="section-divider"></div>
-    <div class="step-list">
-      <div class="step-item">
-        <div class="step-label">STEP 01</div>
-        <div class="step-text">条件整理：暮らし方／優先順位／NG条件の言語化</div>
+  <!-- ============================== -->
+  <!-- Q4: 不動産会社の選び方 -->
+  <!-- ============================== -->
+  <div class="content-section" id="q4">
+    <span class="content-num">Q.04</span>
+    <h3>不動産会社ってどうやって選ぶの？</h3>
+    <p class="lead">掘り出し物を探すより先に、「誰と進めるか」を決めてください。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
       </div>
-      <div class="step-item">
-        <div class="step-label">STEP 02</div>
-        <div class="step-text">資金計画：総予算の確定（自己資金×ローン設計×予備費）</div>
+    </div>
+
+    <div class="article-body">
+      <h4>物件はどこにでもある時代</h4>
+      <p>
+        物件情報そのものはいまやどの会社にもほぼ同じように流れています。<br>
+        「うちだけの特別な物件です」と言われても、実はその会社の自社サイトに載っていたり、<br>
+        会員登録すれば誰でも見られたりするケースがほとんど。
+      </p>
+
+      <h4>「掘り出し物が欲しい」は本当に正しい？</h4>
+      <p>
+        本当に安い物件が出ると、多くの場合いったん買取業者が買って、<br>
+        整えてから"相場価格"で市場に出ます。<br>
+        つまり、<strong>一般の人が買える"掘り出し物"は、ほぼ存在しません。</strong>
+      </p>
+
+      <h4>本当に大事なのは「物件」じゃなく「人」</h4>
+      <div class="highlight">
+        不動産探しで一番大事なのは、<br>
+        <strong>信頼できる"自分の代理人（エージェント）"を見つけること。</strong><br><br>
+        あなたの代わりに調べてくれる。<br>
+        プロの視点で意見をくれる。<br>
+        1対1でちゃんと向き合ってくれる。<br>
+        家族の意見も整理してくれる。
       </div>
-      <div class="step-item">
-        <div class="step-label">STEP 03</div>
-        <div class="step-text">物件整理：相場観の作り方＋"見るべきポイント"で比較できる状態へ</div>
+
+      <p>
+        家探しが進まない理由の多くは、物件じゃなく家族の価値観のズレ。<br>
+        だから本当にできるエージェントは、物件探しの前に想いを整理して、<br>
+        優先順位を可視化して、家族の意見をすり合わせてくれます。
+      </p>
+
+      <div class="quote-line">
+        楽しく家を買えるかどうかは、<br>
+        情報量でも価格でもなく「人」。
       </div>
-      <div class="step-item">
-        <div class="step-label">STEP 04</div>
-        <div class="step-text">買付〜契約準備：重要事項・管理規約・条件の最終チェック</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 05</div>
-        <div class="step-text">引渡しまで：残タスク整理（ローン手続き／保険／引越し等）</div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
       </div>
     </div>
   </div>
 
-  <!-- 成功事例セクション -->
+  <!-- ============================== -->
+  <!-- Q5: 新築 vs 中古 -->
+  <!-- ============================== -->
+  <div class="content-section" id="q5">
+    <span class="content-num">Q.05</span>
+    <h3>新築と中古、どっちが後悔しない？</h3>
+    <p class="lead">新築か中古かは手段。大事なのは「何を叶えたいか」。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        新築か中古か、では決まりません。<br>
+        決まるのは<strong>「あなたは何をしたいのか」</strong>です。
+      </p>
+
+      <h4>マンションの場合</h4>
+      <p>
+        昔は「築15年で半額」と言われていましたが、今は場所によっては15年で倍になることも。<br>
+        価値を決めているのは<strong>"築年数"じゃなく"場所"</strong>。
+      </p>
+      <p>
+        新築は最新の設備・仕様。中古はエリア重視で実績ある立地。<br>
+        どちらにも合理性があります。ただし中古マンションの修繕積立金は、<br>
+        建築費高騰・人件費上昇・円安を考えると将来ほぼ確実に上がります。
+      </p>
+
+      <h4>戸建ての場合</h4>
+      <p>
+        新築は建売（コスト重視）と注文住宅（自由度重視）に分かれます。<br>
+        中古戸建てでいま一番効いてくるのが<strong>断熱性能</strong>。<br>
+        2024年以降は断熱が実質義務化。昔の戸建ては耐震はあっても断熱がほぼ考えられていない。<br>
+        中古戸建てはここがリフォームコストに直結します。
+      </p>
+
+      <div class="highlight">
+        <strong>結局、何から考える？</strong><br><br>
+        「新築か中古か」ではなく、まず：<br>
+        1. 何をしたいのか<br>
+        2. 何にこだわるのか<br><br>
+        そして最後に必ず出てくるのが<br>
+        <strong>場所 × 予算 × 優先順位</strong>。この3つのバランス。
+      </div>
+
+      <div class="quote-line">
+        新築か中古か迷ったら、<br>
+        「何を叶えたいか」から考えよう。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== -->
+  <!-- Q6: 買うタイミング -->
+  <!-- ============================== -->
+  <div class="content-section" id="q6">
+    <span class="content-num">Q.06</span>
+    <h3>今って家を買うタイミングとしてどうなの？</h3>
+    <p class="lead">家を買うタイミングは「市況」じゃなく「自分」。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        景気は？ 金利は？ もう少し待った方がいい？<br>
+        よく聞かれますが、答えはシンプルです。
+      </p>
+
+      <div class="highlight">
+        家を買うのは投資判断じゃなく<strong>人生の決断</strong>。<br>
+        転職、結婚、独立。どれも「景気がいいから」じゃなく、<br>
+        <strong>自分の気持ちが動いたとき</strong>。家も同じ。
+      </div>
+
+      <h4>「いい物件がない」は本当？</h4>
+      <p>
+        いい物件なんて、最初からありません。<br>
+        あるのは、あなたの条件に合う物件。<br>
+        その条件が決まっていないと、どれを見てもピンとこない。<br>
+        つまり、決められない原因は物件じゃなく<strong>"想いの整理不足"</strong>。
+      </p>
+
+      <h4>自分の想いが整理できると何が起きる？</h4>
+      <p>
+        予算が現実的になる。エリアが絞れる。優先順位がはっきりする。<br>
+        すると選択肢は自然に"限られる"。<br>
+        そこで初めて「あ、これだ」が出てくる。
+      </p>
+
+      <div class="quote-line">
+        家は"相場"で買うものじゃない。<br>
+        人生のタイミングで買うもの。
+      </div>
+
+      <p>
+        本気で欲しいと思ったとき、迷わず進めるように、<br>
+        <strong>いいエージェントを先に見つけておく</strong>。<br>
+        整理してくれて、現実を教えてくれて、背中を押してくれる人。
+      </p>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== -->
+  <!-- Q7: 住宅ローンの不安 -->
+  <!-- ============================== -->
+  <div class="content-section" id="q7">
+    <span class="content-num">Q.07</span>
+    <h3>住宅ローンが不安で動けない</h3>
+    <p class="lead">不安は「消す」ものじゃなく、見える化するもの。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        見えないから怖い。正体が分かれば、対策が打てます。<br>
+        多くの人の不安はこの3つです。
+      </p>
+      <div class="highlight">
+        <strong>1. 金利が上がるかもしれない</strong><br>
+        <strong>2. 将来、収入が減るかもしれない</strong><br>
+        <strong>3. 売りたくなったとき、価値が下がるかもしれない</strong><br><br>
+        つまり、ローンが不安なんじゃなくて<strong>お金が不安</strong>。
+      </div>
+
+      <h4>金利が怖い人へ</h4>
+      <p>
+        フラット35（固定金利）は「安心」を買う選択。月額が変わらない。<br>
+        一方で変動金利は、残高が一番大きい最初の数年に低金利で走れるメリットがある。<br>
+        過去を見ても数年で1%以上ドンと上がった例はほぼありません。
+      </p>
+
+      <h4>変動金利の"逃げ道"</h4>
+      <p>
+        預金を残しておく → 上がったら繰上返済で残債を減らす。<br>
+        資産価値のある家を選ぶ → 「最悪、売ればいい」という設計にしておく。
+      </p>
+
+      <h4>収入が減る不安について</h4>
+      <p>
+        これは正直、働き方の問題。<br>
+        これ以上頑張りたくないなら予算を落とす。まだ上げたいならローンを"モチベーション"にする。<br>
+        どちらも正解。ただし後者なら、手元資金と売れる家（資産性）をセットで持つ。
+      </p>
+
+      <div class="quote-line">
+        ローンを組む前に考えるべきなのは、<br>
+        金利じゃなく、あなたの人生設計です。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== -->
+  <!-- Q8: 良い物件の基準 -->
+  <!-- ============================== -->
+  <div class="content-section" id="q8">
+    <span class="content-num">Q.08</span>
+    <h3>良い物件って、何を基準に判断すればいい？</h3>
+    <p class="lead">良い物件かどうかは、価格じゃなく「納得感」。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        「良い物件」には正解はありません。<br>
+        あるのは、<strong>世間的に"人気な物件"</strong>と<strong>あなたにとって"納得できる物件"</strong>の2つだけ。
+      </p>
+
+      <h4>「この物件は買うな」に惑わされないで</h4>
+      <p>
+        接道してない、古いマンション、旗竿地…。<br>
+        確かにデメリットはある。でも<strong>"知らずに買う"のがダメなだけ</strong>。<br>
+        知った上で納得して買うなら、それは立派な選択です。
+      </p>
+
+      <h4>ただし「負動産」は避ける</h4>
+      <p>
+        0円でも売れない物件、管理不能な空き家。<br>
+        手放せない、固定資産税だけかかる、子どもに負担を残す。<br>
+        ここだけは避けてください。
+      </p>
+
+      <div class="highlight">
+        いい物件とは「完璧な物件」じゃない。<br>
+        <strong>「リスクを理解した上で、納得して買える物件」</strong>。<br><br>
+        だから最後はやっぱり、<br>
+        メリットだけじゃなくデメリットも言ってくれる、<br>
+        やめた方がいい時は止めてくれる<strong>信頼できるエージェント</strong>。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== -->
+  <!-- Q9: 営業に流されない方法 -->
+  <!-- ============================== -->
+  <div class="content-section" id="q9">
+    <span class="content-num">Q.09</span>
+    <h3>営業に流されずに家を探す方法はある？</h3>
+    <p class="lead">自分の判断軸があれば、営業トークに振り回されません。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        営業マンは物件を売るのが仕事。あなたの人生を設計するのが仕事ではありません。<br>
+        だからこそ、<strong>物件を見る前に自分の判断軸を持つ</strong>ことが大切。
+      </p>
+
+      <div class="highlight">
+        <strong>営業に流されない3つのポイント</strong><br><br>
+        1. 予算の上限を先に決めておく（「笑って払える額」）<br>
+        2. NG条件を明確にしておく（「これだけは嫌」リスト）<br>
+        3. 自分の代理人（エージェント）を先に持つ
+      </div>
+
+      <p>
+        「いい物件ですよ」「今しかないですよ」<br>
+        こういう言葉に焦るのは、自分の判断基準がないから。<br>
+        条件整理ができていれば、「それは私に合いません」と言えます。
+      </p>
+
+      <div class="quote-line">
+        家選びは"好き"より"無理"から。<br>
+        判断の軸があれば、営業に流されない。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== -->
+  <!-- Q10: 相談だけでもOK？ -->
+  <!-- ============================== -->
+  <div class="content-section" id="q10">
+    <span class="content-num">Q.10</span>
+    <h3>とりあえず相談だけしても大丈夫？</h3>
+    <p class="lead">何も決まっていないときこそ、相談のタイミング。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        はい。もちろん大丈夫です。<br>
+        むしろ、何も決まっていないときこそ相談のベストタイミング。
+      </p>
+
+      <h4>「なんかいい物件あったら買いたい」では決まらない</h4>
+      <p>
+        "いい物件"の定義がない状態で物件をいくら見ても、決まりません。<br>
+        想いの整理ができていない、家族の価値観が合っていない、予算が決まっていない。<br>
+        この状態のまま進んでも、なぜか決まらない。
+      </p>
+
+      <h4>相談はこう使う</h4>
+      <p>
+        何が不安なのか。何が分からないのか。どこで止まっているのか。<br>
+        そこからでいい。そのまま伝えてください。
+      </p>
+
+      <div class="highlight">
+        相談の中で見えることがあります。<br><br>
+        ・話をちゃんと聞いてくれるか<br>
+        ・不安を整理してくれるか<br>
+        ・急がせないか<br>
+        ・デメリットも言うか<br><br>
+        ここで、この人を<strong>"自分の代理人"にできるかどうか</strong>が見えてくる。
+      </div>
+
+      <div class="quote-line">
+        相談は、物件を探す前に<br>
+        「自分を整理する」時間です。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 成功事例セクション ===== -->
   <div class="lifestyle-section">
     <div class="lifestyle-header">
       <svg class="lifestyle-icon" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +968,7 @@
       <span class="lifestyle-title">LIFE STYLE</span>
     </div>
     <p class="lifestyle-desc">
-      住宅購入に至った経緯や当時の悩み、思いなど、お客様のリアルなお<br>
+      住宅購入に至った経緯や当時の悩み、思いなど、お客様のリアルな<br>
       声とともに住宅購入の成功事例をご紹介します。
     </p>
     <div class="lifestyle-grid">
@@ -190,9 +1008,14 @@
     </div>
   </div>
 
+  <!-- ===== クロージングCTA ===== -->
   <div class="closing" id="contact">
-    <h2>初めての家探しこそ、判断の軸があると迷いが減ります。</h2>
-    <p>「住まいの代理人」として、あなたの意思決定を整理し、納得できる購入を支えます。</p>
+    <h2>家探しの第一歩は、<br>「自分を整理する」こと。</h2>
+    <p>
+      何も決まっていなくて大丈夫です。<br>
+      「住まいの代理人」として、あなたの想いを整理し、<br>
+      納得できるマイホーム購入を支えます。
+    </p>
     <div class="cta-buttons">
       <a href="https://styleoftokyo.jp/contact/" class="btn btn-primary">Zoomで無料相談（15分）</a>
       <a href="#" class="btn btn-secondary">LINEで質問する</a>
@@ -201,7 +1024,7 @@
   </div>
 
   <div class="footer">
-    <a href="index.html" class="back-link">&larr; 5つのご相談に戻る</a>
+    <a href="guide.html" class="back-link">&larr; こんなお悩みありませんか？に戻る</a>
     <p>&copy; STYLE OF TOKYO</p>
   </div>
 

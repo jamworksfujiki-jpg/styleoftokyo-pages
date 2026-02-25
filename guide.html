@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>どれに相談すればいい？かんたんガイド | STYLE OF TOKYO</title>
+  <title>こんなお悩みありませんか？ | STYLE OF TOKYO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,358 +14,140 @@
       font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
       color: #333;
       background: #fff;
-      line-height: 2;
+      line-height: 1.9;
     }
 
-    /* ヘッダー */
-    .guide-header {
+    /* ===== ヘッダー ===== */
+    .section-header {
       text-align: center;
-      padding: 60px 20px 40px;
-      background: #fdfdfd;
+      padding: 64px 20px 20px;
     }
 
-    .guide-header h1 {
-      font-size: 28px;
+    .section-header h1 {
+      font-size: 26px;
       font-weight: 500;
       letter-spacing: 0.1em;
       color: #62595a;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
-    .guide-header p {
-      font-size: 15px;
+    .section-header p {
+      font-size: 14px;
       color: #7a7170;
     }
 
-    /* イントロ */
-    .intro {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 40px 20px 50px;
-    }
-
-    .intro .big-question {
-      font-size: 22px;
-      font-weight: 700;
-      color: #62595a;
-      margin-bottom: 16px;
-    }
-
-    .intro p {
-      font-size: 15px;
-      color: #7a7170;
-      line-height: 2;
-    }
-
-    /* フローチャート */
-    .flowchart {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 20px 60px;
-    }
-
-    .flow-question {
+    .header-divider {
+      width: 50px;
+      height: 1px;
       background: #62595a;
-      color: #fff;
-      text-align: center;
-      padding: 24px 20px;
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      margin-bottom: 0;
+      margin: 20px auto 0;
     }
 
-    .flow-answers {
-      display: flex;
-      flex-direction: column;
+    /* ===== お悩みグリッド ===== */
+    .worries-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
       gap: 0;
-      margin-bottom: 50px;
+      max-width: 1100px;
+      margin: 48px auto 0;
+      padding: 0 20px;
     }
 
-    .flow-answer {
-      display: flex;
-      align-items: stretch;
+    .worry-card {
+      text-align: center;
       text-decoration: none;
+      color: #62595a;
+      padding: 36px 16px 32px;
       border: 1px solid #e0d8d4;
-      border-top: none;
+      margin-left: -1px;
+      margin-top: -1px;
       transition: all 0.3s ease;
       position: relative;
+      background: #fff;
     }
 
-    .flow-answer:first-child {
-      border-top: 1px solid #e0d8d4;
-    }
-
-    .flow-answer:hover {
-      border-color: #fd9227;
+    .worry-card:hover {
       background: #fffbf7;
-      z-index: 1;
+      border-color: #fd9227;
+      z-index: 2;
+      box-shadow: 0 4px 16px rgba(98, 89, 90, 0.08);
     }
 
-    .flow-answer:hover + .flow-answer {
-      border-top-color: #fd9227;
+    .worry-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 16px;
+      display: block;
     }
 
-    .flow-emoji {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 70px;
-      font-size: 28px;
-      background: #f8f6f5;
-      border-right: 1px solid #e0d8d4;
-    }
-
-    .flow-content {
-      flex: 1;
-      padding: 20px 24px;
-    }
-
-    .flow-situation {
-      font-size: 16px;
-      font-weight: 700;
-      color: #62595a;
-      margin-bottom: 6px;
-      line-height: 1.6;
-    }
-
-    .flow-desc {
-      font-size: 13px;
-      color: #7a7170;
-      line-height: 1.8;
-    }
-
-    .flow-arrow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 50px;
-      color: #fd9227;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    /* セクション区切り */
-    .section-sep {
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
-
-    .section-sep h2 {
-      font-size: 22px;
-      font-weight: 500;
-      color: #62595a;
-      letter-spacing: 0.08em;
-    }
-
-    .section-sep .divider {
-      width: 60px;
-      height: 1px;
-      background: #62595a;
-      margin: 16px auto 0;
-    }
-
-    /* ユースケースカード */
-    .usecase-section {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 20px 30px;
-    }
-
-    .usecase-card {
-      background: #f8f6f5;
-      padding: 36px 32px;
-      margin-bottom: 24px;
-    }
-
-    .usecase-card h3 {
-      font-size: 18px;
-      font-weight: 700;
-      color: #62595a;
-      margin-bottom: 20px;
-      padding-bottom: 12px;
-      border-bottom: 2px solid #fd9227;
-    }
-
-    .usecase-card h3 .tag {
-      display: inline-block;
-      background: #fd9227;
-      color: #fff;
-      font-size: 12px;
-      padding: 3px 12px;
-      margin-right: 10px;
-      vertical-align: middle;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-    }
-
-    .person-box {
-      background: #fff;
-      border: 1px solid #e0d8d4;
-      padding: 20px 24px;
-      margin-bottom: 16px;
-    }
-
-    .person-label {
-      font-size: 12px;
-      color: #fd9227;
-      font-weight: 700;
-      margin-bottom: 6px;
-      letter-spacing: 0.05em;
-    }
-
-    .person-situation {
-      font-size: 15px;
-      color: #333;
-      line-height: 1.9;
-    }
-
-    .person-situation strong {
-      color: #62595a;
-    }
-
-    .usecase-result {
-      background: #fff;
-      border-left: 3px solid #fd9227;
-      padding: 16px 24px;
-      margin-top: 16px;
-    }
-
-    .usecase-result .result-label {
-      font-size: 12px;
-      color: #fd9227;
-      font-weight: 700;
-      margin-bottom: 6px;
-      letter-spacing: 0.05em;
-    }
-
-    .usecase-result p {
-      font-size: 14px;
-      color: #62595a;
-      line-height: 1.9;
-    }
-
-    .usecase-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 40px;
-      background: #fd9227;
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      transition: background 0.3s ease;
-    }
-
-    .usecase-link:hover {
-      background: #e58220;
-    }
-
-    /* まとめ表 */
-    .summary-section {
-      background: #f8f6f5;
-      padding: 60px 20px;
-    }
-
-    .summary-section h2 {
-      text-align: center;
-      font-size: 22px;
-      font-weight: 500;
-      color: #62595a;
-      margin-bottom: 12px;
-      letter-spacing: 0.08em;
-    }
-
-    .summary-divider {
-      width: 60px;
-      height: 1px;
-      background: #62595a;
-      margin: 0 auto 40px;
-    }
-
-    .summary-table {
+    .worry-icon svg {
       width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      border-collapse: collapse;
-      font-size: 14px;
+      height: 100%;
     }
 
-    .summary-table th {
-      background: #62595a;
-      color: #fff;
-      padding: 14px 16px;
-      text-align: left;
+    .worry-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      color: #62595a;
+    }
+
+    .worry-card p {
+      font-size: 12px;
+      color: #7a7170;
+      line-height: 1.7;
+    }
+
+    .worry-arrow {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 12px;
+      color: #fd9227;
       font-weight: 500;
-      font-size: 13px;
       letter-spacing: 0.05em;
     }
 
-    .summary-table td {
-      padding: 16px;
-      border-bottom: 1px solid #e0d8d4;
-      background: #fff;
-      vertical-align: top;
-    }
-
-    .summary-table td:first-child {
-      font-weight: 700;
-      color: #62595a;
-      white-space: nowrap;
-    }
-
-    .summary-table td:last-child a {
-      color: #fd9227;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .summary-table td:last-child a:hover {
-      text-decoration: underline;
-    }
-
-    /* CTA */
-    .guide-cta {
+    /* ===== CTA ===== */
+    .bottom-cta {
       text-align: center;
-      padding: 60px 20px;
+      padding: 56px 20px 48px;
     }
 
-    .guide-cta p {
-      font-size: 16px;
+    .bottom-cta p {
+      font-size: 15px;
       color: #62595a;
       margin-bottom: 24px;
     }
 
-    .guide-cta .cta-btn {
+    .bottom-cta .cta-btn {
       display: inline-block;
-      padding: 18px 48px;
+      padding: 16px 44px;
       background: #fd9227;
       color: #fff;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 500;
       letter-spacing: 0.08em;
+      font-family: "Noto Serif JP", serif;
       transition: background 0.3s ease;
-      font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
     }
 
-    .guide-cta .cta-btn:hover {
+    .bottom-cta .cta-btn:hover {
       background: #e58220;
     }
 
-    /* フッター */
+    /* ===== フッター ===== */
     .footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 32px 20px;
       font-size: 13px;
       color: #aaa;
     }
 
     .back-link {
       display: inline-block;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       color: #62595a;
       text-decoration: none;
       font-size: 14px;
@@ -376,258 +158,140 @@
       color: #fd9227;
     }
 
-    /* 印刷用 */
-    @media print {
-      body { font-size: 12px; line-height: 1.8; }
-      .guide-header { padding: 30px 10px 20px; }
-      .guide-header h1 { font-size: 22px; }
-      .flow-answer:hover { background: none; border-color: #e0d8d4; }
-      .usecase-link { background: #fff; color: #fd9227; border: 1px solid #fd9227; }
-      .guide-cta .cta-btn { background: #fff; color: #fd9227; border: 1px solid #fd9227; }
-      .footer { display: none; }
+    /* ===== レスポンシブ ===== */
+    @media (max-width: 900px) {
+      .worries-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
-    /* レスポンシブ */
     @media (max-width: 600px) {
-      .guide-header h1 { font-size: 22px; }
-      .intro .big-question { font-size: 18px; }
-      .flow-question { font-size: 15px; padding: 18px 16px; }
-      .flow-emoji { min-width: 50px; font-size: 22px; }
-      .flow-content { padding: 14px 16px; }
-      .flow-situation { font-size: 14px; }
-      .flow-desc { font-size: 12px; }
-      .section-sep h2 { font-size: 18px; }
-      .usecase-card { padding: 24px 20px; }
-      .usecase-card h3 { font-size: 16px; }
-      .summary-table { font-size: 12px; }
-      .summary-table th { font-size: 11px; padding: 10px 8px; }
-      .summary-table td { padding: 10px 8px; }
+      .section-header h1 { font-size: 21px; }
+      .worries-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 12px;
+      }
+      .worry-card {
+        padding: 28px 12px 24px;
+      }
+      .worry-card h3 { font-size: 13px; }
+      .worry-card p { font-size: 11px; }
+      .worry-icon { width: 44px; height: 44px; }
+    }
+
+    @media (max-width: 400px) {
+      .worries-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 印刷用 */
+    @media print {
+      .worry-card:hover { background: #fff; border-color: #e0d8d4; box-shadow: none; }
+      .bottom-cta .cta-btn { background: #fff; color: #fd9227; border: 1px solid #fd9227; }
     }
   </style>
 </head>
 <body>
 
-  <div class="guide-header">
-    <h1>どれに相談すればいい？<br>かんたんガイド</h1>
-    <p>あなたの「今の状況」にぴったりの相談を見つけましょう。</p>
+  <div class="section-header">
+    <h1>こんなお悩みありませんか？</h1>
+    <p>それぞれの状況に合わせた5つのご相談をご用意しています。</p>
+    <div class="header-divider"></div>
   </div>
 
-  <!-- フローチャート -->
-  <div class="intro">
-    <p class="big-question">まず、あなたの状況はどれですか？</p>
-    <p>下の中から、いちばん近いものをクリックしてください。</p>
-  </div>
+  <div class="worries-grid">
 
-  <div class="flowchart">
-    <div class="flow-question">あなたの「今」にいちばん近いのは？</div>
-    <div class="flow-answers">
-      <a href="#usecase-myhome" class="flow-answer">
-        <div class="flow-emoji">&#x1F3E0;</div>
-        <div class="flow-content">
-          <div class="flow-situation">はじめて家を買いたい</div>
-          <div class="flow-desc">マンション？戸建て？何から始めればいいかわからない</div>
-        </div>
-        <div class="flow-arrow">&rarr;</div>
-      </a>
-      <a href="#usecase-sumikae" class="flow-answer">
-        <div class="flow-emoji">&#x1F504;</div>
-        <div class="flow-content">
-          <div class="flow-situation">今の家から引っ越したい（住み替え）</div>
-          <div class="flow-desc">売って買う？先に買う？順番がわからない</div>
-        </div>
-        <div class="flow-arrow">&rarr;</div>
-      </a>
-      <a href="#usecase-iejimai" class="flow-answer">
-        <div class="flow-emoji">&#x1F3DA;</div>
-        <div class="flow-content">
-          <div class="flow-situation">親の家をどうするか考えたい</div>
-          <div class="flow-desc">実家が空き家になりそう。売る？貸す？まだ決まっていない</div>
-        </div>
-        <div class="flow-arrow">&rarr;</div>
-      </a>
-      <a href="#usecase-kenchiku" class="flow-answer">
-        <div class="flow-emoji">&#x1F3D7;</div>
-        <div class="flow-content">
-          <div class="flow-situation">家を建てたいけど、建築会社選びが不安</div>
-          <div class="flow-desc">どこに頼む？見積は妥当？間に入ってほしい</div>
-        </div>
-        <div class="flow-arrow">&rarr;</div>
-      </a>
-      <a href="#usecase-yorozu" class="flow-answer">
-        <div class="flow-emoji">&#x2753;</div>
-        <div class="flow-content">
-          <div class="flow-situation">上のどれにも当てはまらない／とにかく相談したい</div>
-          <div class="flow-desc">相続で揉めている、離婚の財産分与、何から始めたらいいかわからない</div>
-        </div>
-        <div class="flow-arrow">&rarr;</div>
-      </a>
-    </div>
-  </div>
+    <!-- 1. マイホーム購入サポート -->
+    <a href="myhome-support.html" class="worry-card">
+      <div class="worry-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28 8L6 26h6v18h12V34h8v10h12V26h6L28 8z" stroke="#62595a" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+          <rect x="23" y="34" width="10" height="10" stroke="#62595a" stroke-width="1.2" fill="none"/>
+          <path d="M18 22h4v4h-4z" stroke="#62595a" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+      <h3>何から始めれば<br>いいか分からない</h3>
+      <p>初めてのマイホーム購入、<br>資金計画から物件選びまで</p>
+      <span class="worry-arrow">マイホーム購入サポート &rarr;</span>
+    </a>
 
-  <!-- ユースケース詳細 -->
-  <div class="section-sep">
-    <h2>こんな人が、こうなりました</h2>
-    <div class="divider"></div>
-  </div>
+    <!-- 2. 住み替えサポート -->
+    <a href="sumikae-support.html" class="worry-card">
+      <div class="worry-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="18" width="18" height="28" rx="1" stroke="#62595a" stroke-width="1.5" fill="none"/>
+          <rect x="34" y="18" width="18" height="28" rx="1" stroke="#62595a" stroke-width="1.5" fill="none"/>
+          <path d="M22 28h12" stroke="#62595a" stroke-width="1.5"/>
+          <path d="M30 24l4 4-4 4" stroke="#62595a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="8" y="24" width="5" height="4" stroke="#62595a" stroke-width="1" fill="none"/>
+          <rect x="8" y="32" width="5" height="4" stroke="#62595a" stroke-width="1" fill="none"/>
+          <rect x="40" y="24" width="5" height="4" stroke="#62595a" stroke-width="1" fill="none"/>
+          <rect x="40" y="32" width="5" height="4" stroke="#62595a" stroke-width="1" fill="none"/>
+          <path d="M4 18l9-8 9 8" stroke="#62595a" stroke-width="1.3" stroke-linejoin="round" fill="none"/>
+          <path d="M34 18l9-8 9 8" stroke="#62595a" stroke-width="1.3" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <h3>売って買う？<br>先に買う？</h3>
+      <p>住み替えのタイミングと<br>段取りを一緒に設計</p>
+      <span class="worry-arrow">住み替えサポート &rarr;</span>
+    </a>
 
-  <div class="usecase-section">
+    <!-- 3. 実家の家じまいサポート -->
+    <a href="iejimai-support.html" class="worry-card">
+      <div class="worry-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 46V22l18-14 18 14v24H10z" stroke="#62595a" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+          <rect x="21" y="32" width="14" height="14" stroke="#62595a" stroke-width="1.2" fill="none"/>
+          <path d="M21 46V32h14v14" stroke="#62595a" stroke-width="1.2"/>
+          <path d="M16 28h4v4h-4z" stroke="#62595a" stroke-width="1" fill="none"/>
+          <path d="M36 28h4v4h-4z" stroke="#62595a" stroke-width="1" fill="none"/>
+          <circle cx="44" cy="14" r="8" stroke="#62595a" stroke-width="1.3" fill="none"/>
+          <path d="M41 14h6M44 11v6" stroke="#62595a" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>実家が空き家に<br>なりそう</h3>
+      <p>売る？貸す？家族の意見を<br>整理して最善策を提案</p>
+      <span class="worry-arrow">家じまいサポート &rarr;</span>
+    </a>
 
-    <!-- マイホーム購入 -->
-    <div class="usecase-card" id="usecase-myhome">
-      <h3><span class="tag">CASE 1</span>マイホーム購入サポート</h3>
-      <div class="person-box">
-        <div class="person-label">こんな人</div>
-        <div class="person-situation">
-          30代の夫婦。子どもが生まれて、そろそろマイホームがほしい。<br>
-          でも<strong>「いくらの家を買えばいいのか」</strong>も、<strong>「何から始めたらいいのか」</strong>もわからない。<br>
-          ネットで調べれば調べるほど、情報が多すぎて混乱してしまった。
-        </div>
+    <!-- 4. 建築プロデュース -->
+    <a href="kenchiku-produce.html" class="worry-card">
+      <div class="worry-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 46V14l6-6h8l6 6v32" stroke="#62595a" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+          <path d="M28 46V22l6-4h8l6 4v24" stroke="#62595a" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+          <rect x="13" y="18" width="5" height="5" stroke="#62595a" stroke-width="1" fill="none"/>
+          <rect x="13" y="28" width="5" height="5" stroke="#62595a" stroke-width="1" fill="none"/>
+          <rect x="13" y="38" width="5" height="5" stroke="#62595a" stroke-width="1" fill="none"/>
+          <rect x="35" y="26" width="5" height="5" stroke="#62595a" stroke-width="1" fill="none"/>
+          <rect x="35" y="36" width="5" height="5" stroke="#62595a" stroke-width="1" fill="none"/>
+          <path d="M4 46h48" stroke="#62595a" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
       </div>
-      <div class="usecase-result">
-        <div class="result-label">どうなった？</div>
-        <p>
-          まず「いくらまでの家なら安心か」を一緒に計算。<br>
-          次に「どんな条件の家がいいか」を紙に書き出して整理。<br>
-          あとは条件に合う物件だけを見ればよくなったので、<strong>迷わず決められた。</strong>
-        </p>
-      </div>
-      <a href="myhome-support.html" class="usecase-link">くわしく見る &rarr;</a>
-    </div>
+      <h3>建築会社選びが<br>不安</h3>
+      <p>中立の立場で見積もりや<br>進め方をサポート</p>
+      <span class="worry-arrow">建築プロデュース &rarr;</span>
+    </a>
 
-    <!-- 住み替え -->
-    <div class="usecase-card" id="usecase-sumikae">
-      <h3><span class="tag">CASE 2</span>住み替えサポート</h3>
-      <div class="person-box">
-        <div class="person-label">こんな人</div>
-        <div class="person-situation">
-          40代の家族。子どもが大きくなって手狭に。もっと広い家に住み替えたい。<br>
-          でも<strong>「今の家を先に売る？先に新しい家を買う？」</strong>順番がわからない。<br>
-          ローンが二重にならないか心配。引越しの段取りも複雑そう。
-        </div>
+    <!-- 5. 不動産よろず相談 -->
+    <a href="yorozu-soudan.html" class="worry-card">
+      <div class="worry-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="28" cy="26" r="18" stroke="#62595a" stroke-width="1.5" fill="none"/>
+          <path d="M22 22c0-4 3-6 6-6s6 2 6 6c0 3-2 4-4 5s-2 2-2 3" stroke="#62595a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <circle cx="28" cy="35" r="1.2" fill="#62595a"/>
+          <path d="M20 44l-4 6M36 44l4 6" stroke="#62595a" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
       </div>
-      <div class="usecase-result">
-        <div class="result-label">どうなった？</div>
-        <p>
-          住宅ローンの組み方を工夫して、<strong>先に新しい家を買ってから、今の家を売る</strong>方法を提案。<br>
-          「いつまでに何をするか」のスケジュール表を一緒に作って、<br>
-          あわてずに住み替えが完了。
-        </p>
-      </div>
-      <a href="sumikae-support.html" class="usecase-link">くわしく見る &rarr;</a>
-    </div>
-
-    <!-- 家じまい -->
-    <div class="usecase-card" id="usecase-iejimai">
-      <h3><span class="tag">CASE 3</span>実家の家じまいサポート</h3>
-      <div class="person-box">
-        <div class="person-label">こんな人</div>
-        <div class="person-situation">
-          50代。親が施設に入り、実家が空き家になった。<br>
-          兄弟は3人いるけど、<strong>「売る」「残す」で意見がバラバラ。</strong><br>
-          そもそも家がいくらで売れるのかも、誰に聞けばいいのかもわからない。
-        </div>
-      </div>
-      <div class="usecase-result">
-        <div class="result-label">どうなった？</div>
-        <p>
-          まず不動産の「今の状態」を調べて、資料にまとめた。<br>
-          「売ったらいくら」「貸したらいくら」「持ち続けたらいくらかかる」を比較。<br>
-          その資料をもとに兄弟で話し合い、<strong>全員が納得して売却を決定。</strong>
-        </p>
-      </div>
-      <a href="iejimai-support.html" class="usecase-link">くわしく見る &rarr;</a>
-    </div>
-
-    <!-- 建築プロデュース -->
-    <div class="usecase-card" id="usecase-kenchiku">
-      <h3><span class="tag">CASE 4</span>建築プロデュース</h3>
-      <div class="person-box">
-        <div class="person-label">こんな人</div>
-        <div class="person-situation">
-          注文住宅を建てたい。土地は見つかった。<br>
-          でも<strong>建築会社が多すぎて選べない。</strong>見積もりが妥当なのかもわからない。<br>
-          営業マンの話が本当かどうか、判断する自信がない。
-        </div>
-      </div>
-      <div class="usecase-result">
-        <div class="result-label">どうなった？</div>
-        <p>
-          打ち合わせに最初から一緒に入り、<strong>「通訳」として間に立った。</strong><br>
-          見積もりの高い部分・削れる部分を整理。<br>
-          建築会社との関係も良好なまま、<strong>納得のいく家が完成。</strong>
-        </p>
-      </div>
-      <a href="kenchiku-produce.html" class="usecase-link">くわしく見る &rarr;</a>
-    </div>
-
-    <!-- よろず相談 -->
-    <div class="usecase-card" id="usecase-yorozu">
-      <h3><span class="tag">CASE 5</span>不動産よろず相談</h3>
-      <div class="person-box">
-        <div class="person-label">こんな人</div>
-        <div class="person-situation">
-          離婚の財産分与で家をどうするか決まらない。<br>
-          親戚から土地を引き取ってほしいと言われたが、<strong>どうすればいいかまったくわからない。</strong><br>
-          不動産屋に行くほど話がまとまっていない。
-        </div>
-      </div>
-      <div class="usecase-result">
-        <div class="result-label">どうなった？</div>
-        <p>
-          まずは状況を聞いて、「何が問題なのか」を整理。<br>
-          法律・税金・不動産の専門家をつなぎ、<strong>全体をまとめて解決の道筋をつくった。</strong><br>
-          「どこに聞けばいいかわからなかった」が「次にやることが見えた」に変わった。
-        </p>
-      </div>
-      <a href="yorozu-soudan.html" class="usecase-link">くわしく見る &rarr;</a>
-    </div>
+      <h3>何をどこに<br>聞けばいいか不明</h3>
+      <p>相続・離婚・複雑な不動産問題も<br>まず話を整理します</p>
+      <span class="worry-arrow">よろず相談 &rarr;</span>
+    </a>
 
   </div>
 
-  <!-- まとめ表 -->
-  <div class="summary-section">
-    <h2>5つの相談　まとめ</h2>
-    <div class="summary-divider"></div>
-    <table class="summary-table">
-      <thead>
-        <tr>
-          <th>相談の名前</th>
-          <th>こんなときに使う</th>
-          <th>くわしく</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>マイホーム購入<br>サポート</td>
-          <td>はじめて家を買いたい</td>
-          <td><a href="myhome-support.html">見る &rarr;</a></td>
-        </tr>
-        <tr>
-          <td>住み替え<br>サポート</td>
-          <td>今の家から新しい家に引っ越したい</td>
-          <td><a href="sumikae-support.html">見る &rarr;</a></td>
-        </tr>
-        <tr>
-          <td>実家の家じまい<br>サポート</td>
-          <td>親の家をどうするか考えたい</td>
-          <td><a href="iejimai-support.html">見る &rarr;</a></td>
-        </tr>
-        <tr>
-          <td>建築<br>プロデュース</td>
-          <td>家を建てるとき、間に入ってほしい</td>
-          <td><a href="kenchiku-produce.html">見る &rarr;</a></td>
-        </tr>
-        <tr>
-          <td>不動産<br>よろず相談</td>
-          <td>どれにも当てはまらないけど困っている</td>
-          <td><a href="yorozu-soudan.html">見る &rarr;</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- CTA -->
-  <div class="guide-cta">
+  <div class="bottom-cta">
     <p>「どれかわからない」でも大丈夫。<br>まずは気軽に聞いてみてください。</p>
     <a href="https://styleoftokyo.jp/contact/" class="cta-btn">Zoom で相談する（15分・無料）</a>
   </div>
