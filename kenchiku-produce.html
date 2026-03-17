@@ -6,42 +6,302 @@
   <title>建築プロデュース | STYLE OF TOKYO</title>
   <link rel="stylesheet" href="styles-common.css">
   <style>
-    .recommend-section {
-      background: var(--color-bg-section);
-      padding: 80px 20px;
+    /* ===== ページ固有スタイル ===== */
+
+    /* 5つの悩みナビ */
+    .worries-nav {
+      background: #f8f6f5;
+      padding: 56px 20px;
     }
-    .recommend-list {
-      max-width: 700px;
+
+    .worries-nav-inner {
+      max-width: 900px;
       margin: 0 auto;
     }
-    .recommend-item {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      padding: 20px 24px;
+
+    .worries-nav h2 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 500;
+      color: #62595a;
       margin-bottom: 12px;
-      font-size: 15px;
-      color: var(--color-text);
+      letter-spacing: 0.08em;
     }
-    .recommend-item::before {
-      content: '・';
-      color: var(--color-accent);
-      font-weight: bold;
+
+    .worries-nav .nav-sub {
+      text-align: center;
+      font-size: 14px;
+      color: #7a7170;
+      margin-bottom: 36px;
+    }
+
+    .worries-nav-divider {
+      width: 50px;
+      height: 1px;
+      background: #62595a;
+      margin: 0 auto 32px;
+    }
+
+    .worry-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      list-style: none;
+    }
+
+    .worry-list li a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      background: #fff;
+      border: 1px solid #e0d8d4;
+      text-decoration: none;
+      color: #62595a;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: all 0.25s ease;
+    }
+
+    .worry-list li a:hover {
+      border-color: #fd9227;
+      background: #fffbf7;
+    }
+
+    .worry-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      height: 32px;
+      background: #fd9227;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .worry-list li a .arrow {
+      margin-left: auto;
+      color: #fd9227;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    /* コンテンツセクション */
+    .content-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 80px 20px 40px;
+      border-bottom: 1px solid #e0d8d4;
+    }
+
+    .content-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .content-num {
+      display: inline-block;
+      background: #fd9227;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .content-section h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #62595a;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .content-section .lead {
+      font-size: 15px;
+      color: #7a7170;
+      margin-bottom: 32px;
+      line-height: 2;
+    }
+
+    /* 動画プレースホルダー */
+    .video-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: #1a1a1a;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-embed .video-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 14px;
+      gap: 12px;
+    }
+
+    .video-embed .play-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-embed .play-icon::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 22px solid rgba(255,255,255,0.7);
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      margin-left: 4px;
+    }
+
+    /* 記事本文 */
+    .article-body {
+      font-size: 15px;
+      color: #333;
+      line-height: 2.1;
+    }
+
+    .article-body h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #62595a;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0d8d4;
+    }
+
+    .article-body p {
+      margin-bottom: 20px;
+    }
+
+    .article-body .highlight {
+      background: #fffbf7;
+      border-left: 3px solid #fd9227;
+      padding: 20px 24px;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .article-body .highlight strong {
+      color: #62595a;
+    }
+
+    .article-body .quote-line {
+      font-size: 20px;
+      font-weight: 500;
+      color: #62595a;
+      text-align: center;
+      padding: 32px 20px;
+      margin: 36px 0;
+      background: #f8f6f5;
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+    }
+
+    /* セクション間CTAボタン */
+    .section-cta {
+      text-align: center;
+      margin: 48px 0 0;
+    }
+
+    .section-cta a {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 14px;
+      color: #fd9227;
+      border: 1px solid #fd9227;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      font-family: "Noto Serif JP", serif;
+    }
+
+    .section-cta a:hover {
+      background: #fd9227;
+      color: #fff;
+    }
+
+    /* 書籍紹介 */
+    .book-recommend {
+      background: #f8f6f5;
+      border: 1px solid #e0d8d4;
+      padding: 24px 28px;
+      margin: 28px 0;
+      text-align: center;
+    }
+
+    .book-recommend p {
+      margin-bottom: 8px;
+    }
+
+    .book-recommend .book-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #62595a;
+    }
+
+    /* レスポンシブ */
+    @media (max-width: 600px) {
+      .worry-list {
+        grid-template-columns: 1fr;
+      }
+      .worry-list li a {
+        font-size: 14px;
+        padding: 14px 16px;
+      }
+      .content-section h3 {
+        font-size: 20px;
+      }
+      .article-body .quote-line {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- ===== ヒーロー ===== -->
   <div class="hero">
     <h1>建築プロデュース</h1>
     <p class="subtitle">
-      建築会社を紹介するだけでは<br>
-      いい家はできません。
+      家づくりは、楽しくて、ものすごく難しい。
     </p>
     <p class="main-message">
-      私たちは、契約前の打ち合わせから同席し、<br>
-      引き渡しまでずっと間に入り続けます。<br><br>
-      どちらの味方でもなく、「住まい手にとっての最適」を判断する代理人。<br>
-      それがStyle of Tokyoの建築プロデュースです。
+      住宅会社選び、設計、予算、工期、仕様決め――<br>
+      ものすごい数の要素が一気に押し寄せます。<br><br>
+      私たちは「住まいの代理人」として、<br>
+      契約前から引き渡しまで、ずっと間に入り続けます。
     </p>
     <div class="cta-buttons">
       <a href="#contact" class="btn btn-primary">建築プロデュース相談（Zoom 15分）</a>
@@ -49,85 +309,461 @@
     </div>
   </div>
 
-  <div class="section">
-    <p style="font-size: 15px; color: var(--color-text); line-height: 2.2; text-align: center; margin-bottom: 60px;">
-      建築プロデュースをうたう会社はたくさんあります。<br>
-      SUUMOカウンターのように、建築会社を紹介するサービスもあります。<br><br>
-      でも私たちは、"紹介して終わり"ではありません。<br><br>
-      契約前の打ち合わせにも同席し、設計・仕様・金額・スケジュールを一緒に整理。<br>
-      引き渡しまで、常に間に入ります。<br><br>
-      中立公平というより、<strong>住まい手にとって正しい判断をし続ける存在。</strong><br>
-      顧客の一方的なわがままで建築会社を追い込んでも、結果、誰も幸せにならないからです。
-    </p>
-  </div>
+  <!-- ===== 5つの悩みナビ ===== -->
+  <div class="worries-nav">
+    <div class="worries-nav-inner">
+      <h2>家づくりのお悩み</h2>
+      <div class="worries-nav-divider"></div>
+      <p class="nav-sub">気になる項目をクリックすると、解説と動画をご覧いただけます。</p>
 
-  <div class="what-we-do">
-    <div class="section">
-      <h2 class="section-title">なぜ「間に入る」必要があるのか</h2>
-      <div class="section-divider"></div>
-
-      <p style="font-size: 15px; color: var(--color-text); line-height: 2.2; margin-bottom: 40px;">
-        建築は、楽しくて、ものすごく難しい。<br><br>
-        建築会社は"ものづくりの会社"。大手は現場を混乱させないため、選択肢を限定しています。<br>
-        中小は柔軟ですが、そもそも意思疎通が難しいことも多い。<br><br>
-        そこに、工法・性能・価格・仕様・デザイン・人・お金<br>
-        ものすごい数の要素が一気に押し寄せます。<br><br>
-        しかも多くの人は、「何が分からないか」さえ分からない状態で人生最大級の買い物をする。<br><br>
-        ここに<strong>住まい手と作り手のリテラシーギャップ</strong>が生まれます。
-      </p>
+      <ul class="worry-list">
+        <li><a href="#q1"><span class="worry-num">1</span>注文住宅は何から始める？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q2"><span class="worry-num">2</span>こだわりの家は設計事務所に頼むべき？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q3"><span class="worry-num">3</span>家づくりで失敗する人の共通点<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q4"><span class="worry-num">4</span>良い住宅会社の選び方<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q5"><span class="worry-num">5</span>建築で施主が気を付けること<span class="arrow">&darr;</span></a></li>
+      </ul>
     </div>
   </div>
 
-  <div class="section" style="padding-top: 80px;">
-    <h2 class="section-title">STYLE OF TOKYOの役割</h2>
-    <div class="section-divider"></div>
+  <!-- ============================== -->
+  <!-- Q1: 注文住宅は何から始める？ -->
+  <!-- ============================== -->
+  <div class="content-section" id="q1">
+    <span class="content-num">Q.01</span>
+    <h3>注文住宅は何から始める？</h3>
+    <p class="lead">家づくりの最初に考えるべきこと</p>
 
-    <p style="font-size: 15px; color: var(--color-text); line-height: 2.2; margin-bottom: 50px; text-align: center;">
-      私たちは長年、住宅業界を研究し、現場に入り続けてきました。<br>
-      だから、住まい手の感情・建築会社の現実・設計の限界・コスト構造<br>
-      すべてを理解した上で、両者の間に立つことができます。<br><br>
-      私たちの役割は、<strong>「通訳」「整理役」「判断の代理人」</strong><br>
-      本当に住まい手と作り手をつなぐこと。
-    </p>
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
 
-    <div class="point-card" style="border-top: 1px solid var(--color-border); padding-top: 36px;">
-      <h3>POINT 01　契約前から打ち合わせに同席</h3>
+    <div class="article-body">
       <p>
-        建築会社選びだけでなく、初期の打ち合わせから入り、<br>
-        要望整理・優先順位決定・現実的な落とし所を一緒につくります。
+        注文住宅を考え始めると、多くの人はまず<br>
+        住宅会社探し、土地探し、間取りから始めようとします。
       </p>
-    </div>
-
-    <div class="point-card">
-      <h3>POINT 02　引渡しまでプロジェクトとして伴走</h3>
       <p>
-        設計・仕様・見積・工程。すべてを「住まいづくりプロジェクト」として管理。<br>
-        途中で迷子にならないよう支えます。
+        しかし実際には、家づくりはもっと前の段階から始まっています。<br>
+        それは<strong>「誰が関わる家づくりなのか」</strong>を整理することです。
       </p>
-    </div>
 
-    <div class="point-card">
-      <h3>POINT 03　感情ではなく構造で判断</h3>
+      <h4>家づくりは「WHO」から始める</h4>
       <p>
-        「なんとなく不安」「なんとなく好き」を、根拠ある判断材料に変換。<br>
-        住まい手が納得して決断できる状態をつくります。
+        家づくりを進めるときに役立つ考え方に5W2Hがあります。<br>
+        WHO（誰が）、WHY（なぜ）、WHAT（何を）、WHEN（いつ）、WHERE（どこで）、HOW（どのように）、HOW MUCH（いくらで）
       </p>
+
+      <div class="highlight">
+        この中で、<strong>最初に整理するべきなのが「WHO」</strong>です。<br>
+        つまり、家づくりに関わる人は誰なのかということです。
+      </div>
+
+      <h4>関係者の意見がそろっていないと迷走する</h4>
+      <p>
+        家づくりでは、関係者の意見がそろっていないと途中で迷走してしまいます。<br>
+        例えばこんなケースがあります。
+      </p>
+      <p>
+        夫婦は自然素材の家を建てたいと考え工務店を検討している。<br>
+        しかし父母は工務店に不安がありハウスメーカーをすすめる。<br>
+        また、夫は住宅性能を重視、妻はデザインを重視。<br>
+        予算が足りなくなりどちらを優先するかで夫婦喧嘩になることもあります。
+      </p>
+      <p>
+        実際、50代で家づくりをしているご夫婦が「そもそも、なぜこの人と結婚したのか」というところまで話が発展してしまったというケースもありました。
+      </p>
+
+      <h4>家づくりの目的は「楽しく暮らすこと」</h4>
+      <p>
+        本来、家づくりの目的は<strong>家族が楽しく暮らすこと</strong>です。<br>
+        そのためには、なぜ家を建てるのか、どんな暮らしをしたいのか、何を大切にしたいのかを整理することが大切です。
+      </p>
+
+      <div class="highlight">
+        <strong>ワクワクすること</strong>（理想の暮らし）<br>
+        <strong>ワクワクはしないけれど重要なこと</strong>（予算など）<br><br>
+        この両方を整理しておく必要があります。
+      </div>
+
+      <h4>人・もの・お金を整理する</h4>
+      <p>
+        家づくりでは<strong>人・もの・お金</strong>の3つを整理することが重要です。<br>
+        特に「人」は、夫婦、子ども、父母、資金援助する家族など、意見を持つ可能性がある人をすべて含めて考える必要があります。
+      </p>
+
+      <div class="quote-line">
+        まずは関係者全員の思いを整理すること。<br>
+        それが家づくりの第一歩です。
+      </div>
+
+      <div class="book-recommend">
+        <p>家づくりを始める前に読んでほしい本</p>
+        <p class="book-title">藤木賀子『住まいリテラシー』</p>
+        <p>住宅会社の選び方や家づくりの進め方を理解してから動き出すことで、<br>後悔のない家づくりに近づきます。</p>
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
     </div>
   </div>
 
-  <div class="recommend-section">
-    <h2 class="section-title">こんな方におすすめ</h2>
-    <div class="section-divider"></div>
-    <div class="recommend-list">
-      <div class="recommend-item">住宅会社選びで迷っている</div>
-      <div class="recommend-item">設計や見積の妥当性が分からない</div>
-      <div class="recommend-item">要望がうまく伝えられない</div>
-      <div class="recommend-item">営業トークではなく本音で話したい</div>
-      <div class="recommend-item">後悔しない家づくりをしたい</div>
+  <!-- ============================== -->
+  <!-- Q2: こだわりの家は設計事務所に頼むべき？ -->
+  <!-- ============================== -->
+  <div class="content-section" id="q2">
+    <span class="content-num">Q.02</span>
+    <h3>こだわりの家は設計事務所に頼むべき？</h3>
+    <p class="lead">工務店・ハウスメーカーとの違い</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        注文住宅を考え始めると、<br>
+        「こだわりの家を建てたい」「設計事務所に依頼した方がいいの？」<br>
+        という質問をよくいただきます。
+      </p>
+      <p>
+        まず最初に整理したいのは<strong>どこまでこだわりたいのか</strong>ということです。
+      </p>
+
+      <h4>「こだわり」のレベルを整理する</h4>
+      <p>
+        「うちはこだわりの家を建てたいんです」と言われる方に「どこにこだわりたいのですか？」と聞くと、よく出てくるのは壁は珪藻土、床は無垢材、梁を見せたいというような内容です。
+      </p>
+
+      <div class="highlight">
+        しかしこの程度であれば、<br>
+        よほどの規格住宅でない限り多くの住宅会社で対応できます。<br><br>
+        つまり、<strong>「設計事務所でないとできない」というレベルではないことが多い</strong>のです。
+      </div>
+
+      <h4>家はパーツの集合体</h4>
+      <p>
+        家は実は、膨大な数のパーツの集合体です。<br>
+        ビス一本、断熱材、換気システム、アンテナ、スイッチパネル、ドアノブ、取手、かまち、蝶番…こうした細かな部品から、ドア、床材、キッチン、窓、外壁など、選べる要素は数えきれないほどあります。<br>
+        さらに、空間構成、間取り、アプローチ、庭、敷地との関係まで含めると、こだわりは果てしなく広がります。
+      </p>
+
+      <h4>ハウスメーカーの特徴</h4>
+      <p>
+        ハウスメーカーはある程度パッケージ化された住宅です。展示場で見たデザイン・設備・仕様が気に入れば、それをベースに敷地に合わせた間取りを作る形になります。
+      </p>
+      <p>
+        整形地や高低差が少ない土地であれば大きな問題はありません。ただし、変形地、高低差のある土地、条件の難しい敷地などの場合は、ハウスメーカーでは対応が難しいケースもあります。
+      </p>
+
+      <h4>設計事務所が向いているケース</h4>
+      <p>
+        敷地条件が難しい場合や、空間デザイン、敷地との関係、建築的な表現に強くこだわりたい場合は設計事務所に依頼するという選択もあります。<br>
+        設計事務所は、敷地や空間を読み取りながら一から設計することが得意です。
+      </p>
+
+      <h4>工務店という選択</h4>
+      <p>
+        設計事務所だけでなく設計施工を得意とする工務店も多くあります。<br>
+        工務店は、施工方法やコストを理解したうえで設計を進めることが多いため、リーズナブルに仕上がるケースもあります。
+      </p>
+      <p>
+        特に、住宅性能を重視したい、予算とのバランスを考えたいという場合は、工務店と一緒に考えるという方法もあります。
+      </p>
+
+      <div class="quote-line">
+        一番大切なのは「自分のこだわり」。<br>
+        自分のこだわりと相手の得意分野が合うかどうかです。
+      </div>
+
+      <h4>家づくりは家族のプロジェクト</h4>
+      <p>
+        家づくりは、夫婦だけでなく子ども、父母、資金援助する家族など、さまざまな人が関わる家族のプロジェクトです。<br>
+        まずは家族の意見を整理することから始めてみてください。<br>
+        それが、後悔のない家づくりへの第一歩になります。
+      </p>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
     </div>
   </div>
 
-  <!-- 成功事例セクション -->
+  <!-- ============================== -->
+  <!-- Q3: 家づくりで失敗する人の共通点 -->
+  <!-- ============================== -->
+  <div class="content-section" id="q3">
+    <span class="content-num">Q.03</span>
+    <h3>家づくりで失敗する人の共通点</h3>
+    <p class="lead">なぜ家づくりはトラブルになるのか</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        家づくりの相談を受けていると、「失敗した」「こんなはずじゃなかった」という話を聞くことがあります。<br>
+        しかし、その多くは建物の問題ではなく<strong>人の問題</strong>であることが多いのです。
+      </p>
+
+      <h4>1. 目的がはっきりしていない</h4>
+      <p>
+        なんとなく家が欲しい、周りが建てているから、家賃がもったいないから…<br>
+        という理由だけで家づくりを始めてしまうと、途中でデザインを優先するのか、性能を優先するのか、予算を優先するのかが決められず迷走してしまいます。
+      </p>
+
+      <h4>2. メリットしか見えていない</h4>
+      <p>
+        家づくりを考え始めると、新しい家、素敵なインテリア、理想の暮らしなど、楽しいことばかりが見えてきます。<br>
+        しかし、予算、工期、決めることの多さ、家族の意見の違いなど、現実的な問題も必ず出てきます。<br>
+        <strong>メリットだけでなく、家づくりの大変さも理解しておく</strong>ことが重要です。
+      </p>
+
+      <h4>3. 業界のことを理解していない</h4>
+      <p>
+        家は人がつくるものです。そのため、「聞いていなかった」「そういう意味だと思わなかった」「理解していなかった」というコミュニケーションの問題が起こることがあります。
+      </p>
+
+      <div class="highlight">
+        現在のクレームの多くは、<strong>人間関係やコミュニケーションの問題</strong>だと感じています。<br><br>
+        意図的に欠陥住宅を作ることはほとんど不可能と言ってよいでしょう。<br>
+        法律、検査制度、建築確認などが厳しくなり、確認申請もとても複雑なものになっています。
+      </div>
+
+      <h4>ハウスメーカーの場合</h4>
+      <p>
+        ハウスメーカーはシステム化された家づくりです。大きな問題は起きにくい構造になっています。<br>
+        それでも、契約内容と理解が違っていた、修正に時間がかかる、引っ越し時期が遅れるなどのトラブルは起こることがあります。<br>
+        また契約内容が明確な分、「思っていたのと違う」という不満が出ることもあります。
+      </p>
+
+      <h4>工務店の場合</h4>
+      <p>
+        工務店の場合は、会社ごとにやり方が大きく違います。<br>
+        安いと思ったらオプションが多かった、決めた内容が違っていた、工期が遅れた、予算が増えてしまったなど、さまざまなケースがあります。
+      </p>
+
+      <h4>家づくりで大切なこと</h4>
+      <p>
+        家づくりで失敗しないためには、まず<strong>自分の思いを整理すること</strong>が大切です。<br>
+        何をやりたいのか、どこにお金をかけたいのか、予算はどこまでなのか。<br>
+        そして、予算が足りない場合は何を妥協するのかも考えておく必要があります。
+      </p>
+
+      <div class="highlight">
+        <strong>家づくりは参加するもの</strong><br><br>
+        ・言った言わないの問題を防ぐために決めたことを記録する<br>
+        ・わからないことは何度も聞く<br>
+        ・不安があれば担当を変えてもらう<br><br>
+        施主も家づくりに参加する姿勢が大切です。<br>
+        実は、どの建築会社に依頼するかによって施主の関わり方や参加の度合いは大きく変わります。
+      </div>
+
+      <h4>情報を鵜呑みにしない</h4>
+      <p>
+        最近は、YouTubeやSNSで「家づくりでこれに気をつけろ」「これをやらないと失敗する」という情報もたくさんあります。<br>
+        しかし、その情報が自分の家づくりに合うとは限りません。<br>
+        また、建築会社に依頼するのだからきっと全部やってくれるだろうと考えるのも危険です。
+      </p>
+
+      <div class="quote-line">
+        家づくりは多くの人が関わるチームのプロジェクト。<br>
+        一緒に参加する気持ちで進めることが、<br>
+        失敗を防ぐ一番の方法です。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== -->
+  <!-- Q4: 良い住宅会社の選び方 -->
+  <!-- ============================== -->
+  <div class="content-section" id="q4">
+    <span class="content-num">Q.04</span>
+    <h3>良い住宅会社の選び方</h3>
+    <p class="lead">ハウスメーカー・工務店はどう見分ける？</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        家づくりを始めると、「どの会社に頼めばいいですか？」「良い住宅会社はどうやって選べばいいですか？」という質問をよくいただきます。
+      </p>
+
+      <div class="highlight">
+        しかし実は、<strong>一番大切なのは会社の規模ではなく相性</strong>です。
+      </div>
+
+      <h4>まずは自分の優先順位を整理する</h4>
+      <p>
+        住宅会社を選ぶときに大切なのは、自分たちが何を一番大切にしているのかを整理することです。<br>
+        例えば、価格（ローコスト住宅）、デザイン（インスタで見るようなおしゃれな家）、性能（断熱等級など）、素材（無垢材・自然素材）。<br>
+        人によって優先順位は違います。
+      </p>
+      <p>
+        しかし、<strong>全部を同時に満たす住宅会社はほとんどありません。</strong>
+      </p>
+
+      <h4>「全部できます」は危ない</h4>
+      <p>
+        例えば、ローコスト住宅でインスタに出てくるようなおしゃれなキッチン、断熱等級7、無垢材の自然素材。これをすべて実現したいと言われても、現実には難しいことが多いです。
+      </p>
+      <p>
+        断熱性能を重視するなら断熱等級6までなら可能でも、等級7となると対応できる会社は限られます。<br>
+        無垢材や自然素材をたくさん使いたいのであれば、予算とのバランスを取るために面積を小さくする、部分的に素材を変えるなどの調整が必要になることもあります。
+      </p>
+
+      <div class="highlight">
+        <strong>「何でもできます。お任せください」と言う会社よりも、</strong><br>
+        うちの商品ではここまでできます、ここは妥協が必要ですと、<br>
+        <strong>現実を説明してくれる会社の方が信頼できる</strong>ことが多いです。
+      </div>
+
+      <h4>良い営業マンは正直です</h4>
+      <p>
+        本当に良い営業マンほど自社に合わないお客様には無理に契約をすすめません。<br>
+        「それをやりたいのであればうちの会社では難しいです」とはっきり言うこともあります。<br>
+        営業成績のために「全部できます」と言う会社は、契約後に「それはできません」と言われるケースもあります。
+      </p>
+
+      <h4>建築知識はなくても大丈夫</h4>
+      <p>
+        大切なのは、自分が何を大切にしたいのか、どこまで予算を出せるのかを整理して、それをそのまま住宅会社に伝えることです。<br>
+        そのとき、「どうすればできるのか」を具体的に説明してくれる会社は良い会社と言えるでしょう。
+      </p>
+
+      <h4>施主のリテラシーも大切</h4>
+      <p>
+        営業の態度だけですべてを判断するのではなく、会社の特徴、技術力、得意分野を理解することで、うまく家づくりを進めることも可能になります。
+      </p>
+
+      <div class="highlight">
+        <strong>第三者がいると安心</strong><br><br>
+        家づくりでは、住宅会社と施主だけで話を進めるのではなく、第三者のプロが入ることで、トラブルを防ぐこともできます。<br>
+        住宅会社の提案が適切なのか、予算と合っているのか、実現できる内容なのかを客観的に判断することができるからです。<br><br>
+        当社では、住宅会社選びのサポートも行っています。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== -->
+  <!-- Q5: 建築で施主が気を付けること -->
+  <!-- ============================== -->
+  <div class="content-section" id="q5">
+    <span class="content-num">Q.05</span>
+    <h3>建築で施主が気を付けること</h3>
+    <p class="lead">家づくりでトラブルを防ぐために</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        建築は、多くの人にとって人生で一番高い買い物です。<br>
+        そのため、「うっかりミスはやめてほしい」「ちゃんとやってほしい」と思うのは当然です。<br>
+        しかし、ずっと現場を見張っているような家づくりも疲れてしまいます。
+      </p>
+
+      <h4>最初の選択が一番大事</h4>
+      <div class="highlight">
+        まず大切なのは、<strong>どの会社で何を建てるのか</strong>です。<br><br>
+        最初の選択が大きく間違っていなければ、家づくりはほぼ成功すると言ってよいと思います。<br>
+        しかし実際には、契約後の打ち合わせで意思疎通の問題が起こるケースが多くあります。
+      </div>
+
+      <h4>ハウスメーカーの場合</h4>
+      <p>
+        ハウスメーカーの場合、工場生産に近いシステム化された家づくりです。<br>
+        そのため、小さな変更ができない、工事着工が1年後でも先にすべて決める、途中でルートを変えられないということがあります。<br>
+        システムとしては合理的なのですが、「まだ決められない」「後で変更したい」という人にとってはストレスになることもあります。
+      </p>
+
+      <h4>工務店の場合</h4>
+      <p>
+        工務店の場合は会社によってやり方が大きく違います。<br>
+        設計担当が自分の気持ちを理解してくれない、レスポンスが遅い、急に決定を求められる、何を決めたのか分からなくなるなど、コミュニケーションのギャップを感じることもあります。
+      </p>
+
+      <h4>見えない「文化」の違い</h4>
+      <p>
+        こうした問題は、プランや予算の段階ではなかなか見えません。<br>
+        しかし実際には、住宅会社にはそれぞれ<strong>文化・ルール・価値観</strong>があります。<br>
+        そして、この違いがコミュニケーションのギャップを生むことが多いのです。
+      </p>
+
+      <h4>仕事のやり方の違い</h4>
+      <p>
+        施主は、自分の代わりに仕事を依頼している状態です。そのため、仕事ができる人ほど仕事の進め方の違いに違和感を感じることがあります。
+      </p>
+      <p>
+        「普通、質問にはすぐ答えるでしょう」と思う人もいれば、建築の現場では数日返信がないということも珍しくありません。<br>
+        また建築は専門用語が多く技術的な内容が多いため、「よく分からないけどやってくれるだろう」と思っていたら認識が違っていたということもあります。
+      </p>
+
+      <div class="highlight">
+        実はこの業界では、<strong>相手が理解できるまで説明してくれる人はそれほど多くありません。</strong><br><br>
+        ハウスメーカーでも工務店でも設計事務所でも常識はそれぞれ違います。<br>
+        まず大切なのは<strong>文化が違う人たちと仕事をするのだと理解すること</strong>です。
+      </div>
+
+      <h4>施主の立ち位置を変える</h4>
+      <p>
+        どこで建てるかによって、施主の関わり方も変わります。<br>
+        ハウスメーカーの場合は商品よりも担当者の能力が重要になります。良い人よりも、<strong>仕事ができる人</strong>を選ぶ方が安心です。
+      </p>
+
+      <h4>工務店の場合のポイント</h4>
+      <p>
+        工務店の場合は、遠慮せずに得意なことと苦手なことを聞いてみるとよいでしょう。<br>
+        レスポンスは早いですか、打ち合わせの進め方はどうですか、いつまでに何を決めますか、などです。
+      </p>
+      <p>
+        また、自分の仕事のスタイルを伝えておくことも大切です。<br>
+        提案を見るのは週末になる、打ち合わせの日程を先に決めたい、いつまでに何を決めるか知りたい、などです。<br>
+        もし工程表がなければ、今一緒に作りましょうと言ってもよいと思います。
+      </p>
+
+      <div class="quote-line">
+        郷に入れば郷に従え。<br>
+        家を作ってもらう人たちのルールを知ること。<br>
+        その中でうまくコミュニケーションを取ることが、<br>
+        家づくりをスムーズに進める大切なポイントです。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 成功事例セクション ===== -->
   <div class="lifestyle-section">
     <div class="lifestyle-header">
       <svg class="lifestyle-icon" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +776,7 @@
       <span class="lifestyle-title">LIFE STYLE</span>
     </div>
     <p class="lifestyle-desc">
-      住宅購入に至った経緯や当時の悩み、思いなど、お客様のリアルなお<br>
+      住宅購入に至った経緯や当時の悩み、思いなど、お客様のリアルな<br>
       声とともに住宅購入の成功事例をご紹介します。
     </p>
     <div class="lifestyle-grid">
@@ -180,9 +816,14 @@
     </div>
   </div>
 
+  <!-- ===== クロージングCTA ===== -->
   <div class="closing" id="contact">
-    <h2>家づくりは、楽しくもあり、とても大変なプロジェクトです。</h2>
-    <p>だからこそ、ひとりで抱えなくていい。<br>私たちは「住まいの代理人」として、あなたの意思決定に最後まで伴走します。</p>
+    <h2>家づくりは、楽しくもあり、<br>とても大変なプロジェクトです。</h2>
+    <p>
+      だからこそ、ひとりで抱えなくていい。<br>
+      私たちは「住まいの代理人」として、<br>
+      あなたの家づくりに最後まで伴走します。
+    </p>
     <div class="cta-buttons">
       <a href="https://styleoftokyo.jp/contact/" class="btn btn-primary">建築プロデュース相談（Zoom 15分）</a>
       <a href="#" class="btn btn-secondary">LINEで質問</a>
@@ -191,7 +832,7 @@
   </div>
 
   <div class="footer">
-    <a href="index.html" class="back-link">&larr; 5つのご相談に戻る</a>
+    <a href="guide.html" class="back-link">&larr; こんなお悩みありませんか？に戻る</a>
     <p>&copy; STYLE OF TOKYO</p>
   </div>
 
