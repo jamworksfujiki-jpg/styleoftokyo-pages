@@ -6,39 +6,230 @@
   <title>住み替えサポート | STYLE OF TOKYO</title>
   <link rel="stylesheet" href="styles-common.css">
   <style>
-    .timeline-box {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      padding: 40px 32px;
-      margin: 50px auto;
-      max-width: 700px;
+    .worries-nav {
+      background: #f8f6f5;
+      padding: 56px 20px;
     }
-    .timeline-box h3 {
-      font-size: 15px;
-      color: var(--color-text-light);
+    .worries-nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .worries-nav h2 {
       text-align: center;
-      margin-bottom: 28px;
-      font-weight: 400;
+      font-size: 22px;
+      font-weight: 500;
+      color: #62595a;
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
     }
-    .timeline-row {
+    .worries-nav .nav-sub {
+      text-align: center;
+      font-size: 14px;
+      color: #7a7170;
+      margin-bottom: 36px;
+    }
+    .worries-nav-divider {
+      width: 50px;
+      height: 1px;
+      background: #62595a;
+      margin: 0 auto 32px;
+    }
+    .worry-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      list-style: none;
+    }
+    .worry-list li a {
       display: flex;
       align-items: center;
-      margin-bottom: 12px;
-      font-size: 14px;
+      gap: 14px;
+      padding: 18px 20px;
+      background: #fff;
+      border: 1px solid #e0d8d4;
+      text-decoration: none;
+      color: #62595a;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: all 0.25s ease;
     }
-    .timeline-label {
-      font-weight: 700;
-      min-width: 60px;
-      color: var(--color-main);
+    .worry-list li a:hover {
+      border-color: #fd9227;
+      background: #fffbf7;
     }
-    .timeline-steps { color: var(--color-text-light); }
-    .timeline-note {
+    .worry-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      height: 32px;
+      background: #fd9227;
+      color: #fff;
       font-size: 13px;
-      color: var(--color-text-light);
+      font-weight: 700;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .worry-list li a .arrow {
+      margin-left: auto;
+      color: #fd9227;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .content-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 80px 20px 40px;
+      border-bottom: 1px solid #e0d8d4;
+    }
+    .content-section:last-of-type {
+      border-bottom: none;
+    }
+    .content-num {
+      display: inline-block;
+      background: #fd9227;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    .content-section h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #62595a;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .content-section .lead {
+      font-size: 15px;
+      color: #7a7170;
+      margin-bottom: 32px;
+      line-height: 2;
+    }
+    .video-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: #1a1a1a;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .video-embed .video-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 14px;
+      gap: 12px;
+    }
+    .video-embed .play-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-embed .play-icon::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 22px solid rgba(255,255,255,0.7);
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      margin-left: 4px;
+    }
+    .article-body {
+      font-size: 15px;
+      color: #333;
+      line-height: 2.1;
+    }
+    .article-body h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #62595a;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0d8d4;
+    }
+    .article-body p {
+      margin-bottom: 20px;
+    }
+    .article-body .highlight {
+      background: #fffbf7;
+      border-left: 3px solid #fd9227;
+      padding: 20px 24px;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 2;
+    }
+    .article-body .highlight strong {
+      color: #62595a;
+    }
+    .article-body .quote-line {
+      font-size: 20px;
+      font-weight: 500;
+      color: #62595a;
       text-align: center;
-      margin-top: 20px;
-      padding-top: 16px;
-      border-top: 1px solid var(--color-border);
+      padding: 32px 20px;
+      margin: 36px 0;
+      background: #f8f6f5;
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+    }
+    .section-cta {
+      text-align: center;
+      margin: 48px 0 0;
+    }
+    .section-cta a {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 14px;
+      color: #fd9227;
+      border: 1px solid #fd9227;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      font-family: "Noto Serif JP", serif;
+    }
+    .section-cta a:hover {
+      background: #fd9227;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      .worry-list {
+        grid-template-columns: 1fr;
+      }
+      .worry-list li a {
+        font-size: 14px;
+        padding: 14px 16px;
+      }
+      .content-section h3 {
+        font-size: 20px;
+      }
+      .article-body .quote-line {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
@@ -48,13 +239,13 @@
     <h1>住み替えサポート</h1>
     <p class="subtitle">
       住み替えは「タイミング」ではなく<br>
-      時間とお金の"段取り設計"
+      段取り設計のプロジェクト。
     </p>
     <p class="main-message">
-      住み替えは、売ってから引越して買うしかないわけではありません。<br>
-      住宅ローンの組み方次第で<strong>買う → 引越す → 売る</strong>という順番も可能です。<br><br>
-      大切なのは、時間と資金の流れを先に設計すること。<br>
-      私たちは「住まいの代理人」として、住み替えを"感覚"ではなく"段取り"で支えます。
+      売ってから買う？ 買ってから売る？<br>
+      順番に正解はありません。<br><br>
+      大切なのは、お金の流れと時間の段取りを先に設計すること。<br>
+      私たちは「住まいの代理人」として、住み替えのストーリーを一緒に描きます。
     </p>
     <div class="cta-buttons">
       <a href="#contact" class="btn btn-primary">Zoomで住み替え相談（15分）</a>
@@ -62,125 +253,355 @@
     </div>
   </div>
 
-  <div class="hero-image">
-    住み替えイメージ写真（家の模型と鍵）
+  <div class="worries-nav">
+    <div class="worries-nav-inner">
+      <h2>住み替えのお悩み</h2>
+      <div class="worries-nav-divider"></div>
+      <p class="nav-sub">気になる項目をクリックすると、解説と動画をご覧いただけます。</p>
+      <ul class="worry-list">
+        <li><a href="#q1"><span class="worry-num">1</span>住み替えって、売るのが先？買うのが先？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q2"><span class="worry-num">2</span>住み替えって、結局いくらかかるの？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q3"><span class="worry-num">3</span>売却と購入、同じ不動産会社に頼むべき？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q4"><span class="worry-num">4</span>住みながら売却ってできる？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q5"><span class="worry-num">5</span>住み替えで失敗しないために最初にやるべきこと<span class="arrow">&darr;</span></a></li>
+      </ul>
+    </div>
   </div>
 
-  <div class="section">
-    <h2 class="section-title">住み替えで"詰まりやすい"ところ</h2>
-    <div class="section-divider"></div>
-    <div class="pain-grid">
-      <div class="pain-card">
-        <h3>売る順？買う順？判断できない</h3>
-        <p>「売ってから買うべき？」「先に買っても大丈夫？」実はこれは住宅ローンの組み方次第。順番ではなく、資金の流れをどう組むかがポイント。</p>
+  <!-- Q1 -->
+  <div class="content-section" id="q1">
+    <span class="content-num">Q.01</span>
+    <h3>住み替えって、売るのが先？買うのが先？</h3>
+    <p class="lead">お金の流れと時間の段取りで決まります。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
       </div>
-      <div class="pain-card">
-        <h3>居住中の売却が想像以上にストレス</h3>
-        <p>住みながら販売すると、突然の内見対応、常に家を整えておく必要、売れるまで終わらない緊張感。長期化すると、大きな負担になります。</p>
+    </div>
+
+    <div class="article-body">
+      <p>
+        結論から言うと、順番に正解はありません。<br>
+        大事なのは「売る」「買う」ではなく、<strong>お金の流れと時間の段取り</strong>です。
+      </p>
+
+      <div class="highlight">
+        <strong>先に売れば</strong>、資金は確定して安心。<br>
+        <strong>先に買えば</strong>、引越しは楽だけど資金設計が必要。<br><br>
+        住み替えは"タイミング"ではなく、<strong>段取り設計のプロジェクト</strong>。<br>
+        順番は、あなたの資金と暮らしの条件で決まります。
       </div>
-      <div class="pain-card">
-        <h3>建築が絡むと、段取りが一気に複雑になる</h3>
-        <p>土地購入＋新築、中古購入＋リノベーション。建築が入ると、設計期間・工事期間・引渡し時期すべてが絡み合い、時間の逆算が必須になります。</p>
+
+      <h4>住み替えにはいくつかのパターンがあります</h4>
+      <p>
+        実は住み替えと一言で言っても、パターンはいろいろあります。<br>
+        マンション→マンション、マンション→マンション＋リノベーション、マンション→戸建て、マンション→戸建て＋リノベーション、マンション→土地購入＋注文住宅、戸建て→マンション、戸建て→マンション＋リノベーション、戸建て→戸建て。
+      </p>
+      <p>
+        この中で、特に注意が必要なのが<strong>「工期」</strong>です。
+      </p>
+
+      <h4>工期が読めるかどうかはとても重要</h4>
+      <p>
+        例えばマンション購入＋リフォームは、構造が変わらず工事範囲が限定されるので、比較的完成までの工期が読みやすいです。
+      </p>
+      <p>
+        しかし、戸建て購入＋リノベーション、土地購入＋注文住宅になると話は変わります。設計期間、確認申請、工事期間などがあり、完成までの期間が読みづらくなります。
+      </p>
+
+      <h4>住宅ローンのつなぎ期間にも注意</h4>
+      <p>
+        住み替えの場合、金融機関によっては「つなぎ期間は1年以内」などの条件があることもあります。<br>
+        売却が遅れる、建築が遅れると、資金計画が崩れる可能性もあります。<br>
+        そのため住宅ローンのタイミングと金融機関の選択はとても重要になります。
+      </p>
+
+      <h4>売却側にもストーリーが必要</h4>
+      <p>
+        もう一つ重要なのが、今の家がどのような物件かです。<br>
+        人気エリアのマンションなら「出せばすぐ申し込みが入る」ということもあり、売却タイミングは比較的読みやすいです。<br>
+        しかし注文住宅の中古戸建になると、好みが分かれ、買う人が限定されるため、売却タイミングは読みづらくなります。
+      </p>
+
+      <div class="quote-line">
+        住み替えで大事なのは、売るか買うかの順番ではなく、<br>
+        お金の流れ・工期・売却のストーリー。<br>
+        この3つを整理することです。
       </div>
-      <div class="pain-card">
-        <h3>資金繰りが悪くならないか不安</h3>
-        <p>ダブルローン、つなぎ融資、自己資金の使い方。住み替えは、ローンのタイミング設計＝資金の安全性。ここを間違えると、一気に苦しくなります。</p>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
       </div>
     </div>
   </div>
 
-  <div class="what-we-do">
-    <div class="section">
-      <h2 class="section-title">STYLE OF TOKYOが行うこと</h2>
-      <div class="section-divider"></div>
+  <!-- Q2 -->
+  <div class="content-section" id="q2">
+    <span class="content-num">Q.02</span>
+    <h3>住み替えって、結局いくらかかるの？</h3>
+    <p class="lead">「いくらかかるか」より「手持ちの現金が必要かどうか」。</p>
 
-      <div class="point-card">
-        <h3>POINT 01　時間を逆算して、住み替えの全体工程を設計</h3>
-        <p>
-          購入・売却・引越し・建築スケジュールを整理し、「いつ何をするか」を見える化。<br>
-          感覚ではなく工程として住み替えを組み立てます。
-        </p>
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        住み替えは「売る」＋「買う」が同時に動くので難しそうに感じますが、実は考え方は単純です。
+      </p>
+
+      <h4>買うときのお金</h4>
+      <p>
+        基本的に普通の不動産購入と同じです。主な費用は仲介手数料、登記費用、住宅ローンの手数料、保証料などです。
+      </p>
+      <p>
+        少し違うのは新築マンション。新築マンションは仲介手数料がありません。その代わり修繕積立基金、管理準備金など、購入時に別の費用がかかることがあります。<br>
+        新築戸建て・中古マンション・中古戸建ては基本的に同じような諸経費構造です。
+      </p>
+
+      <h4>売るときのお金</h4>
+      <p>
+        主な費用は仲介手数料（売却価格×3%＋6万円＋消費税）と契約時の印紙。<br>
+        その他、引越し費用や仮住まいの家賃が発生する場合があります。
+      </p>
+
+      <h4>本当のポイントは「いくらかかるか」ではない</h4>
+      <div class="highlight">
+        住み替えで大事なのは、いくらかかるかではなく、<br>
+        <strong>手持ちの現金が必要かどうか</strong>。<br>
+        ここが一番現実的なポイントです。
       </div>
 
-      <div class="point-card">
-        <h3>POINT 02　住宅ローンを"住み替え仕様"で設計</h3>
-        <p>
-          単なる借入ではなく、<br>
-          ・先に買う場合<br>
-          ・売却資金が後から入る場合<br>
-          ・建築期間が長い場合<br>
-          それぞれに合ったローン構成を設計。資金繰りが悪化しない組み方をサポートします。
-        </p>
+      <h4>買いを先にする場合</h4>
+      <p>
+        購入を先にする場合、<strong>手付金</strong>が必要になります。一般的には物件価格の5%前後です。<br>
+        例えば物件価格8000万円なら手付金400万円。契約時にこの400万円を支払います。
+      </p>
+      <p>
+        ここで誤解が多いのですが、手付金は<strong>売買代金の前払い</strong>です。<br>
+        ローン実行時に最初に払った400万円は手元に戻ります。<br>
+        つまり、借入自体はできても、<strong>契約時に現金が必要</strong>というのがポイントです。
+      </p>
+
+      <h4>ここは実は工夫できる</h4>
+      <p>
+        資金繰りは工夫できます。手付金を少なく交渉する、売却を先に決める、売却の手付金を購入の手付金に使うなど。<br>
+        いわば<strong>住み替えは資金繰りの設計</strong>なんです。
+      </p>
+
+      <div class="quote-line">
+        住み替えは「いくらかかるか」より<br>
+        「どういうストーリーで進めるか」が重要。<br>
+        売却・購入・ローン・引越しの流れを<br>
+        最初にストーリーとして組み立てることが成功のポイントです。
       </div>
 
-      <div class="point-card">
-        <h3>POINT 03　売る・買う・建てるを一つのプロジェクトとして管理</h3>
-        <p>
-          不動産と建築を分断せず、住み替え全体を一つのプロジェクトとして整理。<br>
-          ムダな仮住まいや二重引越しを防ぎます。
-        </p>
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
       </div>
     </div>
   </div>
 
-  <div class="deliverables">
-    <div class="section" style="padding-bottom: 40px;">
-      <h2 class="section-title">住み替えを安全に進める設計ツール</h2>
-      <div class="section-divider"></div>
-      <table class="deliverables-table">
-        <thead>
-          <tr><th>成果物</th><th>内容</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>住み替え工程表</td>
-            <td>時間逆算でスケジュールを可視化</td>
-          </tr>
-          <tr>
-            <td>資金計画シート</td>
-            <td>ローン＋自己資金＋売却想定の全体設計</td>
-          </tr>
-          <tr>
-            <td>売却／購入 同時管理リスト</td>
-            <td>両方のタスクを一元管理</td>
-          </tr>
-          <tr>
-            <td>建築スケジュール連動チェック</td>
-            <td>建築が絡む場合の工程確認</td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- Q3 -->
+  <div class="content-section" id="q3">
+    <span class="content-num">Q.03</span>
+    <h3>売却と購入、同じ不動産会社に頼むべき？</h3>
+    <p class="lead">大事なのは会社ではなく担当者です。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        結論から言うと、同じ会社でも別の会社でも大丈夫です。<br>
+        状況によって、どちらが良いかは変わります。
+      </p>
+
+      <h4>別の会社に頼んでも問題ないケース</h4>
+      <p>
+        気に入った物件がすでに決まっている、先に購入する予定、売却を急いでいない、住宅ローンの残債の心配がない。<br>
+        このような場合は、先に購入→引越し→落ち着いてから売却、という流れでも問題ありません。<br>
+        資金繰りや時間に余裕がある人は無理に同じ会社にまとめる必要はありません。
+      </p>
+
+      <h4>同じ会社に頼んだ方がいいケース</h4>
+      <p>
+        住宅ローンが残っている、売却価格によって購入予算が変わる、二重ローンを避けたい、引越しを一回で済ませたい。<br>
+        こういう場合は売却と購入を同時に設計する必要があります。<br>
+        住み替えの段取りを一つのストーリーとして組む必要があり、同じ担当者が見ている方がスムーズです。
+      </p>
+
+      <div class="highlight">
+        <strong>一番大事なのは会社ではなく担当者</strong><br><br>
+        住み替えは、売却・購入・住宅ローン・引越しを同時に進めるプロジェクトです。<br>
+        だから必要なのは、この流れを「いつ・何を・いくらで・どう進めるか」<br>
+        <strong>ストーリーとして書ける人</strong>。
+      </div>
+
+      <h4>住み替えがうまくいく人の共通点</h4>
+      <p>
+        住み替えがうまくいく人は、最初にこういう質問をしています。<br>
+        <strong>「この住み替えのストーリーはどう描きますか？」</strong>
+      </p>
+      <p>
+        できる担当者なら、売却価格の現実的な数字、手持ち資金の確認、購入タイミング、資金繰りまで含めて提案してくれます。<br>
+        逆に、査定価格だけ出して状況を深く聞かない担当者は、住み替えのストーリーを描けていません。
+      </p>
+
+      <div class="quote-line">
+        住み替えは「売る」「買う」ではなく<br>
+        ストーリーを作る仕事。<br>
+        そのストーリーを一緒に楽しく描いてくれる<br>
+        代理人（エージェント）を選んでください。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
     </div>
   </div>
 
-  <div class="flow-section">
-    <h2 class="section-title">進め方（FLOW）</h2>
-    <div class="section-divider"></div>
-    <div class="step-list">
-      <div class="step-item">
-        <div class="step-label">STEP 01</div>
-        <div class="step-text">現状整理（ローン残高／資産／希望条件）</div>
+  <!-- Q4 -->
+  <div class="content-section" id="q4">
+    <span class="content-num">Q.04</span>
+    <h3>住みながら売却ってできる？内見のストレスを減らす方法</h3>
+    <p class="lead">価格設定と売り方で、ストレスは大きく変わります。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
       </div>
-      <div class="step-item">
-        <div class="step-label">STEP 02</div>
-        <div class="step-text">資金設計（住み替え用ローン構築）</div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        結論から言うと、住みながら売却することは可能です。<br>
+        実際、多くの人が住みながら売却しています。<br>
+        ただしポイントは一つ。<strong>「内見（ないけん）」</strong>です。
+      </p>
+
+      <h4>内見は避けられない</h4>
+      <p>
+        家を売るとき、購入希望者は必ず物件を見に来ます。つまり居住中の売却は「誰かが家を見に来る生活」になります。<br>
+        しかもクローゼットの中、キッチン収納、洗面台の収納まで見たいという人もいます。歯ブラシ一つまで気を使う生活になることもあります。<br>
+        土日に遊びにも行けない。これは結構ストレスです。
+      </p>
+
+      <h4>内見の数を減らす一番の方法</h4>
+      <div class="highlight">
+        ポイントは<strong>価格設定</strong>です。<br><br>
+        高い査定→高めの売り出し価格→売れない→何ヶ月も内見<br>
+        これは<strong>一番ストレスの多い売り方</strong>です。<br><br>
+        居住中の売却で一番大事なのは、<strong>すぐ売れる価格をつけること</strong>。<br>
+        適正価格なら内見1〜2回で決まることも多い。<br>
+        これが一番ストレスの少ない売り方です。
       </div>
-      <div class="step-item">
-        <div class="step-label">STEP 03</div>
-        <div class="step-text">時間設計（売却・購入・建築逆算）</div>
+
+      <h4>チャレンジ価格という考え方</h4>
+      <p>
+        「少し高く出して様子を見たい」という人もいます。<br>
+        その場合は買い先行（先に購入）にして、引越しの目処が立ってから売却をスタートする方法もあります。<br>
+        空き家になれば、内見の時間調整が不要、収納を見せるストレスがない、掃除も楽になります。
+      </p>
+
+      <h4>内見をまとめるテクニック</h4>
+      <p>
+        居住中の場合は内見をまとめるのもコツです。<br>
+        「クローゼットや収納は居住中のため見られません」と事前に伝える。<br>
+        さらに複数の内見を同じ日にまとめる。すると「他にも買いたい人がいる」と感じるので購入の決断が早くなることがあります。
+      </p>
+
+      <div class="quote-line">
+        居住中の売却で大事なのは<br>
+        価格設定・売り方・内見の段取り。<br>
+        つまり「売却のストーリー」です。<br>
+        誰に頼むかでストレスは大きく変わります。
       </div>
-      <div class="step-item">
-        <div class="step-label">STEP 04</div>
-        <div class="step-text">同時進行サポート</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 05</div>
-        <div class="step-text">引渡し完了</div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
       </div>
     </div>
   </div>
 
-  <!-- 成功事例セクション -->
+  <!-- Q5 -->
+  <div class="content-section" id="q5">
+    <span class="content-num">Q.05</span>
+    <h3>住み替えで失敗しないために、最初にやるべきこと</h3>
+    <p class="lead">なぜ住み替えるのかを整理し、ストーリーを作ること。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder">
+        <div class="play-icon"></div>
+        <span>解説動画 準備中</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        住み替えを考えたとき、多くの人が最初にするのは「いくらで売れるのか？」「どんな物件があるのか？」という情報集めです。<br>
+        もちろんそれも大事ですが、本当に最初にやるべきことは別にあります。
+      </p>
+
+      <div class="highlight">
+        それは<strong>住み替えの理由を整理すること</strong>。<br>
+        そして<strong>住み替えのストーリーを作ること</strong>です。
+      </div>
+
+      <h4>なぜ住み替えるのか？</h4>
+      <p>
+        住み替えの理由は人それぞれです。家が手狭になった、もっと快適な家に住みたい、環境を変えたい、転職や通勤の問題、近隣環境が合わないなど。<br>
+        賃貸の引越しのように「なんとなく違う街に住んでみたい」という感覚とは少し違います。<br>
+        住み替えは家をもう一度買うこと。だからこそ<strong>なぜ住み替えたいのかを自分でも納得しておく</strong>ことが大切です。
+      </p>
+
+      <h4>家族の意見を合わせることも大事</h4>
+      <p>
+        住み替えは自分一人の問題ではありません。家族がいる場合は、なぜ住み替えるのか、次の家で何を大事にしたいのか、この気持ちを家族で共有しておくことが大事です。<br>
+        実際には、<strong>物件より家族の意見が合わないことが一番のボトルネック</strong>になることもあります。
+      </p>
+
+      <h4>住み替えは「住み替え」ではない</h4>
+      <p>
+        実は住み替えだから特別に難しいというわけではありません。<br>
+        結局やることは新しく家を買うこと。つまり想いの整理、予算の整理、優先順位の整理。これは初めて家を買う人と同じステップです。
+      </p>
+      <p>
+        住み替えで少し違うのは、売却のタイミング、資金の流れ、引越しの段取り。つまり<strong>時間とお金の管理</strong>。<br>
+        ここさえ押さえておけば、住み替えだから特別に失敗するということはありません。
+      </p>
+
+      <div class="highlight">
+        <strong>住み替えの失敗は、物件選びよりも時間とお金の段取りで起きることが多い。</strong><br><br>
+        だからこそ、なぜ住み替えるのか、家族の想い、予算、売却と購入の段取り。<br>
+        このストーリーを最初に作ること。<br><br>
+        そのストーリーを一緒に考えてくれる<strong>信頼できる代理人（エージェント）</strong>を見つけることが、住み替え成功の近道です。
+      </div>
+
+      <div class="quote-line">
+        住み替えで失敗しないために大切なのは<br>
+        「売るか買うか」ではありません。<br>
+        なぜ住み替えるのかを整理し、<br>
+        資金と時間のストーリーを作ること。
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact">この悩みを相談する &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 成功事例 -->
   <div class="lifestyle-section">
     <div class="lifestyle-header">
       <svg class="lifestyle-icon" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,38 +614,28 @@
       <span class="lifestyle-title">LIFE STYLE</span>
     </div>
     <p class="lifestyle-desc">
-      住宅購入に至った経緯や当時の悩み、思いなど、お客様のリアルなお<br>
+      住宅購入に至った経緯や当時の悩み、思いなど、お客様のリアルな<br>
       声とともに住宅購入の成功事例をご紹介します。
     </p>
     <div class="lifestyle-grid">
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/satou-300x225.jpg" alt="世田谷区 佐藤様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/satou-300x225.jpg" alt="世田谷区 佐藤様"></div>
         <p class="lifestyle-name">世田谷区 佐藤様</p>
       </a>
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/koga-300x225.jpg" alt="川口市 古賀様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/koga-300x225.jpg" alt="川口市 古賀様"></div>
         <p class="lifestyle-name">川口市 古賀様</p>
       </a>
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/n-300x225.jpg" alt="横浜市 N様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/n-300x225.jpg" alt="横浜市 N様"></div>
         <p class="lifestyle-name">横浜市 N様</p>
       </a>
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/murayama-300x225.jpg" alt="世田谷区 村山様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/murayama-300x225.jpg" alt="世田谷区 村山様"></div>
         <p class="lifestyle-name">世田谷区 村山様</p>
       </a>
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/k-300x225.jpg" alt="船橋市 K様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/k-300x225.jpg" alt="船橋市 K様"></div>
         <p class="lifestyle-name">船橋市 K様</p>
       </a>
     </div>
@@ -235,7 +646,10 @@
 
   <div class="closing" id="contact">
     <h2>住み替えは運ではありません。</h2>
-    <p>時間とお金を整えれば、無理なく進められます。<br>「住まいの代理人」として、あなたの住み替えを段取りから支えます。</p>
+    <p>
+      時間とお金を整えれば、無理なく進められます。<br>
+      「住まいの代理人」として、あなたの住み替えのストーリーを一緒に描きます。
+    </p>
     <div class="cta-buttons">
       <a href="https://styleoftokyo.jp/contact/" class="btn btn-primary">Zoomで住み替え相談（15分）</a>
       <a href="#" class="btn btn-secondary">LINEで段取り相談</a>
@@ -244,7 +658,7 @@
   </div>
 
   <div class="footer">
-    <a href="index.html" class="back-link">&larr; 5つのご相談に戻る</a>
+    <a href="guide.html" class="back-link">&larr; こんなお悩みありませんか？に戻る</a>
     <p>&copy; STYLE OF TOKYO</p>
   </div>
 

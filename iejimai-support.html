@@ -5,6 +5,233 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>実家の家じまいサポート | STYLE OF TOKYO</title>
   <link rel="stylesheet" href="styles-common.css">
+  <style>
+    .worries-nav {
+      background: #f8f6f5;
+      padding: 56px 20px;
+    }
+    .worries-nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .worries-nav h2 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 500;
+      color: #62595a;
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+    }
+    .worries-nav .nav-sub {
+      text-align: center;
+      font-size: 14px;
+      color: #7a7170;
+      margin-bottom: 36px;
+    }
+    .worries-nav-divider {
+      width: 50px;
+      height: 1px;
+      background: #62595a;
+      margin: 0 auto 32px;
+    }
+    .worry-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      list-style: none;
+    }
+    .worry-list li a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      background: #fff;
+      border: 1px solid #e0d8d4;
+      text-decoration: none;
+      color: #62595a;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: all 0.25s ease;
+    }
+    .worry-list li a:hover {
+      border-color: #fd9227;
+      background: #fffbf7;
+    }
+    .worry-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      height: 32px;
+      background: #fd9227;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .worry-list li a .arrow {
+      margin-left: auto;
+      color: #fd9227;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .content-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 80px 20px 40px;
+      border-bottom: 1px solid #e0d8d4;
+    }
+    .content-section:last-of-type {
+      border-bottom: none;
+    }
+    .content-num {
+      display: inline-block;
+      background: #fd9227;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    .content-section h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #62595a;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .content-section .lead {
+      font-size: 15px;
+      color: #7a7170;
+      margin-bottom: 32px;
+      line-height: 2;
+    }
+    .video-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: #1a1a1a;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .video-embed .video-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 14px;
+      gap: 12px;
+    }
+    .video-embed .play-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-embed .play-icon::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 22px solid rgba(255,255,255,0.7);
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      margin-left: 4px;
+    }
+    .article-body {
+      font-size: 15px;
+      color: #333;
+      line-height: 2.1;
+    }
+    .article-body h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #62595a;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0d8d4;
+    }
+    .article-body p {
+      margin-bottom: 20px;
+    }
+    .article-body .highlight {
+      background: #fffbf7;
+      border-left: 3px solid #fd9227;
+      padding: 20px 24px;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 2;
+    }
+    .article-body .highlight strong {
+      color: #62595a;
+    }
+    .article-body .quote-line {
+      font-size: 20px;
+      font-weight: 500;
+      color: #62595a;
+      text-align: center;
+      padding: 32px 20px;
+      margin: 36px 0;
+      background: #f8f6f5;
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+    }
+    .section-cta {
+      text-align: center;
+      margin: 48px 0 0;
+    }
+    .section-cta a {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 14px;
+      color: #fd9227;
+      border: 1px solid #fd9227;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      font-family: "Noto Serif JP", serif;
+    }
+    .section-cta a:hover {
+      background: #fd9227;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      .worry-list {
+        grid-template-columns: 1fr;
+      }
+      .worry-list li a {
+        font-size: 14px;
+        padding: 14px 16px;
+      }
+      .content-section h3 {
+        font-size: 20px;
+      }
+      .article-body .quote-line {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -12,14 +239,13 @@
     <h1>親の家じまい</h1>
     <p class="subtitle">
       親の家じまいは「どうするか」より先に<br>
-      "正しい状態"を知ることから
+      "正しい状態"を知ることから。
     </p>
     <p class="main-message">
       売れるのか。貸せるのか。いくらくらいなのか。そもそも売れないのか。<br>
-      そして誰の名義で、将来どうなるのか。<br>
-      多くの方が、答えが分からないまま悩み続けています。<br><br>
-      私たちは「住まいの代理人」として、<br>
-      まず不動産の正しい状態を整理し、家族で話し合える材料をつくるところから伴走します。
+      そして誰の名義で、将来どうなるのか。<br><br>
+      家じまいは単なる不動産の処分ではなく、家族の人生の整理でもあります。<br>
+      私たちは「住まいの代理人」として、まず不動産の正しい状態を整理するところから伴走します。
     </p>
     <div class="cta-buttons">
       <a href="#contact" class="btn btn-primary">Zoomで家じまい相談（15分）</a>
@@ -27,125 +253,415 @@
     </div>
   </div>
 
-  <div class="section">
-    <h2 class="section-title">"家じまい"でよくある最初の壁</h2>
-    <div class="section-divider"></div>
-    <div class="pain-grid">
-      <div class="pain-card">
-        <h3>何から始めたらいいかわからない</h3>
-        <p>売れる？貸せる？いくらで？売れなかったらどうする？考えることが多すぎて、最初の一歩が踏み出せない。</p>
-      </div>
-      <div class="pain-card">
-        <h3>不動産会社によって言うことが違う</h3>
-        <p>同じ不動産でも、高く言う会社・低く言う会社・曖昧な会社。査定額も説明もバラバラ。「一体、どこを信じればいいのか分からない」という状態になりがちです。</p>
-      </div>
-      <div class="pain-card">
-        <h3>ネットで調べても、本当の価値は分からない</h3>
-        <p>相場サイトで調べても、道路条件・敷地形状・建物の築年数や構造・法的制限で価格は大きく変わります。ネットの数字だけでは、本当の判断はできません。</p>
-      </div>
-      <div class="pain-card">
-        <h3>家族で話し合えない</h3>
-        <p>現状が見えないままだと、「まだ住める」「もう売った方がいい」「将来どうするの？」意見がかみ合わず、話が進まない。</p>
-      </div>
+  <div class="worries-nav">
+    <div class="worries-nav-inner">
+      <h2>家じまいのお悩み</h2>
+      <div class="worries-nav-divider"></div>
+      <p class="nav-sub">気になる項目をクリックすると、解説と動画をご覧いただけます。</p>
+      <ul class="worry-list">
+        <li><a href="#q1"><span class="worry-num">1</span>親の家、売るべき？残すべき？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q2"><span class="worry-num">2</span>親の家じまい、いつから考えるべき？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q3"><span class="worry-num">3</span>実家が空き家になりそう。どう管理する？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q4"><span class="worry-num">4</span>相続人が複数いる。実家の処分はどう決める？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q5"><span class="worry-num">5</span>山林・田・畑が相続に入っている<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q6"><span class="worry-num">6</span>実家の荷物が多すぎる。片付けはどう進める？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q7"><span class="worry-num">7</span>実家を相続すると税金はいくら？<span class="arrow">&darr;</span></a></li>
+        <li><a href="#q8"><span class="worry-num">8</span>家じまいは誰に相談する？<span class="arrow">&darr;</span></a></li>
+      </ul>
     </div>
   </div>
 
-  <div class="what-we-do">
-    <div class="section">
-      <h2 class="section-title">第一歩は不動産の"正しい状態"を理解すること</h2>
-      <div class="section-divider"></div>
+  <!-- Q1 -->
+  <div class="content-section" id="q1">
+    <span class="content-num">Q.01</span>
+    <h3>親の家、売るべき？残すべき？</h3>
+    <p class="lead">家じまいの判断ができない方へ。</p>
 
-      <p style="font-size: 15px; color: var(--color-text); line-height: 2; margin-bottom: 40px;">
-        「売れないだろう」ではなく、本当に売れないのか。<br>
-        「このくらいで売れると言われた」ではなく、なぜその価格なのか。<br><br>
-        私たちは、登記情報・法規制・敷地条件・建物状況・周辺相場を整理し、<br>
-        感覚ではなく根拠で現状を把握します。<br><br>
-        正しく調査することで、初めて親や兄弟、関係者と現実的な話し合いができるようになります。
+    <div class="video-embed">
+      <div class="video-placeholder"><div class="play-icon"></div><span>解説動画 準備中</span></div>
+    </div>
+
+    <div class="article-body">
+      <p>最初に考えるべきなのは<strong>誰がその不動産を引き継ぐのか</strong>です。</p>
+      <p>
+        相続人が複数いる場合、誰が住むのか、誰が管理するのか、誰が固定資産税を払うのか。この整理が必要になります。<br>
+        特に不動産が複数ある場合は、実家、土地、投資物件などをどのように分けるかで兄弟姉妹の意見が分かれることがよくあります。
       </p>
 
-      <div class="point-card">
-        <h3>POINT 01　不動産の調査と可視化</h3>
-        <p>
-          登記・法規・現地条件を整理し、「今どういう状態なのか」を見える形に。
-        </p>
+      <h4>残す場合のリスク</h4>
+      <p>
+        もし残す場合は、<strong>次の世代まで含めて活用できるのか</strong>を考えることが大切です。<br>
+        誰も使わない家を残してしまうと、管理、修繕、固定資産税の負担だけが残ることになります。<br>
+        その場合は売却して現金で分けた方が公平で揉めないケースも多くあります。
+      </p>
+
+      <div class="highlight">
+        注意したいのは<strong>共同持分での賃貸運用</strong>。<br>
+        これは修繕費、管理、売却などの判断で揉めることが多く、トラブルの原因になります。
       </div>
 
-      <div class="point-card">
-        <h3>POINT 02　正しい査定と選択肢の整理</h3>
-        <p>
-          売却だけでなく、賃貸・保有・解体・活用。<br>
-          複数の可能性を比較できる状態にします。
-        </p>
+      <div class="quote-line">
+        まず何をどうするかを話すには、<br>
+        不動産の正しい情報を知ることです。
       </div>
 
-      <div class="point-card">
-        <h3>POINT 03　家族で話せる材料づくり</h3>
-        <p>
-          感情論ではなく、事実ベースで話せる資料を用意。<br>
-          意思決定の土台を整えます。
-        </p>
-      </div>
+      <div class="section-cta"><a href="#contact">この悩みを相談する &rarr;</a></div>
     </div>
   </div>
 
-  <div class="deliverables">
-    <div class="section" style="padding-bottom: 40px;">
-      <h2 class="section-title">家じまいの判断材料セット</h2>
-      <div class="section-divider"></div>
-      <table class="deliverables-table">
-        <thead>
-          <tr><th>成果物</th><th>内容</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>不動産調査レポート</td>
-            <td>登記・法規・現地条件の整理</td>
-          </tr>
-          <tr>
-            <td>価格帯シミュレーション</td>
-            <td>根拠ある査定と相場比較</td>
-          </tr>
-          <tr>
-            <td>選択肢整理シート</td>
-            <td>売却・賃貸・保有・解体の比較</td>
-          </tr>
-          <tr>
-            <td>次のアクションリスト</td>
-            <td>具体的なやるべきこと一覧</td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- Q2 -->
+  <div class="content-section" id="q2">
+    <span class="content-num">Q.02</span>
+    <h3>親の家じまい、いつから考えるべき？</h3>
+    <p class="lead">親が元気なうちに話すべき？</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder"><div class="play-icon"></div><span>解説動画 準備中</span></div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        家じまいは相続が発生してから考えるものと思われがちですが、実際には<strong>親が元気なうちから考えておく方が圧倒的にスムーズ</strong>です。
+      </p>
+      <p>
+        しかし、いきなり親に「家をどうする？」と聞くのは難しいものです。親にとってその家は長い人生を過ごしてきた大切な場所であり、思い出も詰まっています。突然「処分」の話をされると気持ちが追いつかないこともあります。
+      </p>
+
+      <div class="highlight">
+        おすすめなのが、まず<strong>相続人になる兄弟姉妹などで情報を共有すること</strong>から始める方法です。<br><br>
+        不動産の状況、相続人は誰か、不動産の価値はどれくらいか。<br>
+        こうした情報を事前に整理しておくと、いざ家族会議をするときにも感情だけではなく、<strong>事実をもとに冷静に話し合う</strong>ことができます。
+      </div>
+
+      <h4>相続が起きてからでは遅い理由</h4>
+      <p>
+        相続が起きてからでは、感情的な対立、お金の問題、不動産の分け方などが同時に発生するため、家族関係がこじれてしまうケースも少なくありません。
+      </p>
+      <p>
+        親がしっかり考えて遺言書を作っている場合もあります。しかし実際には、その遺言の「公平さ」が原因で感情的な不満が生まれ、法律の争いにまで発展することもあります。
+      </p>
+      <p>
+        マイナスの不動産を誰が引き継ぐのか、価値のある不動産をどう分けるのか、売るのか残すのか。仲の良かった家族の関係にヒビが入るというケースは少なくありません。
+      </p>
+
+      <div class="quote-line">
+        家じまいは、急いで決める必要はありません。<br>
+        しかし、相続が起きる前に<br>
+        少しずつ準備を始めることが大切です。
+      </div>
+
+      <div class="section-cta"><a href="#contact">この悩みを相談する &rarr;</a></div>
     </div>
   </div>
 
-  <div class="flow-section">
-    <h2 class="section-title">進め方（FLOW）</h2>
-    <div class="section-divider"></div>
-    <div class="step-list">
-      <div class="step-item">
-        <div class="step-label">STEP 01</div>
-        <div class="step-text">不動産調査（登記・法規・現地）</div>
+  <!-- Q3 -->
+  <div class="content-section" id="q3">
+    <span class="content-num">Q.03</span>
+    <h3>実家が空き家になりそう。どう管理すればいい？</h3>
+    <p class="lead">「どう管理するか」より「どうするか」を早めに決めること。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder"><div class="play-icon"></div><span>解説動画 準備中</span></div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        実家が空き家になると、建物の劣化、防犯の問題、近隣トラブルなど、さまざまな問題が起こりやすくなります。<br>
+        まず考えるべきなのは「なぜ管理するのか」という目的です。将来住む予定がある、売却する予定がある、当面は様子を見るなど、目的によって管理の方法は変わります。
+      </p>
+
+      <h4>空き家管理サービス</h4>
+      <p>
+        最近では空き家管理サービスも増えており、定期巡回、換気、郵便物の確認、庭の簡易管理などを代行してくれるサービスもあります。
+      </p>
+
+      <h4>放置すると急速に価値が下がる</h4>
+      <p>
+        空き家は放置すると急速に価値が下がります。建物の劣化が進む、雨漏りや害虫被害が起こる、周囲の景観を損ねるなどの理由から、<strong>特定空き家に指定される可能性</strong>もあります。
+      </p>
+
+      <div class="highlight">
+        特定空き家に指定されると、<strong>固定資産税の優遇が外れる</strong>、行政から改善指導が入るなどの措置が取られます。<br>
+        さらに深刻な場合には、行政が解体命令を出し、強制執行で解体を行い、<strong>その費用を所有者に請求する</strong>というケースもあります。
       </div>
-      <div class="step-item">
-        <div class="step-label">STEP 02</div>
-        <div class="step-text">査定と選択肢整理</div>
+
+      <h4>2024年からの相続登記義務化</h4>
+      <p>
+        2024年からは不動産の相続登記が義務化されました。「不動産だけ相続を放棄する」ということはできず、必ず誰かが相続しなければならない仕組みになっています。<br>
+        空き家をそのまま放置して問題を先送りにしてしまうと、次の世代にもその負担が引き継がれてしまいます。
+      </p>
+
+      <h4>空き家になる前に対策を</h4>
+      <p>
+        売却する、賃貸として活用する、引き取り制度を検討するなどの方法があります。<br>
+        売却や賃貸が難しい場合でも、行政の制度や引き取り業者を利用するという選択肢もあります。
+      </p>
+
+      <div class="quote-line">
+        空き家問題は、空き家になってからでは遅いことが多い。<br>
+        誰も住まなくなる前に、<br>
+        次の選択を考えておくことが大切です。
       </div>
-      <div class="step-item">
-        <div class="step-label">STEP 03</div>
-        <div class="step-text">家族共有・方向性決定</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 04</div>
-        <div class="step-text">売却／活用サポート</div>
-      </div>
-      <div class="step-item">
-        <div class="step-label">STEP 05</div>
-        <div class="step-text">完了</div>
-      </div>
+
+      <div class="section-cta"><a href="#contact">この悩みを相談する &rarr;</a></div>
     </div>
   </div>
 
-  <!-- 成功事例セクション -->
+  <!-- Q4 -->
+  <div class="content-section" id="q4">
+    <span class="content-num">Q.04</span>
+    <h3>相続人が複数いる。実家の処分はどう決める？</h3>
+    <p class="lead">感覚だけで進めると不公平感が生まれやすくなります。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder"><div class="play-icon"></div><span>解説動画 準備中</span></div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        相続人が複数いる場合、まず必要なのは<strong>正しい物件調査と査定</strong>です。<br>
+        不動産には固定資産税評価、路線価、市場価格など、複数の価値があります。また、査定額が出ていても実際には売れない、解体費がかかる、買い手が見つからないというケースもあります。
+      </p>
+      <p>
+        場合によっては、引き取ってもらうためにお金を支払う必要があるということもあります。だからこそ、<strong>正確な調査をしたうえで話し合う</strong>ことが重要になります。
+      </p>
+
+      <h4>関係者の意見が影響する</h4>
+      <p>
+        相続は家族や兄弟姉妹だけでなく、配偶者、子ども、その家族など、関係者の意見も影響してくるため、一筋縄ではいかないことも多いものです。
+      </p>
+
+      <h4>最もシンプルな分け方</h4>
+      <p>
+        不動産の分け方として最もシンプルなのは、売却して現金に変え、分配する方法です。これは公平性が高く、トラブルも起きにくい方法です。
+      </p>
+      <p>
+        しかし現実には、実家に母が住んでいる、長男が一緒に住んでいるなど、すでに使われている不動産というケースも多くあります。その場合「売って分ける」という単純な方法では解決できません。
+      </p>
+
+      <div class="highlight">
+        さらに難しいのが、<strong>不動産の価値は常に変動する</strong>という点です。<br>
+        東京など都市部の地価は上昇、地方の地価は下落という傾向があります。<br>
+        「どの不動産を誰が相続するのか」によって、将来の資産価値に大きな差が出る可能性があります。
+      </div>
+
+      <div class="quote-line">
+        相続で揉める原因の多くは、不動産です。<br>
+        だからこそ、まずは不動産の状況を<br>
+        正しく知ることから始めることが大切です。
+      </div>
+
+      <div class="section-cta"><a href="#contact">この悩みを相談する &rarr;</a></div>
+    </div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="content-section" id="q5">
+    <span class="content-num">Q.05</span>
+    <h3>山林・田・畑などの農地が相続に入っている</h3>
+    <p class="lead">意外と多いケースです。まず売れるのか売れないのかを考えます。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder"><div class="play-icon"></div><span>解説動画 準備中</span></div>
+    </div>
+
+    <div class="article-body">
+      <h4>農地の場合</h4>
+      <p>
+        田や畑などの農地は、原則として農業を営む人以外には売却できません。<br>
+        まずは近隣で農業をしている方に声をかけてみるという方法があります。近所でしっかり農業をされている農家さんが購入してくれるケースもあります。
+      </p>
+      <p>
+        また、場所によっては市街化区域・市街化調整区域など都市計画の条件によって、<strong>農地転用</strong>を行うことで宅地・雑種地として売却できる場合もあります。転用が可能であれば、売れる可能性は大きく変わります。
+      </p>
+
+      <h4>山林の場合</h4>
+      <p>
+        山林といっても、本格的な山から小規模な林のような土地まで、状況はさまざまです。<br>
+        材木として利用できるような山林であれば、林業を営んでいる方に相談してみるのもひとつの方法です。<br>
+        小さな林のような土地の場合は、転用して利用できるかを確認することも重要になります。
+      </p>
+
+      <h4>農地や山林が売れない場合</h4>
+      <div class="highlight">
+        売却が難しい場合の選択肢として<strong>国庫帰属制度</strong>があります。<br>
+        一定の条件を満たせば、土地を国に引き取ってもらう制度です。<br><br>
+        また、<strong>土地の引き取り業者</strong>に依頼する方法もあります。<br>
+        農地は法律の制限が多く引き取りが難しいケースもありますが、山林の場合は費用を支払うことで引き取ってもらえるケースもあります。
+      </div>
+
+      <div class="quote-line">
+        山林や農地は、放置しても価値が上がることはほとんどありません。<br>
+        相続の前後で早めに状況を確認しておくことが大切です。
+      </div>
+
+      <div class="section-cta"><a href="#contact">この悩みを相談する &rarr;</a></div>
+    </div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="content-section" id="q6">
+    <span class="content-num">Q.06</span>
+    <h3>実家の荷物が多すぎる。片付けはどう進める？</h3>
+    <p class="lead">実は空き家問題の半分以上は「荷物が片付けられない」が原因です。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder"><div class="play-icon"></div><span>解説動画 準備中</span></div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        実家の片付けは、自分たちでやろうとすると時間がかかる、気力が続かないというケースがとても多くあります。<br>
+        長年暮らしてきた家には思い出の品、家具、生活用品などたくさんの物があります。大切な思い出の品もありますが、実際にはほとんどが使われていない物ということも多いのです。
+      </p>
+
+      <h4>最近は専門サービスも増えています</h4>
+      <p>
+        遺品整理業者、引越し業者の片付けサービス、不用品買取業者など、片付けをサポートするサービスも増えています。中にはメルカリなどでの売却を代行してくれる会社もあります。<br>
+        仏壇については魂抜き（閉眼供養）をしてから処分するのが一般的です。
+      </p>
+
+      <h4>「残置のまま売却する」という方法もあります</h4>
+      <div class="highlight">
+        荷物が多いからといって必ずしもすべてを片付けてから売却する必要はありません。<br><br>
+        査定をして売却が可能な不動産であれば、<strong>荷物が残ったまま売却する</strong>という方法もあります。<br>
+        貴重品や思い出の品だけを持ち出し、残りは残置物としてまとめて処分するという方法です。<br><br>
+        <strong>荷物があっても物件調査や査定は可能です。</strong>
+      </div>
+
+      <h4>片付けは「不動産の流れ」を作ると進みます</h4>
+      <p>
+        実家の片付けは、「いつかやろう」と思っていると、なかなか進まないものです。<br>
+        しかし不動産を調査する、売却を検討するという流れができると、片付けも自然と進みやすくなります。
+      </p>
+
+      <div class="quote-line">
+        実家の片付けは、物の整理だけではありません。<br>
+        家族の思い出と向き合う時間でもあります。<br>
+        まずは不動産の状況を調べることから始めてみてください。
+      </div>
+
+      <div class="section-cta"><a href="#contact">この悩みを相談する &rarr;</a></div>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="content-section" id="q7">
+    <span class="content-num">Q.07</span>
+    <h3>実家を相続すると税金はいくら？</h3>
+    <p class="lead">相続税と不動産の関係を整理します。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder"><div class="play-icon"></div><span>解説動画 準備中</span></div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        相続税がかかる場合、不動産は固定資産税評価、路線価などを基準に評価されます。<br>
+        ただしここで注意したいのは、<strong>相続税の評価額と、実際に売れる価格（時価）は必ずしも同じではない</strong>ということです。<br>
+        相続税評価では価値があるが実際には売れないという不動産も存在します。
+      </p>
+
+      <h4>小規模宅地の特例</h4>
+      <div class="highlight">
+        相続税には<strong>小規模宅地の特例</strong>という制度があります。<br>
+        被相続人が住んでいた土地を一定の条件で相続する場合、<strong>土地の評価額を最大80%減額</strong>できます。<br><br>
+        例えば、評価額1億円の土地でも条件を満たせば2000万円として計算されるケースもあります。<br>
+        この特例が使えるかどうかは相続税に大きく影響します。
+      </div>
+
+      <h4>施設に入っていた場合の注意点</h4>
+      <p>
+        被相続人が老人ホームや介護施設に入っていた場合、その家に「住んでいた」と認められるかどうかが問題になることがあります。<br>
+        一時的な入所なのか、生活の本拠が移っていたのかなどによって扱いが変わります。特に3年以内の扱いが重要なポイントになるケースがあります。<br>
+        税務の判断については税理士など専門家への相談が必要になります。
+      </p>
+
+      <h4>「負動産」になるケースもある</h4>
+      <p>
+        不動産としての評価はあるものの、実際には売れない、買い手がいない、解体費や整備費がかかるなど、手放すためにお金がかかる不動産を<strong>「負動産」</strong>といいます。<br>
+        相続税の計算ではプラスの財産なのに、実際にはマイナスの資産になる可能性があるのです。
+      </p>
+
+      <h4>相続前に整理するという考え方</h4>
+      <p>
+        相続税がかかる規模の相続では、このような不動産までプラスの財産として計算されてしまうのはもったいないケースもあります。<br>
+        そのため、相続が発生する前に処分できる不動産であれば先に整理しておくという考え方もあります。
+      </p>
+
+      <div class="quote-line">
+        不動産はあるだけで資産とは限りません。<br>
+        本当に価値があるのか、将来どのように扱うのかを知ることが<br>
+        相続対策の第一歩になります。
+      </div>
+
+      <div class="section-cta"><a href="#contact">この悩みを相談する &rarr;</a></div>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="content-section" id="q8">
+    <span class="content-num">Q.08</span>
+    <h3>家じまいは誰に相談する？</h3>
+    <p class="lead">不動産？司法書士？税理士？それぞれに得意分野の違いがあります。</p>
+
+    <div class="video-embed">
+      <div class="video-placeholder"><div class="play-icon"></div><span>解説動画 準備中</span></div>
+    </div>
+
+    <div class="article-body">
+      <p>
+        家じまいには、いくつかの専門家が関わります。<br>
+        税理士は相続税の計算や申告、司法書士は所有権移転や相続登記などの手続き、不動産会社は売買や賃貸、活用方法の相談。<br>
+        それぞれ専門分野があり、重要な役割を担っています。
+      </p>
+
+      <h4>税理士の場合</h4>
+      <p>
+        相続の相談では、まず税理士に相談するケースが多くあります。しかし税理士が考える不動産の価値は、実際に売れる価格（時価）というより<strong>相続税の評価額</strong>になります。<br>
+        固定資産税評価、路線価などを基準に財産評価を行うため、実際には売れない不動産でも資産として計算されるケースがあります。
+      </p>
+
+      <h4>司法書士の場合</h4>
+      <p>
+        司法書士は登記手続きの専門家です。<br>
+        例えば、土地の前面道路が私道になっている場合や私道の持分がある場合、その持分の所有権移転まできちんと確認されていないと、後から大きな手間や費用がかかるケースもあります。<br>
+        登記手続きだけでは不動産の全体像が見えないこともあるのです。
+      </p>
+
+      <h4>不動産会社の場合</h4>
+      <p>
+        「売る予定がないから不動産会社には相談できない」と思われる方も多いようです。<br>
+        また現実として、売買が前提でない場合、不動産会社が物件調査をしっかり行わないケースもあります。
+      </p>
+
+      <h4>だからこそ「物件調査」が大切</h4>
+      <div class="highlight">
+        家じまいで最初に必要なのは、<strong>物件調査</strong>です。<br>
+        土地の権利関係、道路の状況、法律上の制限、実際の価値などを確認することです。<br><br>
+        この調査があることで、不動産会社、税理士、司法書士、<strong>すべての専門家が同じ情報をもとに判断できる</strong>ようになります。<br><br>
+        当社では、家じまいの相談の前段階として<strong>物件調査サービス</strong>を行っています。
+      </div>
+
+      <h4>自分で調べることもできます</h4>
+      <p>
+        物件調査は、必ずしも専門家に依頼しなければできないわけではありません。<br>
+        土地の前面道路については所在する市区町村の役所に行けば確認することができます。また、登記簿、公図、測量図などの資料も取得することができます。<br>
+        もし不動産会社に依頼する場合でも、「売る予定はないが、調査をしてほしい」と伝え、費用を支払えば調査をしてくれる会社もあります。
+      </p>
+
+      <div class="quote-line">
+        家じまいは「まず状況を知ること」から。<br>
+        その不動産がどのような状態なのかを知ること。<br>
+        そこから、活用する・売却する・手放すといった<br>
+        判断をしていくことが大切です。
+      </div>
+
+      <div class="section-cta"><a href="#contact">この悩みを相談する &rarr;</a></div>
+    </div>
+  </div>
+
+  <!-- 成功事例 -->
   <div class="lifestyle-section">
     <div class="lifestyle-header">
       <svg class="lifestyle-icon" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,38 +674,28 @@
       <span class="lifestyle-title">LIFE STYLE</span>
     </div>
     <p class="lifestyle-desc">
-      住宅購入に至った経緯や当時の悩み、思いなど、お客様のリアルなお<br>
+      住宅購入に至った経緯や当時の悩み、思いなど、お客様のリアルな<br>
       声とともに住宅購入の成功事例をご紹介します。
     </p>
     <div class="lifestyle-grid">
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/satou-300x225.jpg" alt="世田谷区 佐藤様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/satou-300x225.jpg" alt="世田谷区 佐藤様"></div>
         <p class="lifestyle-name">世田谷区 佐藤様</p>
       </a>
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/koga-300x225.jpg" alt="川口市 古賀様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/koga-300x225.jpg" alt="川口市 古賀様"></div>
         <p class="lifestyle-name">川口市 古賀様</p>
       </a>
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/n-300x225.jpg" alt="横浜市 N様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/n-300x225.jpg" alt="横浜市 N様"></div>
         <p class="lifestyle-name">横浜市 N様</p>
       </a>
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/murayama-300x225.jpg" alt="世田谷区 村山様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/murayama-300x225.jpg" alt="世田谷区 村山様"></div>
         <p class="lifestyle-name">世田谷区 村山様</p>
       </a>
       <a href="https://styleoftokyo.jp/voice/" class="lifestyle-item">
-        <div class="lifestyle-thumb">
-          <img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/k-300x225.jpg" alt="船橋市 K様">
-        </div>
+        <div class="lifestyle-thumb"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/01/k-300x225.jpg" alt="船橋市 K様"></div>
         <p class="lifestyle-name">船橋市 K様</p>
       </a>
     </div>
@@ -199,8 +705,11 @@
   </div>
 
   <div class="closing" id="contact">
-    <h2>親の家じまいは、急ぐ話でも、放置していい話でもありません。</h2>
-    <p>まずは「今どういう不動産なのか」を知ること。そこから、すべてが始まります。</p>
+    <h2>親の家じまいは、<br>急ぐ話でも、放置していい話でもありません。</h2>
+    <p>
+      まずは「今どういう不動産なのか」を知ること。<br>
+      そこから、すべてが始まります。
+    </p>
     <div class="cta-buttons">
       <a href="https://styleoftokyo.jp/contact/" class="btn btn-primary">Zoomで家じまい相談（15分）</a>
       <a href="#" class="btn btn-secondary">LINEで現状チェック</a>
@@ -209,7 +718,7 @@
   </div>
 
   <div class="footer">
-    <a href="index.html" class="back-link">&larr; 5つのご相談に戻る</a>
+    <a href="guide.html" class="back-link">&larr; こんなお悩みありませんか？に戻る</a>
     <p>&copy; STYLE OF TOKYO</p>
   </div>
 
