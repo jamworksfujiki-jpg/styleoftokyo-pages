@@ -89,6 +89,57 @@ export const EDITS = {
     ],
   },
 
+  top: {
+    id: 7,
+    edits: [
+      {
+        name: 'TOP card1 heading',
+        find: '<h4 class="sot-worry-title">何から始めれば<br>いいか分からない</h4>',
+        replace: '<h4 class="sot-worry-title">不動産、何から始めれば<br>いいか分からない</h4>',
+      },
+      {
+        name: 'TOP card1 desc',
+        find: '<p class="sot-worry-desc">初めてのマイホーム購入、<br>資金計画から物件選びまで</p>',
+        replace: '<p class="sot-worry-desc">購入・売却・相続…まず何をすべきか、<br>プロが一緒に整理します</p>',
+      },
+      {
+        name: 'TOP card2 heading',
+        find: '<h4 class="sot-worry-title">売って買う？<br>先に買う？</h4>',
+        replace: '<h4 class="sot-worry-title">売って買う？先に買う？<br>住み替えが不安</h4>',
+      },
+      {
+        name: 'TOP card2 desc',
+        find: '<p class="sot-worry-desc">住み替えのタイミングと<br>段取りを一緒に設計</p>',
+        replace: '<p class="sot-worry-desc">売却・購入のタイミングと段取りを、<br>プロが中立な立場で一緒に設計</p>',
+      },
+      {
+        name: 'TOP card3 desc (heading unchanged per docx)',
+        find: '<p class="sot-worry-desc">売る？貸す？家族の意見を<br>整理して最善策を提案</p>',
+        replace: '<p class="sot-worry-desc">売る？貸す？相続は？家族の意見を整理して、<br>東京の不動産プロが最善策を提案</p>',
+      },
+      {
+        name: 'TOP card4 heading',
+        find: '<h4 class="sot-worry-title">建築会社選びが<br>不安</h4>',
+        replace: '<h4 class="sot-worry-title">建築・リフォーム<br>会社選びが不安</h4>',
+      },
+      {
+        name: 'TOP card4 desc',
+        find: '<p class="sot-worry-desc">中立の立場で見積もりや<br>進め方をサポート</p>',
+        replace: '<p class="sot-worry-desc">中立の立場で相見積もり・価格交渉・進め方をサポート。<br>騙されない家づくりのために</p>',
+      },
+      {
+        name: 'TOP card5 heading',
+        find: '<h4 class="sot-worry-title">何をどこに<br>聞けばいいか不明</h4>',
+        replace: '<h4 class="sot-worry-title">不動産のことを<br>気軽に聞ける場所がない</h4>',
+      },
+      {
+        name: 'TOP card5 desc',
+        find: '<p class="sot-worry-desc">相続・離婚・複雑な不動産問題も<br>まず話を整理します</p>',
+        replace: '<p class="sot-worry-desc">相続・離婚・売却・購入…複雑な問題も、<br>セカンドオピニオンとしてまず話を整理します</p>',
+      },
+    ],
+  },
+
   service: {
     id: 242,
     edits: [
