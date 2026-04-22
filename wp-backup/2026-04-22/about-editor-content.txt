@@ -1,0 +1,163 @@
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgImageUrl":"https://styleoftokyo.jp/wp-content/uploads/2023/01/clm-back01.jpg","bgOpacity":60,"pcPadding":"40","spPadding":"20","bgFocalPoint":{"x":0.52000000000000002,"y":0.39000000000000001},"className":"u-mb-ctrl u-mb-30"} -->
+<div class="swell-block-fullWide pc-py-40 sp-py-20 has-bg-img alignfull lazyload u-mb-ctrl u-mb-30" style="background-position:52% 39%;background-color:rgba(255, 255, 255, 0.6)" data-bg="https://styleoftokyo.jp/wp-content/uploads/2023/01/clm-back01.jpg"><div class="swell-block-fullWide__inner l-article"><!-- wp:heading {"className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading is-style-section_ttl u-mb-ctrl u-mb-10"><small class="mininote"><span class="swl-inline-color has-swl-main-color"><span class="swl-fz u-fz-l">ABOUT</span></span></small><span style="font-size: var(--swl-fz--large); color: inherit; letter-spacing: var(--swl-letter_spacing,0.2px); font-family: var(--swl-font_family);">初めての方へ</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center"} -->
+<p class="has-text-align-center pc-only-center">スタイルオブ東京のホームページにご訪問頂きありがとうございます。<br>理想の住まいを手に入れるまでには、煩雑な手続きや難しい専門用語が飛び交う打ち合わせなどが必要になり、[pcbr]心も体もクタクタになってしまいます。スタイルオブ東京はそんなお客様の声にお応えし、<br>住まいに関する無料相談から実際の購入・リノベーション・リフォームに至るまでの[pcbr]きめ細やかなトータルコーディネートを行っています。[pcbr]不動産について不安や疑問を感じたら、まずはお気軽にご利用ください。</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:heading {"textAlign":"center","level":3,"className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h3 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><small class="mininote"><span class="swl-fz u-fz-l"><span class="swl-inline-color has-swl-main-color">SOLUTION</span></span></small><span class="swl-fz u-fz-l">「分からない！」を解決するために</span></h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:heading {"level":4,"className":"is-style-section_ttl"} -->
+<h4 class="wp-block-heading is-style-section_ttl"><span class="swl-marker mark_yellow"><span class="swl-fz u-fz-l">まずは不動産について[spbr]知りたい方</span></span></h4>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2045,"width":"152px","height":"152px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/名称未設定-1.png" alt="" class="wp-image-2045" style="width:152px;height:152px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center","className":"txt txt-width700 pc-only-center u-mb-ctrl u-mb-15"} -->
+<p class="has-text-align-center txt txt-width700 pc-only-center u-mb-ctrl u-mb-15">目からウロコの豆知識から、自分にぴったりな不動産を探すコツなど、[pcbr]不動産購入のイロハがわかる動画・読みものをお届けしています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"backgroundColor":"swl-main-thin","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-swl-main-thin-background-color has-background"><!-- wp:loos/columns -->
+<div class="swell-block-columns"><div class="swell-block-columns__inner"><!-- wp:loos/column -->
+<div class="swell-block-column swl-has-mb--s"><!-- wp:paragraph {"className":"is-style-border_left"} -->
+<p class="is-style-border_left"><strong>動画で学ぶ</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":6082,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://www.youtube.com/@e.ne.fudousan" target="_blank" rel="noreferrer noopener"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/12/youtube-link2.png" alt="" class="wp-image-6082"/></a></figure>
+<!-- /wp:image --></div>
+<!-- /wp:loos/column -->
+
+<!-- wp:loos/column -->
+<div class="swell-block-column swl-has-mb--s"><!-- wp:paragraph {"className":"is-style-border_left"} -->
+<p class="is-style-border_left"><strong>読んで学ぶ</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2085,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://styleoftokyo.jp/column/"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/column-link.png" alt="" class="wp-image-2085"/></a></figure>
+<!-- /wp:image --></div>
+<!-- /wp:loos/column --></div></div>
+<!-- /wp:loos/columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"has-border -border01 u-mb-ctrl u-mb-0","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01 u-mb-ctrl u-mb-0"><!-- wp:heading {"level":4,"className":"is-style-section_ttl"} -->
+<h4 class="wp-block-heading is-style-section_ttl"><span class="swl-marker mark_yellow"><span class="swl-fz u-fz-l">専門家に相談したい方</span></span></h4>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2990,"width":"800px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/02/about-img01.jpg" alt="" class="wp-image-2990" style="width:800px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center","className":"txt u-mb-ctrl u-mb-10 txt-width700 pc-only-center"} -->
+<p class="has-text-align-center txt u-mb-ctrl u-mb-10 txt-width700 pc-only-center">述べ2,000件以上のご相談をお受けしているスタイルオブ東京が個別にご相談をお受けします。<br>100件あったら100通りの住まいがあるように、物件購入のタイミングも種類も条件も１人１人で異なります。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"is-style-big_kakko_box","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-big_kakko_box"><!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong><span class="swl-fz u-fz-l">例えばこんなお悩みにお答えします！</span></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"is-style-check_list txt"} -->
+<ul class="wp-block-list is-style-check_list txt"><!-- wp:list-item -->
+<li>まずは何から始めればいいか教えて欲しい</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>新築、注文住宅、リフォーム、どれが自分に合っているか分からない</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>買い替えのいい方法が知りたい</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>住宅ローンや月々の支払いが不安なので資金計画について教えて欲しい</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>不動産や建築業者を一緒に探して欲しい</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"align":"center","className":"txt pc-only-center"} -->
+<p class="has-text-align-center txt pc-only-center">※ご相談のみの料金は無料です。実物件購入の際には、仲介手数料および実費諸経費が必要です。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/button {"hrefUrl":"https://styleoftokyo.jp/contact/","className":"is-style-btn_normal u-mb-ctrl u-mb-30"} -->
+<div class="swell-block-button is-style-btn_normal u-mb-ctrl u-mb-30"><a href="https://styleoftokyo.jp/contact/" class="swell-block-button__link"><span>無料で相談する</span></a></div>
+<!-- /wp:loos/button -->
+
+<!-- wp:group {"className":"is-style-bg_stripe","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-bg_stripe"><!-- wp:image {"id":2159,"width":"94px","height":"113px","sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-5"} -->
+<figure class="wp-block-image size-full is-resized u-mb-ctrl u-mb-5"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/line02.png" alt="" class="wp-image-2159" style="width:94px;height:113px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3,"className":"u-mb-ctrl u-mb-10 is-style-default","textColor":"swl-deep-02"} -->
+<h3 class="wp-block-heading has-text-align-center u-mb-ctrl u-mb-10 is-style-default has-swl-deep-02-color has-text-color">LINEで簡単相談もできます！</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"txt pc-only-center"} -->
+<p class="has-text-align-center txt pc-only-center">スタイルオブ東京の公式LINEアカウントを友だち追加していただくと、<br>LINEでのご相談や来店予約が可能です。[pcbr]友だち追加をして、トーク画面からお気軽にご連絡ください。<br>※営業時間外に頂いたメッセージは、翌日以降の営業時間内にご返答致します。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/button {"hrefUrl":"https://lin.ee/rjkmG2g","isNewTab":true,"color":"blue","className":"is-style-btn_normal"} -->
+<div class="swell-block-button blue_ is-style-btn_normal"><a href="https://lin.ee/rjkmG2g" target="_blank" rel="noopener noreferrer" class="swell-block-button__link"><span>LINEで相談する</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"pcPadding":"40","spPadding":"20","className":"u-mb-ctrl u-mb-0"} -->
+<div class="swell-block-fullWide pc-py-40 sp-py-20 alignfull u-mb-ctrl u-mb-0"><div class="swell-block-fullWide__inner l-article"><!-- wp:heading {"textAlign":"center","level":3,"className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h3 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><small class="mininote"><span class="swl-fz u-fz-l"><span class="swl-inline-color has-swl-main-color">CONTENTS</span></span></small><span class="swl-fz u-fz-l">もっとためになる！[spbr]お役立ちコンテンツ</span></h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"100%"} -->
+<div class="wp-block-column" style="flex-basis:100%"><!-- wp:loos/columns {"className":""} -->
+<div class="swell-block-columns"><div class="swell-block-columns__inner"><!-- wp:loos/column {"colWidth":{"pc":"50%"},"useCustomPadding":true} -->
+<div class="swell-block-column swl-has-mb--s" style="--clmn-w--pc:50%;--swl-clmn-pddng:1rem 1rem 1rem 1rem"><!-- wp:paragraph {"align":"center","className":"is-style-balloon_box2 txt u-mb-ctrl u-mb-10","fontSize":"small"} -->
+<p class="has-text-align-center is-style-balloon_box2 txt u-mb-ctrl u-mb-10 has-small-font-size"><span class="swl-fz u-fz-s">お客様の体験談を参考にしたい</span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/banner-link {"imageID":3190,"imageSize":"full","bgColor":"#51422a","bgOpacity":27,"bannerHeightPC":"240px","className":""} -->
+<div class="swell-block-bannerLink"><a href="https://styleoftokyo.jp/voice/" class="c-bannerLink" style="background-color:rgba(81, 66, 42, 0.27)"><figure class="c-bannerLink__figure" data-tab-style="height:240px"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/02/about-service1.jpg" class="c-bannerLink__img wp-image-3190 size-full" alt=""/></figure><div class="c-bannerLink__text"><div class="c-bannerLink__title"><strong><span class="swl-fz u-fz-s">お客様の成功事例</span></strong></div></div></a></div>
+<!-- /wp:loos/banner-link --></div>
+<!-- /wp:loos/column -->
+
+<!-- wp:loos/column {"vAlign":"top","colWidth":{"pc":"50%"},"useCustomPadding":true} -->
+<div class="swell-block-column swl-has-mb--s" data-valign="top" style="--clmn-w--pc:50%;--swl-clmn-pddng:1rem 1rem 1rem 1rem"><!-- wp:paragraph {"align":"center","className":"is-style-balloon_box2 txt u-mb-ctrl u-mb-10","fontSize":"small"} -->
+<p class="has-text-align-center is-style-balloon_box2 txt u-mb-ctrl u-mb-10 has-small-font-size"><span class="swl-fz u-fz-s">不動産のプロを探したい</span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/banner-link {"imageID":3191,"imageSize":"full","isBlank":true,"bgColor":"#51422a","bgOpacity":38,"bannerHeightPC":"240px"} -->
+<div class="swell-block-bannerLink"><a href="https://agent.sotsoken.jp/" class="c-bannerLink" target="_blank" rel="noopener noreferrer" style="background-color:rgba(81, 66, 42, 0.38)"><figure class="c-bannerLink__figure" data-tab-style="height:240px"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/02/about-service2.jpg" class="c-bannerLink__img wp-image-3191 size-full" alt=""/></figure><div class="c-bannerLink__text"><div class="c-bannerLink__title"><span class="swl-fz u-fz-s"><strong>エージェント見つかる</strong></span></div></div></a></div>
+<!-- /wp:loos/banner-link --></div>
+<!-- /wp:loos/column -->
+
+<!-- wp:loos/column {"colWidth":{"pc":"100%","tab":"100%","mobile":"100%"},"useCustomPadding":true} -->
+<div class="swell-block-column swl-has-mb--s" style="--clmn-w--mobile:100%;--clmn-w--tab:100%;--clmn-w--pc:100%;--swl-clmn-pddng:1rem 1rem 1rem 1rem"><!-- wp:image {"lightbox":{"enabled":false},"id":6475,"scale":"cover","sizeSlug":"full","linkDestination":"custom","className":"pc_only"} -->
+<figure class="wp-block-image size-full pc_only"><a href="https://styleoftokyo.jp/service/"><img src="https://styleoftokyo.jp/wp-content/uploads/2025/12/service-bnr-pc.jpg" alt="" class="wp-image-6475" style="object-fit:cover"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":6476,"scale":"cover","sizeSlug":"full","linkDestination":"custom","className":"sp_only"} -->
+<figure class="wp-block-image size-full sp_only"><a href="https://styleoftokyo.jp/service/"><img src="https://styleoftokyo.jp/wp-content/uploads/2025/12/service-bnr-sp.jpg" alt="" class="wp-image-6476" style="object-fit:cover"/></a></figure>
+<!-- /wp:image --></div>
+<!-- /wp:loos/column --></div></div>
+<!-- /wp:loos/columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/blog-parts {"partsID":"201"} /-->

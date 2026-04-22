@@ -1,0 +1,301 @@
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"contentSize":"full","pcPadding":"20","spPadding":"20","isParallax":true,"className":"u-mb-ctrl u-mb-0"} -->
+<div class="swell-block-fullWide pc-py-20 sp-py-20 alignfull u-mb-ctrl u-mb-0"><div class="swell-block-fullWide__inner"><!-- wp:heading {"className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading is-style-section_ttl u-mb-ctrl u-mb-10"><small class="mininote"><span class="swl-inline-color has-swl-main-color"><span class="swl-fz u-fz-l">CONCEPT</span></span></small><span style="font-size: var(--swl-fz--large); color: inherit; letter-spacing: var(--swl-letter_spacing,0.2px); font-family: var(--swl-font_family);">スタイルオブ東京とは</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3166,"sizeSlug":"full","linkDestination":"none","align":"full","className":"u-mb-ctrl u-mb-0"} -->
+<figure class="wp-block-image alignfull size-full u-mb-ctrl u-mb-0"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/02/about-fv02.jpg" alt="" class="wp-image-3166"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"txt-width700 u-mb-ctrl u-mb-0","backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group txt-width700 u-mb-ctrl u-mb-0 has-white-background-color has-background"><!-- wp:heading {"textAlign":"center","level":3,"className":"u-mb-ctrl u-mb-5"} -->
+<h3 class="wp-block-heading has-text-align-center u-mb-ctrl u-mb-5"><strong><span class="swl-fz u-fz-l">不動産のことなら、</span></strong>[spbr]<strong><span class="swl-fz u-fz-l">何でもご相談ください。</span></strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center txt txt-width700 u-mb-ctrl u-mb-20"} -->
+<p class="has-text-align-center pc-only-center txt txt-width700 u-mb-ctrl u-mb-20">購入・売却・住み替え・相続・家じまいまで、<br>不動産に関するお悩みは人それぞれです。[pcbr]どんなことでも、<strong><span class="swl-marker mark_yellow">プロと伴走することでストレスなく・効率よく解決</span></strong>できます。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"wide","className":"has-border -border01 u-mb-ctrl u-mb-0","backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-border -border01 u-mb-ctrl u-mb-0 has-white-background-color has-background"><!-- wp:image {"id":1312,"width":"70px","height":"61px","sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-5"} -->
+<figure class="wp-block-image size-full is-resized u-mb-ctrl u-mb-5"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/rec-icon.png" alt="" class="wp-image-1312" style="width:70px;height:61px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3,"className":"is-style-section_ttl u-mb-ctrl u-mb-5","textColor":"swl-main"} -->
+<h3 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-5 has-swl-main-color has-text-color">想いの整理と決断はお客様の担当。[spbr]専門分野はプロと伴走する不動産サポート</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"txt pc-only-center u-mb-ctrl u-mb-10"} -->
+<p class="has-text-align-center txt pc-only-center u-mb-ctrl u-mb-10">スタイルオブ東京では、購入・売却・建築・相続など、単発のご相談からフルサポートまでお引き受けします。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"pc_only","layout":{"type":"constrained"}} -->
+<div class="wp-block-group pc_only"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":6047,"width":"auto","height":"180px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/12/グループ-40.png" alt="" class="wp-image-6047" style="width:auto;height:180px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":6048,"width":"auto","height":"180px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/12/グループ-41.png" alt="" class="wp-image-6048" style="width:auto;height:180px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":6049,"width":"auto","height":"180px","sizeSlug":"full","linkDestination":"custom","className":"pc_only"} -->
+<figure class="wp-block-image size-full is-resized pc_only"><a href="https://styleoftokyo.jp/iejimai/" target="_blank" rel=" noreferrer noopener"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/12/グループ-42.png" alt="" class="wp-image-6049" style="width:auto;height:180px"/></a></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"sp_only","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","orientation":"vertical"}} -->
+<div class="wp-block-group sp_only"><!-- wp:image {"id":6047,"width":"auto","height":"180px","sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-5"} -->
+<figure class="wp-block-image size-full is-resized u-mb-ctrl u-mb-5"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/12/グループ-40.png" alt="" class="wp-image-6047" style="width:auto;height:180px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":6048,"width":"auto","height":"180px","sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-5"} -->
+<figure class="wp-block-image size-full is-resized u-mb-ctrl u-mb-5"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/12/グループ-41.png" alt="" class="wp-image-6048" style="width:auto;height:180px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":6049,"width":"auto","height":"180px","sizeSlug":"full","linkDestination":"custom","className":""} -->
+<figure class="wp-block-image size-full is-resized"><a href="https://styleoftokyo.jp/iejimai/" target="_blank" rel=" noreferrer noopener"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/12/グループ-42.png" alt="" class="wp-image-6049" style="width:auto;height:180px"/></a></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:table {"className":"txt is-style-regular u-mb-ctrl u-mb-20","style":{"typography":{"lineHeight":"1.3"}},"swlCell1Width":"150px"} -->
+<figure class="wp-block-table txt is-style-regular u-mb-ctrl u-mb-20" style="line-height:1.3"><table class="has-fixed-layout"><tbody><tr><th>無料相談</th><td>どんな住宅が自分に合っているのか？解像度がアップします。</td></tr><tr><th>土地探し</th><td>不動産事業者として土地取得·物件取得をサポートします。<br><span class="swl-fz u-fz-s">※仲介手数料の範囲内でサポート</span></td></tr><tr><th>住宅ローン</th><td>将来にわたる資金計画·ローン選定や実行支援の伴走<br><span class="swl-fz u-fz-s">※当社が不動産仲介する場合は無料。単発でのご依頼は10万円～お引き受けします。</span></td></tr><tr><th>建築</th><td>お客様が選んだ業者やご希望があればご紹介します。<br>建築・リフォーム会社との折衝や価格交渉などサポート。<br><span class="swl-fz u-fz-s">※当社が不動産仲介する場合は無料。単発でのご依頼は建築費の３％～でお引き受けします。</span></td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:loos/button {"hrefUrl":"https://styleoftokyo.jp/service/","className":"is-style-btn_normal"} -->
+<div class="swell-block-button is-style-btn_normal"><a href="https://styleoftokyo.jp/service/" class="swell-block-button__link"><span>私たちのサービス</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"pcPadding":"20","spPadding":"20","className":" u-mb-ctrl u-mb-0"} -->
+<div class="swell-block-fullWide pc-py-20 sp-py-20 alignfull  u-mb-ctrl u-mb-0"><div class="swell-block-fullWide__inner l-article"><!-- wp:heading {"className":"is-style-section_ttl u-mb-ctrl u-mb-15"} -->
+<h2 class="wp-block-heading is-style-section_ttl u-mb-ctrl u-mb-15"><span class="swl-inline-color has-swl-main-color"><small class="mininote"><span class="swl-fz u-fz-l">SERVICE</span></small></span><span class="swl-fz u-fz-l">サービス案内</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:loos/columns {"colTab":"1","align":"wide","className":"u-mb-ctrl u-mb-25"} -->
+<div class="alignwide swell-block-columns u-mb-ctrl u-mb-25" style="--clmn-w--tab:100%"><div class="swell-block-columns__inner"><!-- wp:loos/column -->
+<div class="swell-block-column swl-has-mb--s"><!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:heading {"textAlign":"center","level":3,"className":"pc-only-center is-style-section_ttl u-mb-ctrl u-mb-5","textColor":"swl-main"} -->
+<h3 class="wp-block-heading has-text-align-center pc-only-center is-style-section_ttl u-mb-ctrl u-mb-5 has-swl-main-color has-text-color">不動産をご検討中の方へ</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3075,"width":"492px","sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-15"} -->
+<figure class="wp-block-image size-full is-resized u-mb-ctrl u-mb-15"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/02/service_ph_01-1.jpg" alt="" class="wp-image-3075" style="width:492px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4,"className":"u-mb-ctrl u-mb-5"} -->
+<h4 class="wp-block-heading u-mb-ctrl u-mb-5">住まい取得支援事業</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"txt u-mb-ctrl u-mb-15"} -->
+<p class="txt u-mb-ctrl u-mb-15"><strong><span class="swl-marker mark_yellow">仲介手数料内で無料</span></strong>でプロのコーチが住宅取得をサポートいたします。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/button {"hrefUrl":"https://styleoftokyo.jp/","className":"is-style-more_btn"} -->
+<div class="swell-block-button is-style-more_btn"><a href="https://styleoftokyo.jp/" class="swell-block-button__link"><span>スタイルオブ東京</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group --></div>
+<!-- /wp:loos/column -->
+
+<!-- wp:loos/column -->
+<div class="swell-block-column swl-has-mb--s"><!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:heading {"textAlign":"center","level":3,"className":"pc-only-center is-style-section_ttl u-mb-ctrl u-mb-5","textColor":"swl-main"} -->
+<h3 class="wp-block-heading has-text-align-center pc-only-center is-style-section_ttl u-mb-ctrl u-mb-5 has-swl-main-color has-text-color">エージェントと[spbr]住まい探しをされたい方へ</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2868,"width":"492px","sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-15"} -->
+<figure class="wp-block-image size-full is-resized u-mb-ctrl u-mb-15"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/service_ph_02.jpg" alt="" class="wp-image-2868" style="width:492px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4,"className":"u-mb-ctrl u-mb-5"} -->
+<h4 class="wp-block-heading u-mb-ctrl u-mb-5">不動産ーエージェント紹介事業</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"txt u-mb-ctrl u-mb-15"} -->
+<p class="txt u-mb-ctrl u-mb-15"><strong><span class="swl-marker mark_yellow">お客様の価値観に合うお客様の代理人</span></strong>（エージェント）のマッチングサイトを運営しています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/button {"hrefUrl":"https://agent.sotsoken.jp/","isNewTab":true,"iconName":"LsExternallink","iconPosition":"right","className":"is-style-more_btn"} -->
+<div class="swell-block-button is-style-more_btn"><a href="https://agent.sotsoken.jp/" target="_blank" rel="noopener noreferrer" class="swell-block-button__link" data-has-icon="1"><span>不動産エージェントみつかる</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group --></div>
+<!-- /wp:loos/column --></div></div>
+<!-- /wp:loos/columns -->
+
+<!-- wp:loos/columns {"align":"wide"} -->
+<div class="alignwide swell-block-columns"><div class="swell-block-columns__inner"><!-- wp:loos/column -->
+<div class="swell-block-column swl-has-mb--s"><!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:heading {"level":3,"className":"pc-only-center is-style-section_ttl u-mb-ctrl u-mb-5","textColor":"swl-main"} -->
+<h3 class="wp-block-heading pc-only-center is-style-section_ttl u-mb-ctrl u-mb-5 has-swl-main-color has-text-color">断熱住宅をご検討の方へ</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":4049,"sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-15"} -->
+<figure class="wp-block-image size-full u-mb-ctrl u-mb-15"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/06/dannetsu01.jpg" alt="" class="wp-image-4049"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4,"className":"u-mb-ctrl u-mb-5"} -->
+<h4 class="wp-block-heading u-mb-ctrl u-mb-5">自分にピッタリ「ちょうどいい断熱住宅」が分かる</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"txt u-mb-ctrl u-mb-15"} -->
+<p class="txt u-mb-ctrl u-mb-15">断熱住宅の知識や考え方をご紹介。お客様が求める<span class="swl-marker mark_yellow"><strong>断熱レベルを考慮した住宅取得サポートを行います。</strong></span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/button {"hrefUrl":"https://styleoftokyo.jp/dannetsu-lp/","isNewTab":true,"iconPosition":"right","className":"is-style-more_btn"} -->
+<div class="swell-block-button is-style-more_btn"><a href="https://styleoftokyo.jp/dannetsu-lp/" target="_blank" rel="noopener noreferrer" class="swell-block-button__link"><span>断熱不動産</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group --></div>
+<!-- /wp:loos/column -->
+
+<!-- wp:loos/column -->
+<div class="swell-block-column swl-has-mb--s"><!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:heading {"level":3,"className":"pc-only-center is-style-section_ttl u-mb-ctrl u-mb-5","textColor":"swl-main"} -->
+<h3 class="wp-block-heading pc-only-center is-style-section_ttl u-mb-ctrl u-mb-5 has-swl-main-color has-text-color">家じまいをご検討の方へ</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":6013,"width":"492px","sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-15"} -->
+<figure class="wp-block-image size-full is-resized u-mb-ctrl u-mb-15"><img src="https://styleoftokyo.jp/wp-content/uploads/2024/12/iejimai01.jpg" alt="" class="wp-image-6013" style="width:492px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4,"className":"u-mb-ctrl u-mb-5"} -->
+<h4 class="wp-block-heading u-mb-ctrl u-mb-5">家じまいの<strong>面倒な手続きや調査</strong>も<strong>フルサポート</strong></h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"txt u-mb-ctrl u-mb-15"} -->
+<p class="txt u-mb-ctrl u-mb-15"><span class="swl-marker mark_yellow"><strong>ご自身やご実家の家じまい</strong></span>のご相談もお引き受け<br>いたします。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/button {"hrefUrl":"https://styleoftokyo.jp/iejimai/","isNewTab":true,"iconPosition":"right","className":"is-style-more_btn"} -->
+<div class="swell-block-button is-style-more_btn"><a href="https://styleoftokyo.jp/iejimai/" target="_blank" rel="noopener noreferrer" class="swell-block-button__link"><span>家じまい</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group --></div>
+<!-- /wp:loos/column --></div></div>
+<!-- /wp:loos/columns --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#f8f8f8","pcPadding":"40","spPadding":"20"} -->
+<div class="swell-block-fullWide pc-py-40 sp-py-20 alignfull" style="background-color:#f8f8f8"><div class="swell-block-fullWide__inner l-article"><!-- wp:group {"className":"u-mb-ctrl u-mb-10","backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group u-mb-ctrl u-mb-10 has-white-background-color has-background"><!-- wp:loos/columns {"vAlign":"center"} -->
+<div class="swell-block-columns" data-valign="center"><div class="swell-block-columns__inner"><!-- wp:loos/column {"colWidth":{"pc":"40%"}} -->
+<div class="swell-block-column swl-has-mb--s" style="--clmn-w--pc:40%"><!-- wp:image {"id":2646,"width":"258px","height":"387px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/profile01.jpg" alt="" class="wp-image-2646" style="width:258px;height:387px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:loos/column -->
+
+<!-- wp:loos/column {"colWidth":{"pc":"60%"}} -->
+<div class="swell-block-column swl-has-mb--s" style="--clmn-w--pc:60%"><!-- wp:heading {"textAlign":"left","level":4,"className":"is-style-section_ttl u-mb-ctrl u-mb-5"} -->
+<h4 class="wp-block-heading has-text-align-left is-style-section_ttl u-mb-ctrl u-mb-5"><span class="swl-fz u-fz-l"><span class="swl-inline-color has-swl-main-color">PROFILE</span></span></h4>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide u-mb-ctrl u-mb-5"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide u-mb-ctrl u-mb-5"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph {"align":"left","className":"u-mb-ctrl u-mb-0","style":{"typography":{"lineHeight":"1.3"}},"fontSize":"small"} -->
+<p class="has-text-align-left u-mb-ctrl u-mb-0 has-small-font-size" style="line-height:1.3"><span class="swl-fz u-fz-s">スタイルオブ東京株式会社 / [spbr]スタイルオブ東京総研株式会社</span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"left"} -->
+<p class="has-text-align-left">代表取締役　藤木賀子</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"txt","style":{"typography":{"lineHeight":1.3999999999999999}}} -->
+<p class="txt" style="line-height:1.4"><span class="swl-fz u-fz-s">前進の建築会社の時代から様々な案件に携わり、それまでの経験と高い専門性、先進的な取り組みが評価され、テレビや雑誌、専門誌などから多数の取材申し込みを受けてる。さらに同業者へのセミナー講師や国交省の会議にも招かれる。</span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"txt u-mb-ctrl u-mb-20","style":{"typography":{"lineHeight":1.3999999999999999}}} -->
+<p class="txt u-mb-ctrl u-mb-20" style="line-height:1.4"><span class="swl-fz u-fz-s">2006年12月スタイルオブ東京を設立住宅取得に必要な『不動産取得』『住宅建築』『住宅ローン』『マネープラン』をワンストップにてサポートするサービスを開始している。また、住宅取得をより良いものにするための、住宅·不動産関連事業者BtoBコンサルティングも行う。</span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/button {"hrefUrl":"https://saas.actibookone.com/content/detail?param=eyJjb250ZW50TnVtIjoyNzcxNzF9\u0026detailFlg=0\u0026pNo=1","isNewTab":true,"iconName":"IoBook","className":"is-style-btn_normal"} -->
+<div class="swell-block-button is-style-btn_normal"><a href="https://saas.actibookone.com/content/detail?param=eyJjb250ZW50TnVtIjoyNzcxNzF9&amp;detailFlg=0&amp;pNo=1" target="_blank" rel="noopener noreferrer" class="swell-block-button__link" data-has-icon="1"><svg class="__icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 512 512"><path d="M202.24 74C166.11 56.75 115.61 48.3 48 48a31.36 31.36 0 00-17.92 5.33A32 32 0 0016 79.9V366c0 19.34 13.76 33.93 32 33.93 71.07 0 142.36 6.64 185.06 47a4.11 4.11 0 006.94-3V106.82a15.89 15.89 0 00-5.46-12A143 143 0 00202.24 74zM481.92 53.3A31.33 31.33 0 00464 48c-67.61.3-118.11 8.71-154.24 26a143.31 143.31 0 00-32.31 20.78 15.93 15.93 0 00-5.45 12v337.13a3.93 3.93 0 006.68 2.81c25.67-25.5 70.72-46.82 185.36-46.81a32 32 0 0032-32v-288a32 32 0 00-14.12-26.61z"></path></svg><span>ストーリーブック(pdf)</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:loos/column --></div></div>
+<!-- /wp:loos/columns --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","pcPadding":"40","spPadding":"20","className":"u-mb-ctrl u-mb-0"} -->
+<div class="swell-block-fullWide pc-py-40 sp-py-20 alignfull u-mb-ctrl u-mb-0" style="background-color:#ffffff"><div class="swell-block-fullWide__inner l-article"><!-- wp:heading {"className":"is-style-section_ttl u-mb-ctrl u-mb-5"} -->
+<h2 class="wp-block-heading is-style-section_ttl u-mb-ctrl u-mb-5"><span class="swl-inline-color has-swl-main-color"><small class="mininote"><span class="swl-fz u-fz-l">BOOKS</span></small></span><span class="swl-fz u-fz-l">書籍紹介</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:heading {"textAlign":"left","level":3,"className":"u-mb-ctrl u-mb-5 is-style-default"} -->
+<h3 class="wp-block-heading has-text-align-left u-mb-ctrl u-mb-5 is-style-default">賢く注文住宅を建てたい人のための家づくりリテラシー</h3>
+<!-- /wp:heading -->
+
+<!-- wp:loos/columns {"vAlign":"center"} -->
+<div class="swell-block-columns" data-valign="center"><div class="swell-block-columns__inner"><!-- wp:loos/column {"vAlign":"center","colWidth":{"pc":"20%"}} -->
+<div class="swell-block-column swl-has-mb--s" data-valign="center" style="--clmn-w--pc:20%"><!-- wp:image {"id":6204,"width":"130px","height":"183px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2025/08/71eQDorSfgL._SL1500_.jpg" alt="" class="wp-image-6204" style="width:130px;height:183px"/><figcaption class="wp-element-caption"><span class="swl-fz u-fz-l">著者：藤木  賀子</span></figcaption></figure>
+<!-- /wp:image --></div>
+<!-- /wp:loos/column -->
+
+<!-- wp:loos/column {"vAlign":"center","colWidth":{"pc":"80%"},"useCustomPadding":true,"className":"txt"} -->
+<div class="swell-block-column swl-has-mb--s txt" data-valign="center" style="--clmn-w--pc:80%;--swl-clmn-pddng:1rem 1rem 1rem 1rem"><!-- wp:paragraph {"align":"left"} -->
+<p class="has-text-align-left"><strong>理想の家づくりに欠かせない判断軸が身につく</strong>、<br><strong>悩める施主のための必携バイブル</strong>。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>本書は、施主が主体的に家づくりを進めるための判断軸「家づくりリテラシー」を解説します。その中心は「ヒト（誰と進めるか）」「モノ（何を重視するか）」「カネ（予算と配分）」の3点であり、これらを使いこなすことが理想の家づくりのカギとなります。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>家を建てたい人にとって心強い指針となる一冊です。</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:loos/column --></div></div>
+<!-- /wp:loos/columns -->
+
+<!-- wp:loos/button {"hrefUrl":"https://www.amazon.co.jp/dp/4344693922","isNewTab":true,"iconPosition":"right","className":"is-style-btn_line"} -->
+<div class="swell-block-button is-style-btn_line"><a href="https://www.amazon.co.jp/dp/4344693922" target="_blank" rel="noopener noreferrer" class="swell-block-button__link"><span>[icon class="icon-amazon"]  Amazonで見る</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:heading {"textAlign":"left","level":3,"className":"u-mb-ctrl u-mb-5 is-style-default"} -->
+<h3 class="wp-block-heading has-text-align-left u-mb-ctrl u-mb-5 is-style-default"><span class="swl-fz u-fz-s">私は不動産エージェント: </span><br><span class="swl-fz u-fz-s">これからの不動産仲介業会のスタンダート営業職からの不動産エージェントへの道</span></h3>
+<!-- /wp:heading -->
+
+<!-- wp:loos/columns {"vAlign":"center"} -->
+<div class="swell-block-columns" data-valign="center"><div class="swell-block-columns__inner"><!-- wp:loos/column {"vAlign":"center","colWidth":{"pc":"20%"}} -->
+<div class="swell-block-column swl-has-mb--s" data-valign="center" style="--clmn-w--pc:20%"><!-- wp:image {"id":2611,"width":"130px","height":"183px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/51z3d9RTMiL.jpeg" alt="" class="wp-image-2611" style="width:130px;height:183px"/><figcaption class="wp-element-caption"><span class="swl-fz u-fz-l">著者：藤木  賀子</span></figcaption></figure>
+<!-- /wp:image --></div>
+<!-- /wp:loos/column -->
+
+<!-- wp:loos/column {"vAlign":"center","colWidth":{"pc":"80%"},"useCustomPadding":true,"className":"txt"} -->
+<div class="swell-block-column swl-has-mb--s txt" data-valign="center" style="--clmn-w--pc:80%;--swl-clmn-pddng:1rem 1rem 1rem 1rem"><!-- wp:paragraph {"align":"left"} -->
+<p class="has-text-align-left">この本は、不動産エージェントになるための方法についてわかりやすく丁寧にまとめました。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"is-style-check_list"} -->
+<ul class="wp-block-list is-style-check_list"><!-- wp:list-item -->
+<li>不動産仲介営業として働いているが、会社の営業方針に疑問がある。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>不動産仲介の仕事に転職をしたいが、今は異業種で働いている。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>将来的に不動産の仕事をしてみたい。</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>こんな方にオススメです。</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:loos/column --></div></div>
+<!-- /wp:loos/columns -->
+
+<!-- wp:loos/button {"hrefUrl":"https://amzn.asia/d/69aoGBJ","isNewTab":true,"iconPosition":"right","className":"is-style-btn_line"} -->
+<div class="swell-block-button is-style-btn_line"><a href="https://amzn.asia/d/69aoGBJ" target="_blank" rel="noopener noreferrer" class="swell-block-button__link"><span>[icon class="icon-amazon"]  Amazonで見る</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/blog-parts {"partsID":"201"} /-->

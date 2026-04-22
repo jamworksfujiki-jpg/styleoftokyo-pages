@@ -1,0 +1,26 @@
+{
+  "concept": {
+    "id": 222,
+    "slug": "concept",
+    "title": "スタイルオブ東京とは",
+    "link": "https://styleoftokyo.jp/concept/",
+    "status": "publish",
+    "modified": "2025-10-09T13:36:27"
+  },
+  "about": {
+    "id": 239,
+    "slug": "about",
+    "title": "初めての方へ",
+    "link": "https://styleoftokyo.jp/about/",
+    "status": "publish",
+    "modified": "2025-12-22T13:10:29"
+  },
+  "service": {
+    "id": 242,
+    "slug": "service",
+    "title": "私たちのサービス",
+    "link": "https://styleoftokyo.jp/service/",
+    "status": "publish",
+    "modified": "2025-12-08T14:38:37"
+  }
+}

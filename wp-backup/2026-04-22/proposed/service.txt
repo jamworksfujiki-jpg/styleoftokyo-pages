@@ -1,0 +1,635 @@
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgImageUrl":"https://styleoftokyo.jp/wp-content/uploads/2023/01/clm-back01.jpg","bgOpacity":50,"pcPadding":"40","spPadding":"20","bgFocalPoint":{"x":0.52000000000000002,"y":0.44},"className":"u-mb-ctrl u-mb-20"} -->
+<div class="swell-block-fullWide pc-py-40 sp-py-20 has-bg-img alignfull lazyload u-mb-ctrl u-mb-20" style="background-position:52% 44%;background-color:rgba(255, 255, 255, 0.5)" data-bg="https://styleoftokyo.jp/wp-content/uploads/2023/01/clm-back01.jpg"><div class="swell-block-fullWide__inner l-article"><!-- wp:heading {"className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading is-style-section_ttl u-mb-ctrl u-mb-10"><span class="swl-fz u-fz-l"><small class="mininote"><span class="swl-inline-color has-swl-main-color">SERVICE</span></small>私たちのサービス</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center"} -->
+<p class="has-text-align-center pc-only-center">不動産の購入・売却・住み替え・建築・相続まで、<br>お客様に関わるあらゆる不動産のお悩みをワンストップでサポートします。<br>相談だけでもOK。まずはZoom無料相談からどうぞ。</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"pcPadding":"20","spPadding":"20"} -->
+<div class="swell-block-fullWide pc-py-20 sp-py-20 alignfull" id="step01"><div class="swell-block-fullWide__inner l-article"><!-- wp:group {"className":"txt-width700 u-mb-ctrl u-mb-25","layout":{"type":"constrained"}} -->
+<div class="wp-block-group txt-width700 u-mb-ctrl u-mb-25"><!-- wp:paragraph {"align":"center","className":"is-style-balloon_box u-mb-ctrl u-mb-10","fontSize":"small"} -->
+<p class="has-text-align-center is-style-balloon_box u-mb-ctrl u-mb-10 has-small-font-size">STEP01</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><span class="swl-fz u-fz-l">セールス0のZoom無料相談</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2464,"width":"800px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/online1.jpg" alt="" class="wp-image-2464" style="width:800px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center txt u-mb-ctrl u-mb-20"} -->
+<p class="has-text-align-center pc-only-center txt u-mb-ctrl u-mb-20">不動産のことはわからないことだらけ。<br>購入・売却・相続・空き家・住み替えなど、<span class="swl-marker mark_yellow">どんなお悩みでも気軽にご相談ください。</span><br>「何を聞けばいいかわからない」という状態でも大丈夫です。<br>中立の立場でお客様の状況を整理し、<span class="swl-marker mark_yellow">最適な道筋をご提案します。</span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"is-style-bg_stripe","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-bg_stripe"><!-- wp:heading {"level":4,"className":"u-mb-ctrl u-mb-10"} -->
+<h4 class="wp-block-heading u-mb-ctrl u-mb-10">Zoom無料相談の手順</h4>
+<!-- /wp:heading -->
+
+<!-- wp:loos/step {"stepLabel":"","className":"u-mb-ctrl u-mb-25 is-style-default"} -->
+<div class="swell-block-step u-mb-ctrl u-mb-25 is-style-default" data-num-style="circle"><!-- wp:loos/step-item -->
+<div class="swell-block-step__item"><div class="swell-block-step__number u-bg-main"></div><div class="swell-block-step__title u-fz-l"><span class="swl-fz u-fz-s">お問い合わせフォームから申し込む</span></div><div class="swell-block-step__body"><!-- wp:paragraph {"className":"txt","fontSize":"small"} -->
+<p class="txt has-small-font-size"><span class="swl-fz u-fz-s">お問い合わせフォームより、「無料相談の申し込み」「オンライン(Zoom)で相談したい」にチェックを入れて、お客様情報やご希望の日時、ご相談したい内容などをご入力ください。</span></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:loos/step-item -->
+
+<!-- wp:loos/step-item -->
+<div class="swell-block-step__item"><div class="swell-block-step__number u-bg-main"></div><div class="swell-block-step__title u-fz-l"><span class="swl-fz u-fz-s">ご案内メールにてZoomのミーティングURLを確認</span></div><div class="swell-block-step__body"><!-- wp:paragraph {"className":"txt","fontSize":"small"} -->
+<p class="txt has-small-font-size"><span class="swl-fz u-fz-s">ご案内メールにて、ZoomのミーティングURLをお送りいたします。</span></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:loos/step-item -->
+
+<!-- wp:loos/step-item -->
+<div class="swell-block-step__item"><div class="swell-block-step__number u-bg-main"></div><div class="swell-block-step__title u-fz-l"><span class="swl-fz u-fz-s">ご相談日時にミーティングURLにアクセス</span></div><div class="swell-block-step__body"><!-- wp:paragraph {"className":"txt","fontSize":"small"} -->
+<p class="txt has-small-font-size"><span class="swl-fz u-fz-s">お申し込みいただいたご相談日時に、ご案内メールにてお送りしたZoomのミーティングURLへアクセスしてください。</span></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:loos/step-item -->
+
+<!-- wp:loos/step-item -->
+<div class="swell-block-step__item"><div class="swell-block-step__number u-bg-main"></div><div class="swell-block-step__title u-fz-l"><span class="swl-fz u-fz-s">Zoom相談</span></div><div class="swell-block-step__body"><!-- wp:paragraph {"className":"txt","fontSize":"small"} -->
+<p class="txt has-small-font-size"><span class="swl-fz u-fz-s">家づくりに関するお悩みやご質問など、お気軽にご相談ください。</span></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:loos/step-item --></div>
+<!-- /wp:loos/step -->
+
+<!-- wp:loos/button {"hrefUrl":"https://styleoftokyo.jp/contact/#form-anc","className":"is-style-btn_normal"} -->
+<div class="swell-block-button is-style-btn_normal"><a href="https://styleoftokyo.jp/contact/#form-anc" class="swell-block-button__link"><span>お問い合わせフォーム</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:image {"id":2159,"width":"94px","height":"113px","sizeSlug":"full","linkDestination":"none","className":"u-mb-ctrl u-mb-5"} -->
+<figure class="wp-block-image size-full is-resized u-mb-ctrl u-mb-5"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/line02.png" alt="" class="wp-image-2159" style="width:94px;height:113px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3,"className":"u-mb-ctrl u-mb-10 is-style-default","textColor":"swl-deep-02"} -->
+<h3 class="wp-block-heading has-text-align-center u-mb-ctrl u-mb-10 is-style-default has-swl-deep-02-color has-text-color">LINEで簡単相談もできます！</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"txt pc-only-center"} -->
+<p class="has-text-align-center txt pc-only-center">スタイルオブ東京の公式LINEアカウントを友だち追加していただくと、<br>LINEでのご相談や来店予約が可能です。[pcbr]友だち追加をして、トーク画面からお気軽にご連絡ください。<br>※営業時間外に頂いたメッセージは、翌日以降の営業時間内にご返答致します。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:loos/button {"hrefUrl":"https://lin.ee/rjkmG2g","isNewTab":true,"color":"blue","className":"is-style-btn_normal"} -->
+<div class="swell-block-button blue_ is-style-btn_normal"><a href="https://lin.ee/rjkmG2g" target="_blank" rel="noopener noreferrer" class="swell-block-button__link"><span>LINEで相談する</span></a></div>
+<!-- /wp:loos/button --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"pcPadding":"20","spPadding":"20"} -->
+<div class="swell-block-fullWide pc-py-20 sp-py-20 alignfull" id="step02"><div class="swell-block-fullWide__inner l-article"><!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"className":"txt-width700 u-mb-ctrl u-mb-25","layout":{"type":"constrained"}} -->
+<div class="wp-block-group txt-width700 u-mb-ctrl u-mb-25"><!-- wp:paragraph {"align":"center","className":"is-style-balloon_box u-mb-ctrl u-mb-10","fontSize":"small"} -->
+<p class="has-text-align-center is-style-balloon_box u-mb-ctrl u-mb-10 has-small-font-size">STEP02</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><span class="swl-fz u-fz-l">ファイナンスサポート</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2995,"width":"800px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/02/step020-img.jpg" alt="" class="wp-image-2995" style="width:800px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center txt u-mb-ctrl u-mb-20"} -->
+<p class="has-text-align-center pc-only-center txt u-mb-ctrl u-mb-20">住宅購入に必要な住宅ローン、金利の選択や金融機関の選択、<br>そして借入金額や全体的な予算を決めるのも悩みが多いものです。<br>FPや税理士でも難しい住宅ローンの相談や不動産の査定など、<br><span class="swl-marker mark_yellow">住宅に関わるすべてのファイナンスをプロが無料でアドバイスいたします。</span></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"pcPadding":"20","spPadding":"20"} -->
+<div class="swell-block-fullWide pc-py-20 sp-py-20 alignfull" id="step03"><div class="swell-block-fullWide__inner l-article"><!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"className":"txt-width700 u-mb-ctrl u-mb-25","layout":{"type":"constrained"}} -->
+<div class="wp-block-group txt-width700 u-mb-ctrl u-mb-25"><!-- wp:paragraph {"align":"center","className":"is-style-balloon_box u-mb-ctrl u-mb-10","fontSize":"small"} -->
+<p class="has-text-align-center is-style-balloon_box u-mb-ctrl u-mb-10 has-small-font-size">STEP03</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><span class="swl-fz u-fz-l">物件内見サポート・物件調査</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2458,"width":"800px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/naiken01.jpg" alt="" class="wp-image-2458" style="width:800px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center txt u-mb-ctrl u-mb-20"} -->
+<p class="has-text-align-center pc-only-center txt u-mb-ctrl u-mb-20">物件の内見の際に大事なことは、物件の管理状態や建築の制限、修繕や改装に必要なコストです。<br>土地は新築のプランと予算、中古はリフォームのプランと予算は内見時に予測を立てる必要があります。<br><span class="swl-marker mark_yellow">近隣の状況や地盤、ハザード、評価など気になる点もプロ目線でアドバイスいたします。</span></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"pcPadding":"20","spPadding":"20"} -->
+<div class="swell-block-fullWide pc-py-20 sp-py-20 alignfull" id="step04"><div class="swell-block-fullWide__inner l-article"><!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"className":"txt-width700 u-mb-ctrl u-mb-25","layout":{"type":"constrained"}} -->
+<div class="wp-block-group txt-width700 u-mb-ctrl u-mb-25"><!-- wp:paragraph {"align":"center","className":"is-style-balloon_box u-mb-ctrl u-mb-10","fontSize":"small"} -->
+<p class="has-text-align-center is-style-balloon_box u-mb-ctrl u-mb-10 has-small-font-size">STEP04</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><span class="swl-fz u-fz-l">不動産探しサポート</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center txt u-mb-ctrl u-mb-20"} -->
+<p class="has-text-align-center pc-only-center txt u-mb-ctrl u-mb-20">不動産はすべて個別な契約条件となります。<br><span class="swl-marker mark_yellow">価格交渉やお客様に不利のないよう、隈なくチェックします。</span><br>またリフォームや建築が必要な物件にはプランや予算、見積もりなど<br><span class="swl-marker mark_yellow">お客様が物件を選択できるようすべてサポートいたします。</span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2430,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/01/index__keiyaku.jpeg" alt="" class="wp-image-2430"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:loos/cap-block {"iconName":"FasThumbsUp","className":"is-style-onborder_ttl2"} -->
+<div class="swell-block-capbox cap_box is-style-onborder_ttl2"><div class="cap_box_ttl" data-has-icon="1"><svg height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 512 512"><path d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"></path></svg><span>ここがポイント</span></div><div class="cap_box_content"><!-- wp:paragraph {"className":"txt"} -->
+<p class="txt">契約条件はお客様に代わってしっかり交渉いたします。<br>また、わかりにくい用語や契約内容は事前にお客様にご理解いただけるようご説明いたします。</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:loos/cap-block --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"pcPadding":"20","spPadding":"20"} -->
+<div class="swell-block-fullWide pc-py-20 sp-py-20 alignfull" id="step05"><div class="swell-block-fullWide__inner l-article"><!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"className":"txt-width700 u-mb-ctrl u-mb-25","layout":{"type":"constrained"}} -->
+<div class="wp-block-group txt-width700 u-mb-ctrl u-mb-25"><!-- wp:paragraph {"align":"center","className":"is-style-balloon_box u-mb-ctrl u-mb-10","fontSize":"small"} -->
+<p class="has-text-align-center is-style-balloon_box u-mb-ctrl u-mb-10 has-small-font-size">STEP05</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><span class="swl-fz u-fz-l">建築会社のご紹介</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3000,"width":"800px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/02/step03-img.jpg" alt="" class="wp-image-3000" style="width:800px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center txt u-mb-ctrl u-mb-20"} -->
+<p class="has-text-align-center pc-only-center txt u-mb-ctrl u-mb-20">建築会社の選択のポイントは見た目だけで判断しないことです。<br>デザインだけでなく、プランニング力、コスト、施工能力や設計、営業マンの対応など、<br>住宅購入では建築会社のセレクトは重要です。<br>当社ではただご紹介するだけでなく、&nbsp;<span class="swl-marker mark_yellow">ご予算やご要望に合わせた<br>お客様にぴったりの会社さんを選択</span>し最後までサポートいたします。</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff","bgOpacity":0,"pcPadding":"20","spPadding":"20","className":"u-mb-ctrl u-mb-0"} -->
+<div class="swell-block-fullWide pc-py-20 sp-py-20 alignfull u-mb-ctrl u-mb-0" id="step06"><div class="swell-block-fullWide__inner l-article"><!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"className":"txt-width700 u-mb-ctrl u-mb-25","layout":{"type":"constrained"}} -->
+<div class="wp-block-group txt-width700 u-mb-ctrl u-mb-25"><!-- wp:paragraph {"align":"center","className":"is-style-balloon_box u-mb-ctrl u-mb-10","fontSize":"small"} -->
+<p class="has-text-align-center is-style-balloon_box u-mb-ctrl u-mb-10 has-small-font-size">STEP06</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><span class="swl-fz u-fz-l">充実したアフターサービス</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3004,"width":"800px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://styleoftokyo.jp/wp-content/uploads/2023/02/step06-img.jpg" alt="" class="wp-image-3004" style="width:800px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center","className":"pc-only-center txt u-mb-ctrl u-mb-20"} -->
+<p class="has-text-align-center pc-only-center txt u-mb-ctrl u-mb-20">お引き渡し後、確定申告や保険、相続や投資などのご相談は<span class="swl-marker mark_yellow">無料でサポートいたします。</span></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/full-wide {"bgColor":"#ffffff"} -->
+<div class="swell-block-fullWide pc-py-60 sp-py-40 alignfull" style="background-color:#ffffff"><div class="swell-block-fullWide__inner l-article"><!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","className":"is-style-section_ttl u-mb-ctrl u-mb-10"} -->
+<h2 class="wp-block-heading has-text-align-center is-style-section_ttl u-mb-ctrl u-mb-10"><small class="mininote">よくある質問</small><span class="swl-fz u-fz-l">Q&amp;A</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"has-border -border01","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border -border01"><!-- wp:loos/faq {"qIconStyle":"fill-main","aIconStyle":"col-main","className":"is-style-faq-stripe"} -->
+<dl class="swell-block-faq is-style-faq-stripe" data-q="fill-main" data-a="col-main"><!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">不動産会社ですか？建築会社ですか？どんな立場なのですか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>不動産“仲介”を中心にしながら、住まい選び全体を中立の立場でサポートする仕事です。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>当社は売主やデベロッパーではないため、<br>「自分の物件を売る必要がない」というのが大きな特徴です。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>そのため、</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>新築・中古</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>マンション・戸建て</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>中古＋リフォーム</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>土地＋注文住宅</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>どの選択肢も、お客様と同じ目線で自由に比較 できます。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>さらに、建築のプロセスや現場で起きやすい課題を理解しているため、<br>購入後のリフォームや建築についても中立にアドバイスできます。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">なぜ“中立”といえるのでしょうか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>当社の収益構造がシンプルで、特定の会社・物件に依存していないためです。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>不動産購入を伴う場合 → 普通の仲介手数料</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>建築のみ／相談のみ → 内容に応じたコンサル費用</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>そのため、<br>「この会社を使ってほしい」「この物件を売りたい」という意図が一切なく、<br>純粋に<br>“お客様にとって最適かどうか”<br>だけで判断できます。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>特定の会社を推す必要がないからこそ、安心してご相談いただけます。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">工務店や建築会社を紹介してもらえますか？紹介後のサポートはどうなりますか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>&nbsp;ご希望があればご紹介します。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>紹介後は、必要に応じて<br>設計〜竣工までを伴走サポート しています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>◆ 具体的にはこんなことをしています</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>設計内容が希望とズレていないか確認</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>予算と仕様のバランス調整</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>見積もりの読み解き</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>ローンや資金計画の再整理</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>打ち合わせ内容の整理</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>工務店との“温度差”の調整</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>意図がうまく伝わらない部分の通訳役</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>誤解やすれ違いの予防</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>工程の確認フォロー</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>建築は「言った・聞いてない」のすれ違いが起きやすいため、<br>第三者の視点で言語化し、双方の理解が同じになるように整えます。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>双方が気持ちよく進められるように整える 翻訳者・調整役 という立場です。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">他の不動産会社と併用して相談できますか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>申し訳ありません。並行でのご依頼はお受けしていません。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>理由はシンプルで、<br>住まい探しは“誰と一緒に進めるか”が結果に大きく影響し、<br>誠実な方と丁寧に進めることで本当の価値が出るためです。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>「良い物件があったら教えてください」</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>「情報だけほしいです」</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>という依頼もお受けしていません。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>当社は<br>“伴走型のサポート”<br>を大切にしています。情報ではなく、<br>「判断の軸」と「安心」を一緒に作っていきたい方に向けたサービスです。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">建築・リフォームだけでも相談可能ですか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>はい、可能です。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>土地購入がないお客様や、<br>すでに土地をお持ちの方、<br>建売のリノベーションをされる方からも多くご相談いただいています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>建築における</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>会社選び</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>見積比較</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>打ち合わせ内容の整理</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>プロセス全体の流れ</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>トラブル未然防止</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>こういった部分を、第三者の立場で整えることで<br>ストレスが大幅に軽くなります。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>内容に応じて、事前にコンサル費用をご案内しています。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">どんな人に向いていますか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>プロの視点を取り入れながら、ムダなストレスや時間をかけずに“納得の住まい選び”をしたい方に向いています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>具体的には、次のような方が多いです：</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>プロの知見を取り入れて、判断の精度を上げたい</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>情報が多すぎて整理できず、何を信じればいいか迷っている</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>根拠のある情報を、必要なタイミングで受け取りたい</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>自分の価値観に合う“最適解”を一緒に探してほしい</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>忙しくても、安心して決断できる環境がほしい</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>家族・会社・建築会社との意見調整が必要</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>▼ こんな方にも役立ちます</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>自分で調べてみたけれど、結局よく分からなくなってしまった方</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>SNSやブログに振り回されて、何が正しいのか不安な方</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>営業マンの説明がバラバラで、比較ができなくなってしまった方</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>▼ ただし、このサービスはこんな方とは相性が良くありません</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>自分でじっくり情報収集し、時間をかけて一歩ずつ進めたい方</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>プロの提案より、完全に自分のペースで進めたい方</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">相談費用はどうなりますか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>不動産購入を伴う場合 → 仲介手数料<br>建築のみ・相談のみ → 内容に応じてお見積り</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>初回相談（方向性の確認・優先順位の可視化）は無料です。<br>オンラインでも承っています。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">&nbsp;AIでもたくさん情報収集できますが、それでも迷うのはなぜですか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>&nbsp;AIは情報整理は得意ですが、“人の本音・価値観・相性”までは扱えないためです。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>住まい選びの迷いは、<br>情報よりも “感情・価値観・人間関係のズレ” に原因があることが多いです。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>例えば：</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>エリアの迷い</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>マンションか戸建てか</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>性能・価値・デザインのバランス</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>家族の意見の違い</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>営業担当との相性</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>工務店との温度差</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>「何が不安かわからない」という状態</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>これらを整理するのはAIだけでは難しく、人が寄り添うことで初めて整います。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>AI＋人の組み合わせが一番スムーズです。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">どのタイミングで相談するのがベストですか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>迷い始めたタイミングが一番おすすめです。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>なんとなく不安がある</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>何から始めればいいかわからない</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>SNSやYouTubeで情報が多すぎる</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>会社ごとに言うことが違う</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>判断が止まってしまった</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>こんな時に相談いただくと、道が早く開けます。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>具体的な物件が決まっていなくても大丈夫です。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item -->
+
+<!-- wp:loos/faq-item -->
+<div class="swell-block-faq__item"><dt class="faq_q">実際にはどんなサポートをしてくれるのですか？</dt><dd class="faq_a"><!-- wp:paragraph -->
+<p>住まい選びの“判断の軸”を一緒につくり、不動産と建築の両面を伴走します。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>迷いの整理</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>情報の比較</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>注意すべき点の整理</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>打ち合わせや資料の読み解き</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>工務店・営業担当との通訳</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>プロセス全体の整合</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>工程確認や打ち合わせのフォロー</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>トラブルの予防</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>最終判断のサポート</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>特に「自分では言語化しにくい部分」がスッキリして、安心して決められたという声を多くいただいています。</p>
+<!-- /wp:paragraph --></dd></div>
+<!-- /wp:loos/faq-item --></dl>
+<!-- /wp:loos/faq --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:loos/full-wide -->
+
+<!-- wp:loos/blog-parts {"partsID":"201"} /-->
