@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スタイルオブ東京 WP反映用リファレンス (SEO/AIO対応)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --main: #62595a;
+    --accent: #fd9227;
+    --text: #333;
+    --light: #7a7170;
+    --border: #e0d8d4;
+    --bg-alt: #faf8f6;
+    --bg-before: #fff5f5;
+    --bg-after: #f0fff4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+    color: var(--text);
+    line-height: 1.8;
+    background: #fff;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--main);
+    margin-bottom: 40px;
+  }
+  h1 { font-size: 28px; color: var(--main); letter-spacing: 0.08em; margin-bottom: 8px; }
+  header p { color: var(--light); font-size: 14px; }
+  h2 {
+    font-size: 22px;
+    color: var(--main);
+    margin: 48px 0 8px;
+    padding: 8px 16px;
+    background: var(--bg-alt);
+    border-left: 4px solid var(--accent);
+    letter-spacing: 0.05em;
+  }
+  h2 .url {
+    display: block;
+    font-size: 13px;
+    color: var(--light);
+    font-weight: 400;
+    margin-top: 4px;
+    letter-spacing: normal;
+  }
+  h3 {
+    font-size: 16px;
+    color: var(--main);
+    margin: 28px 0 8px;
+    padding-left: 12px;
+    border-left: 3px solid var(--border);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 14px;
+  }
+  th, td {
+    padding: 16px 18px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.9;
+  }
+  th {
+    background: var(--main);
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    width: 110px;
+    white-space: nowrap;
+  }
+  .before td { background: var(--bg-before); }
+  .after td { background: var(--bg-after); }
+  .after td { font-weight: 500; }
+  ul.change-list {
+    margin: 12px 0 20px 28px;
+    padding: 0;
+  }
+  ul.change-list li {
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  .copy-btn {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 12px;
+    font-family: inherit;
+  }
+  .copy-btn:hover { background: #e58220; }
+  .copy-btn.copied { background: #4a8b3e; }
+  .note {
+    background: #fff9e6;
+    border-left: 4px solid #f0c020;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  .note strong { color: #8a6000; }
+  .meta-box {
+    background: var(--bg-alt);
+    padding: 16px 20px;
+    margin: 12px 0;
+    font-size: 14px;
+    line-height: 1.9;
+    border-left: 3px solid var(--accent);
+  }
+  .meta-box code {
+    display: block;
+    background: #fff;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border: 1px solid var(--border);
+    font-family: Menlo, Consolas, monospace;
+    font-size: 12px;
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+  .keywords {
+    background: #f5f0ff;
+    border-left: 4px solid #8855dd;
+    padding: 14px 18px;
+    margin: 12px 0 20px;
+    font-size: 14px;
+  }
+  .keywords strong { color: #5a3aa8; display: block; margin-bottom: 6px; }
+  .keywords span {
+    display: inline-block;
+    background: #fff;
+    padding: 3px 10px;
+    margin: 3px 4px 3px 0;
+    border: 1px solid #ccbff2;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #442285;
+  }
+  footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 12px;
+    color: var(--light);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>スタイルオブ東京 WP 反映用リファレンス</h1>
+  <p>SEO / AIO 対応版・2026-04-22 作成 ／ 原本: スタイルオブ東京_HP修正テキスト_SEO_AIO対応.docx</p>
+</header>
+
+<div class="note">
+  <strong>⚠ 使い方:</strong><br>
+  WordPress 管理画面 (<code>https://styleoftokyo.jp/wp-admin/</code>) にログインし、各ページを編集画面で開いたまま、このページの「修正案」のテキストをコピー (📋 ボタン) して WP 側のブロックに貼り付けてください。<br>
+  本文の差し替えと meta description の入力は<strong>別々の場所</strong>で行います（meta description は SEO プラグイン欄、なければテーマの head 領域）。
+</div>
+
+<div class="keywords">
+  <strong>🎯 SEO / AIO 狙いキーワード（自然な形で本文に盛り込む）</strong>
+  <span>不動産相談 東京</span><span>マイホーム購入 相談</span><span>住宅ローン 相談 無料</span><span>不動産 何でも相談</span>
+  <span>不動産売却 相談</span><span>住み替え サポート</span><span>売って買う タイミング</span>
+  <span>実家 空き家 相談</span><span>相続 不動産 東京</span><span>不動産 セカンドオピニオン</span><span>不動産 中立 エージェント</span><span>Zoom 不動産相談 無料</span>
+</div>
+
+<!-- ============ CONCEPT ============ -->
+<h2>1. CONCEPT ページ <span class="url">https://styleoftokyo.jp/concept/</span></h2>
+
+<h3>キャッチコピー（大見出し）</h3>
+<table>
+  <tr class="before"><th>現在</th><td>タイパ・コスパ良く住まいを取得しましょう。</td></tr>
+  <tr class="after"><th>修正案 <button class="copy-btn" data-text="不動産のことなら、何でもご相談ください。">📋</button></th><td>不動産のことなら、何でもご相談ください。</td></tr>
+</table>
+
+<h3>リード文</h3>
+<table>
+  <tr class="before"><th>現在</th><td>住宅取得への想いは千差万別です。全ての方への幸せな住まい取得をサポートできるかはわかりませんが、プロと伴走することでストレスなく効率的に進むことが多いのも事実です。</td></tr>
+  <tr class="after"><th>修正案 <button class="copy-btn" data-text="購入・売却・住み替え・相続・家じまいまで、不動産に関するお悩みは人それぞれです。どんなことでも、プロと伴走することでストレスなく・効率よく解決できます。">📋</button></th><td>購入・売却・住み替え・相続・家じまいまで、不動産に関するお悩みは人それぞれです。どんなことでも、プロと伴走することでストレスなく・効率よく解決できます。</td></tr>
+</table>
+
+<h3>サブ見出し</h3>
+<table>
+  <tr class="before"><th>現在</th><td>専門分野はプロと伴走する住宅取得</td></tr>
+  <tr class="after"><th>修正案 <button class="copy-btn" data-text="専門分野はプロと伴走する不動産サポート">📋</button></th><td>専門分野はプロと伴走する不動産サポート</td></tr>
+</table>
+
+<h3>サブリード文</h3>
+<table>
+  <tr class="before"><th>現在</th><td>スタイルオブ東京では、単発でもフルサポートでもお引き受けします。</td></tr>
+  <tr class="after"><th>修正案 <button class="copy-btn" data-text="スタイルオブ東京では、購入・売却・建築・相続など、単発のご相談からフルサポートまでお引き受けします。">📋</button></th><td>スタイルオブ東京では、購入・売却・建築・相続など、単発のご相談からフルサポートまでお引き受けします。</td></tr>
+</table>
+
+<h3>CONCEPT ページ用 meta description</h3>
+<div class="meta-box">
+  SEO プラグイン（Yoast / All in One SEO / SEO SIMPLE PACK 等）の「メタディスクリプション」欄に入力。
+  <code data-copy="スタイルオブ東京は、住宅購入から売却・相続・家じまいまで、不動産のことなら何でも相談できる東京の不動産エージェントです。中立の立場でプロが伴走し、タイパ・コスパ良く不動産問題を解決します。">スタイルオブ東京は、住宅購入から売却・相続・家じまいまで、不動産のことなら何でも相談できる東京の不動産エージェントです。中立の立場でプロが伴走し、タイパ・コスパ良く不動産問題を解決します。</code>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<h2>2. ABOUT ページ（初めての方へ） <span class="url">https://styleoftokyo.jp/about/</span></h2>
+
+<h3>冒頭リード文</h3>
+<table>
+  <tr class="before"><th>現在</th><td>理想の住まいを手に入れるまでには、煩雑な手続きや難しい専門用語が飛び交う打ち合わせなどが必要になり、心も体もクタクタになってしまいます。スタイルオブ東京はそんなお客様の声にお応えし、住まいに関する無料相談から実際の購入・リノベーション・リフォームに至るまできめ細やかなトータルコーディネートを行っています。</td></tr>
+  <tr class="after"><th>修正案 <button class="copy-btn" data-text="不動産に関するお悩みは多岐にわたります。購入・売却・住み替え・相続・空き家・建築リフォームなど、どんなことでもまずはお気軽にご相談ください。スタイルオブ東京は、東京を中心に累計2,000件以上の不動産相談をお受けしてきた専門家として、お客様一人ひとりに寄り添ったサポートをご提供します。">📋</button></th><td>不動産に関するお悩みは多岐にわたります。購入・売却・住み替え・相続・空き家・建築リフォームなど、どんなことでもまずはお気軽にご相談ください。スタイルオブ東京は、東京を中心に累計2,000件以上の不動産相談をお受けしてきた専門家として、お客様一人ひとりに寄り添ったサポートをご提供します。</td></tr>
+</table>
+
+<h3>「こんなお悩みにお答えします！」箇条書き（追加・修正）</h3>
+<div class="note" style="background: #f0fff4; border-left-color: #4a8b3e;">
+  <strong>既存の箇条書きに以下を追加/修正:</strong>
+</div>
+<ul class="change-list">
+  <li>まずは何から始めればいいか教えてほしい</li>
+  <li>購入か賃貸か、新築か中古か迷っている</li>
+  <li>住み替えのタイミングや段取りが分からない</li>
+  <li>実家が空き家になりそうで、売る・貸す・残すを整理したい</li>
+  <li>相続・離婚など複雑な不動産の問題がある</li>
+  <li>他の不動産会社の説明が信用できず、セカンドオピニオンがほしい</li>
+  <li>建築・リフォーム会社の見積もりが妥当かチェックしてほしい</li>
+</ul>
+<button class="copy-btn" data-text="・まずは何から始めればいいか教えてほしい
+・購入か賃貸か、新築か中古か迷っている
+・住み替えのタイミングや段取りが分からない
+・実家が空き家になりそうで、売る・貸す・残すを整理したい
+・相続・離婚など複雑な不動産の問題がある
+・他の不動産会社の説明が信用できず、セカンドオピニオンがほしい
+・建築・リフォーム会社の見積もりが妥当かチェックしてほしい">📋 箇条書き全文をコピー</button>
+
+<h3>ABOUT ページ用 meta description</h3>
+<div class="meta-box">
+  <code data-copy="初めての方でも安心。購入・売却・住み替え・相続・空き家など、不動産に関するどんなお悩みも、累計2,000件以上の相談実績を持つプロが丁寧にサポートします。まずはZoom無料相談から。">初めての方でも安心。購入・売却・住み替え・相続・空き家など、不動産に関するどんなお悩みも、累計2,000件以上の相談実績を持つプロが丁寧にサポートします。まずはZoom無料相談から。</code>
+</div>
+
+<!-- ============ SERVICE ============ -->
+<h2>3. SERVICE ページ（私たちのサービス） <span class="url">https://styleoftokyo.jp/service/</span></h2>
+
+<h3>冒頭リード文</h3>
+<table>
+  <tr class="before"><th>現在</th><td>スタイルオブ東京は、相談・ファイナンス・物件サポート・折衝、契約・建築会社紹介・アフターサービスをすべてワンストップでご提供いたします。</td></tr>
+  <tr class="after"><th>修正案 <button class="copy-btn" data-text="不動産の購入・売却・住み替え・建築・相続まで、お客様に関わるあらゆる不動産のお悩みをワンストップでサポートします。相談だけでもOK。まずはZoom無料相談からどうぞ。">📋</button></th><td>不動産の購入・売却・住み替え・建築・相続まで、お客様に関わるあらゆる不動産のお悩みをワンストップでサポートします。相談だけでもOK。まずはZoom無料相談からどうぞ。</td></tr>
+</table>
+
+<h3>STEP01 Zoom 無料相談の説明文</h3>
+<table>
+  <tr class="before"><th>現在</th><td>不動産購入はわからないことだらけ・・。購入を考えてみたけど、予算、物件の探し方や選び方などいざとなると不安がいっぱい。そもそも買わない方がいいのか?またはいつ買うのか?何を相談すればいいのかわからない…など、どんなことでもご相談いただけます。</td></tr>
+  <tr class="after"><th>修正案 <button class="copy-btn" data-text="不動産のことはわからないことだらけ。購入・売却・相続・空き家・住み替えなど、どんなお悩みでも気軽にご相談ください。「何を聞けばいいかわからない」という状態でも大丈夫です。中立の立場でお客様の状況を整理し、最適な道筋をご提案します。">📋</button></th><td>不動産のことはわからないことだらけ。購入・売却・相続・空き家・住み替えなど、どんなお悩みでも気軽にご相談ください。「何を聞けばいいかわからない」という状態でも大丈夫です。中立の立場でお客様の状況を整理し、最適な道筋をご提案します。</td></tr>
+</table>
+
+<h3>SERVICE ページ用 meta description</h3>
+<div class="meta-box">
+  <code data-copy="スタイルオブ東京のサービスは、不動産相談（Zoom無料）・住宅ローンサポート・物件内見同行・価格交渉・建築会社紹介・アフターサービスまでワンストップ。売却・相続・住み替えのご相談も受付中です。">スタイルオブ東京のサービスは、不動産相談（Zoom無料）・住宅ローンサポート・物件内見同行・価格交渉・建築会社紹介・アフターサービスまでワンストップ。売却・相続・住み替えのご相談も受付中です。</code>
+</div>
+
+<!-- ============ サマリー ============ -->
+<h2>4. 共通: 会社説明文 (全ページの meta description / 冒頭リード共通素材)</h2>
+<div class="meta-box">
+  <code data-copy="スタイルオブ東京は、不動産の購入・売却・住み替え・相続・空き家・建築リフォームまで、あらゆる不動産のお悩みに中立の立場で対応する東京の不動産エージェント会社です。Zoom無料相談受付中。">スタイルオブ東京は、不動産の購入・売却・住み替え・相続・空き家・建築リフォームまで、あらゆる不動産のお悩みに中立の立場で対応する東京の不動産エージェント会社です。Zoom無料相談受付中。</code>
+</div>
+
+<footer>
+  本ファイルは WordPress 反映用のリファレンスです。<br>
+  ローカル HTML（guide.html 他 7 ページ）は既に SEO/AIO 対応済み。<br>
+  © 2026 STYLE OF TOKYO
+</footer>
+
+<script>
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    const text = btn.dataset.text || btn.previousElementSibling?.textContent || '';
+    navigator.clipboard.writeText(text).then(() => {
+      btn.classList.add('copied');
+      btn.textContent = '✓ コピー済み';
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.textContent = btn.textContent.includes('箇条書き') ? '📋 箇条書き全文をコピー' : '📋';
+      }, 1800);
+    });
+  });
+});
+document.querySelectorAll('code[data-copy]').forEach(code => {
+  code.style.cursor = 'pointer';
+  code.title = 'クリックでコピー';
+  code.addEventListener('click', () => {
+    navigator.clipboard.writeText(code.dataset.copy).then(() => {
+      const orig = code.textContent;
+      code.textContent = '✓ コピーしました: ' + orig;
+      setTimeout(() => { code.textContent = orig; }, 1500);
+    });
+  });
+});
+</script>
+</body>
+</html>
