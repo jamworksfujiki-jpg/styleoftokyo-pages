@@ -1,0 +1,977 @@
+<!--
+  前倒し相続 ページコンテンツ（WordPress貼り付け用 / STYLE OF TOKYO ブランド版）
+  使い方：
+   1. 固定ページを新規作成
+   2. ブロックエディタで「カスタムHTML」ブロックを追加
+   3. 下記 "COPY START" 〜 "COPY END" までを貼り付け
+  ※ WordPressのテーマ header / footer / パンくずはそのまま使えます。
+  ※ 全スタイルは .maedaoshi-wp スコープに閉じているため、既存テーマに影響しません。
+  ※ リンク先（お問い合わせ・関連サービス等）は /iejimai-support/ /sumikae-support/
+     /yorozu-soudan/ /contact/ のWordPressパーマリンクに向けています。
+     実際のサイトのパスに合わせて変更してください。
+-->
+
+<!-- ================= COPY START ================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700;900&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+<div class="maedaoshi-wp">
+<style>
+/* ===== Brand Design System (STYLE OF TOKYO) — scoped ===== */
+.maedaoshi-wp {
+  --mw-main: #62595a;
+  --mw-main-dark: #463f40;
+  --mw-accent: #fd9227;
+  --mw-accent-hover: #e58220;
+  --mw-accent-pale: #fff5ec;
+  --mw-red: #d9534f;
+  --mw-text: #333333;
+  --mw-text-sub: #555555;
+  --mw-text-light: #7a7170;
+  --mw-bg: #ffffff;
+  --mw-bg-alt: #fdfdfd;
+  --mw-bg-section: #f8f6f5;
+  --mw-border: #e0d8d4;
+  --mw-font-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --mw-font-en: "Montserrat", "Noto Serif JP", serif;
+
+  font-family: var(--mw-font-serif);
+  color: var(--mw-text);
+  background: var(--mw-bg);
+  line-height: 1.9;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.maedaoshi-wp *, .maedaoshi-wp *::before, .maedaoshi-wp *::after { box-sizing: border-box; }
+.maedaoshi-wp img { max-width: 100%; height: auto; }
+.maedaoshi-wp a { color: var(--mw-accent); text-decoration: none; transition: color 0.2s; }
+.maedaoshi-wp a:hover { color: var(--mw-accent-hover); }
+.maedaoshi-wp h1, .maedaoshi-wp h2, .maedaoshi-wp h3 { margin: 0; padding: 0; border: 0; background: none; font-family: var(--mw-font-serif); }
+.maedaoshi-wp p { margin: 0 0 1.4em; }
+.maedaoshi-wp ul { margin: 0; padding: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .maedaoshi-wp .fade-up { opacity: 1 !important; transform: none !important; }
+}
+
+.maedaoshi-wp .fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.maedaoshi-wp .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* Hero */
+.maedaoshi-wp .mw-hero {
+  text-align: center;
+  padding: 96px 24px 80px;
+  background: linear-gradient(180deg, var(--mw-bg-section) 0%, var(--mw-bg) 100%);
+  border-bottom: 1px solid var(--mw-border);
+}
+.maedaoshi-wp .mw-hero__eyebrow {
+  font-family: var(--mw-font-en);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--mw-main);
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 6px 18px;
+  background: #fff;
+  border: 1px solid var(--mw-border);
+  border-radius: 4px;
+}
+.maedaoshi-wp .mw-hero__title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  color: var(--mw-main);
+  margin-bottom: 20px;
+}
+.maedaoshi-wp .mw-hero__title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: var(--mw-accent);
+  margin: 24px auto 0;
+}
+.maedaoshi-wp .mw-hero__subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--mw-text-sub);
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+.maedaoshi-wp .mw-hero__byline {
+  font-size: 13px;
+  color: var(--mw-text-light);
+  margin: 16px 0 0;
+  letter-spacing: 0.08em;
+}
+
+/* Section */
+.maedaoshi-wp .mw-section { padding: 80px 24px; }
+.maedaoshi-wp .mw-section--alt { background: var(--mw-bg-section); }
+.maedaoshi-wp .mw-section--dark { background: #2d2628; color: #efebea; }
+.maedaoshi-wp .mw-section--dark .mw-title__heading { color: #fff; }
+.maedaoshi-wp .mw-section--dark .mw-title__heading::before,
+.maedaoshi-wp .mw-section--dark .mw-title__heading::after { background: rgba(255,255,255,0.5); }
+.maedaoshi-wp .mw-section--dark .mw-body { color: #d9d3d2; }
+.maedaoshi-wp .mw-section--dark strong { color: #fff; }
+.maedaoshi-wp .mw-inner { max-width: 860px; margin: 0 auto; }
+.maedaoshi-wp .mw-inner--wide { max-width: 1040px; margin: 0 auto; }
+
+/* Section Title */
+.maedaoshi-wp .mw-title { text-align: center; margin-bottom: 48px; }
+.maedaoshi-wp .mw-title__eyebrow {
+  display: inline-block;
+  font-family: var(--mw-font-en);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #fff;
+  background: var(--mw-accent);
+  padding: 6px 18px;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+.maedaoshi-wp .mw-title__heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--mw-main);
+  letter-spacing: 0.06em;
+  display: inline-block;
+}
+.maedaoshi-wp .mw-title__heading::before,
+.maedaoshi-wp .mw-title__heading::after {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: var(--mw-main);
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+/* Body Text */
+.maedaoshi-wp .mw-body { font-size: 16px; line-height: 2; color: var(--mw-text); }
+.maedaoshi-wp .mw-body p { margin-bottom: 1.4em; }
+.maedaoshi-wp .mw-body ul { margin: 0 0 1.4em 0; padding: 0; list-style: none; }
+.maedaoshi-wp .mw-body li { padding: 6px 0 6px 28px; position: relative; line-height: 1.9; }
+.maedaoshi-wp .mw-body li::before {
+  content: ''; position: absolute; left: 8px; top: 18px;
+  width: 8px; height: 8px; background: var(--mw-accent); border-radius: 50%;
+}
+.maedaoshi-wp .mw-section--dark .mw-body li::before { background: var(--mw-accent); }
+
+.maedaoshi-wp .mw-main { color: var(--mw-main); font-weight: 700; }
+.maedaoshi-wp .mw-accent { color: var(--mw-accent); font-weight: 700; }
+.maedaoshi-wp .mw-red { color: var(--mw-red); font-weight: 700; }
+.maedaoshi-wp .mw-mark {
+  background: linear-gradient(transparent 60%, #ffefd8 60%); padding: 0 2px;
+}
+.maedaoshi-wp .mw-lead { font-size: 18px; font-weight: 500; line-height: 2; letter-spacing: 0.02em; }
+
+/* Alert Box */
+.maedaoshi-wp .mw-alert {
+  margin: 32px 0;
+  border: 1px solid var(--mw-red);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+.maedaoshi-wp .mw-alert__head {
+  background: var(--mw-red); color: #fff;
+  padding: 12px 22px; font-size: 15px; font-weight: 700;
+  letter-spacing: 0.04em;
+  display: flex; align-items: center; gap: 10px;
+}
+.maedaoshi-wp .mw-alert__body { padding: 24px 28px; font-size: 15px; line-height: 1.9; color: var(--mw-text); }
+.maedaoshi-wp .mw-alert__body p { margin-bottom: 1em; }
+.maedaoshi-wp .mw-alert__body p:last-child { margin-bottom: 0; }
+.maedaoshi-wp .mw-alert__body ul { margin: 12px 0; padding: 0; list-style: none; }
+.maedaoshi-wp .mw-alert__body li { padding: 4px 0 4px 24px; position: relative; }
+.maedaoshi-wp .mw-alert__body li::before {
+  content: ''; position: absolute; left: 4px; top: 15px;
+  width: 10px; height: 2px; background: var(--mw-red);
+}
+
+/* Callout */
+.maedaoshi-wp .mw-callout {
+  background: var(--mw-bg-section);
+  border-left: 3px solid var(--mw-accent);
+  padding: 24px 28px; margin: 28px 0;
+  font-size: 15px; line-height: 2;
+}
+.maedaoshi-wp .mw-callout--warm { background: var(--mw-accent-pale); border-left-color: var(--mw-accent); }
+.maedaoshi-wp .mw-callout--center { text-align: center; }
+.maedaoshi-wp .mw-callout p:last-child { margin-bottom: 0; }
+.maedaoshi-wp .mw-section--dark .mw-callout {
+  background: rgba(255,255,255,0.05);
+  border-left-color: var(--mw-accent);
+  color: #efebea;
+}
+
+/* Feature Cards */
+.maedaoshi-wp .mw-fgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 48px 0;
+  align-items: stretch;
+}
+.maedaoshi-wp .mw-fcard {
+  background: #fff;
+  border: 1px solid var(--mw-border);
+  border-radius: 4px;
+  display: flex; flex-direction: column; height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.maedaoshi-wp .mw-fcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(98, 89, 90, 0.12);
+  border-color: var(--mw-accent);
+}
+.maedaoshi-wp .mw-fcard__head {
+  background: var(--mw-main); color: #fff;
+  padding: 18px 24px;
+  display: flex; align-items: center; gap: 14px;
+  border-radius: 3px 3px 0 0;
+}
+.maedaoshi-wp .mw-fcard--alt .mw-fcard__head { background: var(--mw-accent); }
+.maedaoshi-wp .mw-fcard__num {
+  font-family: var(--mw-font-en);
+  font-size: 22px; font-weight: 800; line-height: 1;
+  background: rgba(255,255,255,0.2);
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.maedaoshi-wp .mw-fcard__title { font-size: 18px; font-weight: 700; line-height: 1.5; color: #fff; letter-spacing: 0.04em; }
+.maedaoshi-wp .mw-fcard__body { padding: 24px 28px; flex: 1; }
+.maedaoshi-wp .mw-fcard__list { list-style: none; padding: 0; margin: 0; }
+.maedaoshi-wp .mw-fcard__list li {
+  padding: 10px 0 10px 24px;
+  font-size: 15px; color: var(--mw-text); line-height: 1.8;
+  border-bottom: 1px dashed var(--mw-border);
+  position: relative;
+}
+.maedaoshi-wp .mw-fcard__list li:last-child { border-bottom: none; padding-bottom: 0; }
+.maedaoshi-wp .mw-fcard__list li::before {
+  content: ''; position: absolute; left: 0; top: 22px;
+  width: 12px; height: 2px; background: var(--mw-main);
+}
+.maedaoshi-wp .mw-fcard--alt .mw-fcard__list li::before { background: var(--mw-accent); }
+
+/* Comparison Table */
+.maedaoshi-wp .mw-table-wrap { overflow-x: auto; }
+.maedaoshi-wp .mw-table {
+  width: 100%; border-collapse: collapse;
+  margin: 40px 0; font-size: 15px;
+  border: 1px solid var(--mw-border); background: #fff;
+}
+.maedaoshi-wp .mw-table thead th {
+  background: var(--mw-main); color: #fff;
+  padding: 14px 20px; text-align: left;
+  font-weight: 700; font-size: 14px;
+  letter-spacing: 0.04em;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+.maedaoshi-wp .mw-table thead th:last-child { border-right: none; }
+.maedaoshi-wp .mw-table tbody td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--mw-border);
+  border-right: 1px solid var(--mw-border);
+  vertical-align: top; line-height: 1.8; color: var(--mw-text);
+}
+.maedaoshi-wp .mw-table tbody td:last-child { border-right: none; }
+.maedaoshi-wp .mw-table tbody tr:last-child td { border-bottom: none; }
+.maedaoshi-wp .mw-table tbody tr:nth-child(even) { background: var(--mw-bg-section); }
+.maedaoshi-wp .mw-table tbody strong { color: var(--mw-main); }
+.maedaoshi-wp .mw-table tbody tr.is-highlight { background: var(--mw-accent-pale); }
+.maedaoshi-wp .mw-table tbody tr.is-highlight strong { color: var(--mw-accent); }
+
+/* Step Flow */
+.maedaoshi-wp .mw-steps { counter-reset: mwstep; position: relative; }
+.maedaoshi-wp .mw-steps::before {
+  content: ''; position: absolute; left: 27px; top: 30px; bottom: 30px;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom, var(--mw-accent) 0 4px, transparent 4px 10px);
+}
+.maedaoshi-wp .mw-step {
+  display: flex; gap: 28px; margin-bottom: 36px;
+  align-items: flex-start; position: relative;
+}
+.maedaoshi-wp .mw-step:last-child { margin-bottom: 0; }
+.maedaoshi-wp .mw-step__badge {
+  width: 56px; height: 56px; min-width: 56px; border-radius: 50%;
+  background: #fff; border: 2px solid var(--mw-accent); color: var(--mw-accent);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  counter-increment: mwstep;
+  font-family: var(--mw-font-en); line-height: 1;
+  position: relative; z-index: 1;
+}
+.maedaoshi-wp .mw-step__badge-label {
+  font-size: 8px; font-weight: 700; letter-spacing: 0.1em; opacity: 0.85;
+}
+.maedaoshi-wp .mw-step__badge::after {
+  content: counter(mwstep);
+  font-size: 22px; font-weight: 800; line-height: 1;
+}
+.maedaoshi-wp .mw-step__content { flex: 1; padding-top: 6px; }
+.maedaoshi-wp .mw-step__title {
+  font-size: 18px; font-weight: 700; margin-bottom: 8px;
+  color: var(--mw-main);
+  letter-spacing: 0.04em;
+  position: relative; display: inline-block; padding-left: 14px;
+}
+.maedaoshi-wp .mw-step__title::before {
+  content: ''; position: absolute; left: 0; top: 8px; bottom: 8px;
+  width: 3px; background: var(--mw-accent);
+}
+.maedaoshi-wp .mw-step__desc { font-size: 15px; color: var(--mw-text-sub); line-height: 1.9; }
+
+/* Summary Banner */
+.maedaoshi-wp .mw-summary {
+  background: linear-gradient(135deg, var(--mw-main-dark) 0%, var(--mw-main) 100%);
+  color: #fff;
+  padding: 56px 44px;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--mw-main-dark);
+  border-radius: 4px;
+}
+.maedaoshi-wp .mw-summary::before {
+  content: ''; position: absolute;
+  top: 12px; left: 12px; right: 12px; bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.2); pointer-events: none;
+}
+.maedaoshi-wp .mw-summary h2 {
+  font-size: 28px; font-weight: 700; margin-bottom: 14px;
+  letter-spacing: 0.08em; color: #fff;
+}
+.maedaoshi-wp .mw-summary h2::after {
+  content: ''; display: block;
+  width: 48px; height: 2px; background: var(--mw-accent);
+  margin: 20px auto 0;
+}
+.maedaoshi-wp .mw-summary__sub { font-size: 15px; opacity: 0.9; margin-bottom: 32px; letter-spacing: 0.06em; }
+.maedaoshi-wp .mw-summary__list {
+  list-style: none; padding: 0;
+  display: inline-block; text-align: left; margin: 0 0 32px;
+}
+.maedaoshi-wp .mw-summary__list li {
+  padding: 6px 0 6px 32px; font-size: 16px; position: relative;
+}
+.maedaoshi-wp .mw-summary__list li::before {
+  content: '✕'; position: absolute; left: 0; top: 6px;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--mw-accent); color: #fff;
+  font-size: 12px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.maedaoshi-wp .mw-summary__divider {
+  width: 48px; height: 1px;
+  background: rgba(255,255,255,0.3); margin: 0 auto 24px;
+}
+.maedaoshi-wp .mw-summary__catch {
+  font-size: 24px; font-weight: 700; line-height: 1.6;
+  color: var(--mw-accent); margin-bottom: 24px; letter-spacing: 0.06em;
+}
+.maedaoshi-wp .mw-summary__msg {
+  font-size: 16px; font-weight: 400; line-height: 2.1; opacity: 0.95; letter-spacing: 0.04em;
+}
+.maedaoshi-wp .mw-summary__msg .mw-msg-accent { color: var(--mw-accent); font-weight: 700; }
+
+/* Related Services Banner */
+.maedaoshi-wp .mw-sbanner { background: var(--mw-main); padding: 72px 24px; }
+.maedaoshi-wp .mw-sbanner__title { text-align: center; color: #fff; margin-bottom: 40px; }
+.maedaoshi-wp .mw-sbanner__eyebrow {
+  display: inline-block;
+  font-family: var(--mw-font-en);
+  font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+  color: #fff; background: var(--mw-accent);
+  padding: 6px 18px; margin-bottom: 14px; border-radius: 2px;
+}
+.maedaoshi-wp .mw-sbanner__heading {
+  font-size: 26px; font-weight: 700; color: #fff; letter-spacing: 0.08em;
+}
+.maedaoshi-wp .mw-sgrid {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.maedaoshi-wp .mw-scard {
+  background: #fff; border: 1px solid var(--mw-border); border-radius: 4px;
+  padding: 28px 24px 24px;
+  display: flex; flex-direction: column;
+  text-decoration: none; color: var(--mw-text);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.maedaoshi-wp .mw-scard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  border-color: var(--mw-accent);
+  color: var(--mw-text);
+}
+.maedaoshi-wp .mw-scard__icon {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--mw-accent-pale);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--mw-accent); margin-bottom: 18px;
+}
+.maedaoshi-wp .mw-scard__title {
+  font-size: 18px; font-weight: 700; margin-bottom: 12px;
+  color: var(--mw-main); line-height: 1.6; letter-spacing: 0.04em;
+}
+.maedaoshi-wp .mw-scard__desc {
+  font-size: 14px; color: var(--mw-text-sub); line-height: 1.9;
+  margin-bottom: 20px; flex: 1;
+}
+.maedaoshi-wp .mw-scard__link {
+  display: inline-flex; align-items: center; justify-content: space-between;
+  padding: 10px 18px;
+  border: 1px solid var(--mw-main); border-radius: 4px;
+  font-size: 13px; font-weight: 700; color: var(--mw-main);
+  margin-top: auto;
+  letter-spacing: 0.06em;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+.maedaoshi-wp .mw-scard__link::after {
+  content: '→'; margin-left: 16px; font-size: 16px;
+  transition: transform 0.25s;
+}
+.maedaoshi-wp .mw-scard:hover .mw-scard__link {
+  background: var(--mw-accent); color: #fff; border-color: var(--mw-accent);
+}
+.maedaoshi-wp .mw-scard:hover .mw-scard__link::after { transform: translateX(4px); }
+
+/* CTA */
+.maedaoshi-wp .mw-zcta-section { padding: 80px 24px; background: var(--mw-bg-section); }
+.maedaoshi-wp .mw-zcta {
+  max-width: 960px; margin: 0 auto;
+  background: #fff; border: 2px solid var(--mw-main); border-radius: 8px;
+  padding: 40px 44px;
+  display: flex; align-items: center; gap: 36px;
+}
+.maedaoshi-wp .mw-zcta__illust {
+  width: 180px; min-width: 180px; height: 180px;
+  background: var(--mw-accent-pale); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--mw-border);
+}
+.maedaoshi-wp .mw-zcta__illust svg { width: 140px; height: 140px; }
+.maedaoshi-wp .mw-zcta__content { flex: 1; }
+.maedaoshi-wp .mw-zcta__title {
+  font-size: 22px; font-weight: 700; color: var(--mw-main);
+  line-height: 1.6; margin-bottom: 14px; letter-spacing: 0.06em;
+}
+.maedaoshi-wp .mw-zcta__desc {
+  font-size: 14px; color: var(--mw-text-sub); line-height: 1.9; margin-bottom: 20px;
+}
+.maedaoshi-wp .mw-zcta__note {
+  font-size: 12px; color: var(--mw-text-light); margin: 16px 0 0;
+  letter-spacing: 0.04em;
+}
+.maedaoshi-wp .mw-zcta__buttons {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+}
+.maedaoshi-wp .mw-zbtn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  height: 56px; border-radius: 4px;
+  font-size: 15px; font-weight: 700; text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
+  font-family: var(--mw-font-serif);
+}
+.maedaoshi-wp .mw-zbtn--line { background: #06c755; color: #fff; }
+.maedaoshi-wp .mw-zbtn--line:hover { background: #05a847; color: #fff; }
+.maedaoshi-wp .mw-zbtn--chatwork { background: #fff; color: var(--mw-main); border-color: var(--mw-main); }
+.maedaoshi-wp .mw-zbtn--chatwork:hover { background: var(--mw-bg-section); color: var(--mw-main); }
+.maedaoshi-wp .mw-zbtn--contact { background: var(--mw-accent); color: #fff; }
+.maedaoshi-wp .mw-zbtn--contact:hover { background: var(--mw-accent-hover); color: #fff; }
+.maedaoshi-wp .mw-zbtn__icon {
+  width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .maedaoshi-wp .mw-hero { padding: 64px 20px 56px; }
+  .maedaoshi-wp .mw-hero__title { font-size: 34px; letter-spacing: 0.06em; }
+  .maedaoshi-wp .mw-hero__subtitle { font-size: 15px; }
+  .maedaoshi-wp .mw-section { padding: 56px 20px; }
+  .maedaoshi-wp .mw-title { margin-bottom: 32px; }
+  .maedaoshi-wp .mw-title__heading { font-size: 22px; line-height: 1.5; }
+  .maedaoshi-wp .mw-title__heading::before,
+  .maedaoshi-wp .mw-title__heading::after { width: 18px; margin: 0 12px; }
+  .maedaoshi-wp .mw-fgrid { grid-template-columns: 1fr; gap: 20px; }
+  .maedaoshi-wp .mw-table { font-size: 13px; }
+  .maedaoshi-wp .mw-table thead th { padding: 12px 14px; }
+  .maedaoshi-wp .mw-table tbody td { padding: 14px; }
+  .maedaoshi-wp .mw-steps::before { left: 23px; }
+  .maedaoshi-wp .mw-step { gap: 18px; }
+  .maedaoshi-wp .mw-step__badge { width: 48px; height: 48px; min-width: 48px; }
+  .maedaoshi-wp .mw-step__badge::after { font-size: 18px; }
+  .maedaoshi-wp .mw-step__title { font-size: 16px; }
+  .maedaoshi-wp .mw-summary { padding: 40px 24px; }
+  .maedaoshi-wp .mw-summary h2 { font-size: 22px; letter-spacing: 0.06em; }
+  .maedaoshi-wp .mw-summary__catch { font-size: 20px; }
+  .maedaoshi-wp .mw-sbanner { padding: 48px 20px; }
+  .maedaoshi-wp .mw-sbanner__heading { font-size: 20px; }
+  .maedaoshi-wp .mw-sgrid { grid-template-columns: 1fr; gap: 18px; }
+  .maedaoshi-wp .mw-zcta-section { padding: 48px 20px; }
+  .maedaoshi-wp .mw-zcta { flex-direction: column; padding: 32px 24px; gap: 20px; }
+  .maedaoshi-wp .mw-zcta__illust { width: 140px; min-width: 140px; height: 140px; }
+  .maedaoshi-wp .mw-zcta__illust svg { width: 100px; height: 100px; }
+  .maedaoshi-wp .mw-zcta__content { text-align: center; }
+  .maedaoshi-wp .mw-zcta__title { font-size: 19px; }
+  .maedaoshi-wp .mw-zcta__buttons { grid-template-columns: 1fr; gap: 10px; }
+  .maedaoshi-wp .mw-alert__body { padding: 18px 20px; }
+  .maedaoshi-wp .mw-callout { padding: 18px 22px; }
+}
+</style>
+
+<!-- Hero -->
+<section class="mw-hero">
+  <div class="fade-up">
+    <div class="mw-hero__eyebrow">HOME LEGACY PLANNING</div>
+    <h1 class="mw-hero__title">前倒し相続</h1>
+    <p class="mw-hero__subtitle">住まいと相続、両方の視点で備える。</p>
+    <p class="mw-hero__byline">住まいの代理人 × 提携税理士がチームで伴走します</p>
+  </div>
+</section>
+
+<!-- はじめに -->
+<section class="mw-section">
+  <div class="mw-inner">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">INTRODUCTION</span>
+      <h2 class="mw-title__heading">なぜ「前倒し」が必要なのか</h2>
+    </div>
+    <div class="mw-body fade-up">
+      <p class="mw-lead"><strong>「相続」と「親の家じまい」</strong>は、不動産の話だけでも、税金の話だけでも解決しません。私たち住まいの代理人は、提携税理士とチームを組み、<span class="mw-mark">住まいの現状整理</span>から伴走します。</p>
+      <div class="mw-callout">
+        <p>相続や親の家に関するご相談は、<span class="mw-mark">生前よりも亡くなった後に一気に増える</span>のが実態です。特に多いのは「東京に住んでいるが、地方や郊外に親の家が残っているケース」。親が住んでいた家を相続したが住む予定はなく、どう扱えばいいかわからない——こうしたお声が後を絶ちません。</p>
+      </div>
+      <p>相続では、不動産の価値・税金・家族関係・思い出や感情など、さまざまな問題が絡み合います。家じまいは単なる不動産の処分ではなく、<strong>ご家族の人生の整理</strong>でもあります。</p>
+      <p>だからこそ、<strong class="mw-main">相続が起きる前に「前倒し」で備えることが、ご家族を守る第一歩</strong>になると、私たちは考えています。</p>
+    </div>
+  </div>
+</section>
+
+<!-- POINT 01 -->
+<section class="mw-section mw-section--alt">
+  <div class="mw-inner">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">POINT 01</span>
+      <h2 class="mw-title__heading">「負動産」という現実</h2>
+    </div>
+    <div class="mw-body fade-up">
+      <p>近年、<strong>「負動産」</strong>という言葉が使われるようになっています。これは売れない不動産、あるいは<span class="mw-mark">お金を払ってでも手放さなければならない不動産</span>を指します。</p>
+      <ul>
+        <li>地方だけでなく、千葉県など首都圏でも発生</li>
+        <li>売却できず、管理費や固定資産税だけがかかる</li>
+        <li>相続税の計算ではプラスの財産なのに、実際にはマイナスの資産</li>
+      </ul>
+      <div class="mw-alert">
+        <div class="mw-alert__head">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 2L18 17H2L10 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8V11M10 14V14.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          相続税との矛盾
+        </div>
+        <div class="mw-alert__body">
+          <p>相続税の評価では、不動産は固定資産税評価額や路線価を基準に「資産」として計算されます。しかし現実には、<strong>評価はあるが売れない・お金を払って手放すべき不動産</strong>が確実に存在します。</p>
+          <p>相続では<strong>特定の財産だけを選んで放棄することはできません</strong>（相続放棄は全財産が対象）。そのため、現金は欲しいが不動産は不要——という選択ができず、問題が深刻化しやすいのです。</p>
+        </div>
+      </div>
+      <p>だからこそ、<strong class="mw-main">相続が発生する前に、処分できる不動産は先に整理しておく</strong>という考え方が重要です。相続が起きてからでは選択肢が限られてしまいます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- POINT 02 -->
+<section class="mw-section">
+  <div class="mw-inner">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">POINT 02</span>
+      <h2 class="mw-title__heading">親の家、売るべき？残すべき？</h2>
+    </div>
+    <div class="mw-body fade-up">
+      <p>家じまいの判断で最初に考えるべきなのは、<strong>誰がその不動産を引き継ぐのか</strong>です。</p>
+      <ul>
+        <li>誰が住むのか</li>
+        <li>誰が管理するのか</li>
+        <li>誰が固定資産税を払うのか</li>
+      </ul>
+      <p>特に不動産が複数ある場合、実家・土地・投資物件などをどのように分けるかで、ご兄弟姉妹の意見が分かれることがよくあります。</p>
+      <div class="mw-callout mw-callout--warm">
+        <p><strong>注意したいのは共同持分での賃貸運用。</strong>修繕費・管理・売却などの判断で揉めることが多く、トラブルの原因になります。誰も使わない家を残してしまうと、管理・修繕・固定資産税の負担だけが残ります。</p>
+      </div>
+      <p>不動産の価値は常に変動します。都市部の地価は上昇し、地方は下落する傾向がある中、<strong>「どの不動産を誰が相続するのか」</strong>によって将来の資産価値に大きな差が出ます。</p>
+      <p><strong class="mw-main">まず何をどうするかを話すには、不動産の正しい情報を知ることが第一歩です。</strong>住まいの代理人として、物件調査から入らせていただきます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- POINT 03 -->
+<section class="mw-section mw-section--alt">
+  <div class="mw-inner">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">POINT 03</span>
+      <h2 class="mw-title__heading">相続登記の放置・空き家放置のリスク</h2>
+    </div>
+    <div class="mw-body fade-up">
+      <p>現場で非常に多いのが、以下のようなケースです。</p>
+      <ul>
+        <li>建物の相続登記は済んでいるが、<strong>私道や共有持分の登記が未了</strong></li>
+        <li>結果として売却不可に</li>
+      </ul>
+      <p><strong>2024年4月から相続登記が義務化</strong>されました。過去の相続分にも遡及適用され、施行日から3年以内（2027年3月末まで）に登記が必要です。放置すると<strong class="mw-red">10万円以下の過料</strong>が科される可能性があります。</p>
+      <div class="mw-alert">
+        <div class="mw-alert__head">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 2L18 17H2L10 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8V11M10 14V14.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          空き家放置のリスク
+        </div>
+        <div class="mw-alert__body">
+          <p>老朽化した空き家を放置すると——</p>
+          <ul>
+            <li><strong>特定空き家に指定</strong> → 固定資産税の住宅用地特例が解除（税額が最大6倍に）</li>
+            <li>行政から<strong>助言・指導・勧告・命令</strong>の段階的措置</li>
+            <li>改善されない場合は<strong>行政代執行による強制解体</strong> → 費用は所有者に請求</li>
+          </ul>
+          <p>解体費用は相続税の債務控除の対象にならず、ご兄弟間で「誰が払うのか」で揉める原因にもなります。</p>
+        </div>
+      </div>
+      <p><strong class="mw-main">空き家問題は、空き家になってからでは遅い。</strong>誰も住まなくなる前に、次の選択を考えておくことが大切です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- POINT 04 -->
+<section class="mw-section">
+  <div class="mw-inner--wide">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">POINT 04</span>
+      <h2 class="mw-title__heading">「誰も相続したくない」不動産の出口戦略</h2>
+    </div>
+    <div class="mw-body fade-up" style="max-width:760px; margin:0 auto;">
+      <p>固定資産税が安くても、子どもや孫へと負担を引き継がせてしまうことを懸念し、<strong>家じまいとセットで整理したい</strong>というご相談が増えています。</p>
+    </div>
+    <div class="mw-fgrid fade-up">
+      <div class="mw-fcard">
+        <div class="mw-fcard__head">
+          <div class="mw-fcard__num">01</div>
+          <div class="mw-fcard__title">引き取り業者</div>
+        </div>
+        <div class="mw-fcard__body">
+          <ul class="mw-fcard__list">
+            <li>境界確定が不要な場合もある</li>
+            <li>その分、費用は高額になりやすい</li>
+            <li>農地は法律の制限で引き取りが難しいケースも</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mw-fcard mw-fcard--alt">
+        <div class="mw-fcard__head">
+          <div class="mw-fcard__num">02</div>
+          <div class="mw-fcard__title">相続土地国庫帰属制度</div>
+        </div>
+        <div class="mw-fcard__body">
+          <ul class="mw-fcard__list">
+            <li>2023年4月開始。土地を国に引き取ってもらう制度</li>
+            <li>境界確定・整地・建物なしなど厳しい条件あり</li>
+            <li>審査手数料（1.4万円）＋負担金（原則20万円〜）が必要</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mw-body fade-up" style="max-width:760px; margin:0 auto;">
+      <p>どちらにもメリット・デメリットがあるため、<strong class="mw-main">事前の現状把握が不可欠</strong>です。山林や農地が含まれる場合は、法律の制限・都市計画・利用状況によって対応方法が大きく変わるため、私たち住まいの代理人がまず状況整理からお手伝いします。</p>
+    </div>
+  </div>
+</section>
+
+<!-- POINT 05 -->
+<section class="mw-section mw-section--alt">
+  <div class="mw-inner--wide">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">POINT 05</span>
+      <h2 class="mw-title__heading">一つの専門家だけでは、判断しきれない</h2>
+    </div>
+    <div class="mw-body fade-up" style="max-width:760px; margin:0 auto;">
+      <p>相続と家じまいで<strong>最も重要なポイント</strong>がここです。税理士・司法書士・不動産会社、それぞれに専門分野があります。一方で、同じ不動産について<strong>全員が同じ情報を持っていない</strong>ために判断がずれることが、実際の現場では起こります。</p>
+      <p>私たち住まいの代理人は、<strong class="mw-accent">家族と専門家のあいだで全体を整える役割</strong>を担います。</p>
+    </div>
+    <div class="mw-table-wrap fade-up">
+      <table class="mw-table">
+        <thead>
+          <tr>
+            <th>専門家</th>
+            <th>得意分野</th>
+            <th>見落としがちな点</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>税理士</strong></td>
+            <td>相続税の計算・申告<br>財産評価（路線価・固定資産税評価）</td>
+            <td>実際に売れるか・利用できるかの現場判断</td>
+          </tr>
+          <tr>
+            <td><strong>司法書士</strong></td>
+            <td>所有権移転・相続登記</td>
+            <td>私道持分の確認漏れ、不動産の全体像</td>
+          </tr>
+          <tr>
+            <td><strong>不動産会社</strong></td>
+            <td>売買・賃貸・活用方法</td>
+            <td>税務上の有利不利、売る予定がない物件の対応</td>
+          </tr>
+          <tr class="is-highlight">
+            <td><strong>STYLE OF TOKYO<br>（住まいの代理人）</strong></td>
+            <td>物件調査・全体調整・ご家族への伴走<br>提携税理士・司法書士との連携</td>
+            <td>——（中立に全体を見通します）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mw-body fade-up" style="max-width:760px; margin:0 auto;">
+      <p>現実には、<strong>「評価はあるが売れない」「税金はかかるが資産価値はない」</strong>というケースが確実にあります。1つの不動産を、不動産と税務の両面から戦略的に考えることが本来あるべき姿です。</p>
+      <div class="mw-callout">
+        <p>家じまいで最初に必要なのは<strong>「物件調査」</strong>です。土地の権利関係・道路の状況・法律上の制限・実際の価値を、住まいの代理人が整理することで、税理士・司法書士・不動産会社すべてが<strong>同じ情報をもとに判断できる</strong>ようになります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POINT 06 -->
+<section class="mw-section">
+  <div class="mw-inner">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">POINT 06</span>
+      <h2 class="mw-title__heading">「小規模宅地等の特例」の落とし穴</h2>
+    </div>
+    <div class="mw-body fade-up">
+      <p>相続税には<strong>小規模宅地等の特例</strong>という制度があります。被相続人が住んでいた土地（<strong>330㎡まで</strong>）を一定の条件で相続する場合、<span class="mw-mark">土地の評価額を最大80％減額</span>できるという制度です。</p>
+      <p>例えば、330㎡以内で評価額1億円の土地なら、条件を満たせば2,000万円として計算される可能性があります。この特例が使えるかどうかで相続税額は大きく変わるため、住まいの選択にも直結します。</p>
+      <div class="mw-alert">
+        <div class="mw-alert__head">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 2L18 17H2L10 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8V11M10 14V14.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          老人ホーム・施設入所の注意点
+        </div>
+        <div class="mw-alert__body">
+          <p>被相続人が老人ホームや介護施設に入っていた場合、この特例を使うには以下の<strong>すべての要件</strong>を満たす必要があります。</p>
+          <ul>
+            <li><strong>要介護認定・要支援認定</strong>等を受けていたこと</li>
+            <li>入所先が老人福祉法等に規定する<strong>一定の施設</strong>であること</li>
+            <li>自宅を<strong>賃貸など他の用途に供していない</strong>こと</li>
+          </ul>
+          <p>施設入所後に自宅を賃貸に出してしまうと、特例が使えなくなるケースがあります。私たちが物件の現状を整理し、<strong>提携税理士と早めに相談</strong>しておくことで、住まいの選択を誤らずに済みます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POINT 07 -->
+<section class="mw-section mw-section--dark">
+  <div class="mw-inner">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">POINT 07</span>
+      <h2 class="mw-title__heading">生前に決める・片付けることの重要性</h2>
+    </div>
+    <div class="mw-body fade-up">
+      <div class="mw-callout mw-callout--center">
+        <p style="font-size:18px;"><strong>100万〜200万円かかるとしても、<br>元気なうちにご自身の財布から整理する。<br>その方がご家族はもめない。</strong></p>
+      </div>
+      <p>これは不動産の現場で頻繁に聞かれる声です。相続は「お金の問題」だけではなく、<strong>家族関係の問題</strong>でもあります。親御さまが元気なうちから考えておく方が、圧倒的にスムーズに進みます。</p>
+      <p>実家の片付けも同様です。長年暮らしてきた家には思い出の品がたくさんありますが、実際にはほとんどが使われていない物です。荷物が片付いていなくても物件調査や査定は可能ですし、<strong>荷物が残ったまま売却する方法</strong>もあります。</p>
+      <p><strong style="color:#fd9227;">急いで決める必要はありません。けれど、少しずつ準備を始めること。</strong>不動産の情報を集め、状況を理解しておくだけでも、判断の準備・心の準備の両方ができます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="mw-section">
+  <div class="mw-inner">
+    <div class="mw-title fade-up">
+      <span class="mw-title__eyebrow">FLOW</span>
+      <h2 class="mw-title__heading">前倒し相続の進め方</h2>
+    </div>
+    <div class="mw-steps fade-up">
+      <div class="mw-step">
+        <div class="mw-step__badge"><span class="mw-step__badge-label">STEP</span></div>
+        <div class="mw-step__content">
+          <div class="mw-step__title">不動産の現状把握（物件調査）</div>
+          <div class="mw-step__desc">住まいの代理人が、権利関係・道路状況・法律上の制限・実際の価値を整理します。ここがすべての起点です。</div>
+        </div>
+      </div>
+      <div class="mw-step">
+        <div class="mw-step__badge"><span class="mw-step__badge-label">STEP</span></div>
+        <div class="mw-step__content">
+          <div class="mw-step__title">税務シミュレーション</div>
+          <div class="mw-step__desc">提携税理士と連携し、相続税がいくらかかるか、小規模宅地等の特例が使えるか等を試算します。</div>
+        </div>
+      </div>
+      <div class="mw-step">
+        <div class="mw-step__badge"><span class="mw-step__badge-label">STEP</span></div>
+        <div class="mw-step__content">
+          <div class="mw-step__title">戦略のすり合わせ</div>
+          <div class="mw-step__desc">住まいと税務の両面から、売却・活用・引き取りなど、ご家族にとって最適な方針を一緒に決めていきます。</div>
+        </div>
+      </div>
+      <div class="mw-step">
+        <div class="mw-step__badge"><span class="mw-step__badge-label">STEP</span></div>
+        <div class="mw-step__content">
+          <div class="mw-step__title">生前整理の実行</div>
+          <div class="mw-step__desc">不動産の売却・登記整備・荷物の片付けなどを、元気なうちに段取りよく進めます。</div>
+        </div>
+      </div>
+      <div class="mw-step">
+        <div class="mw-step__badge"><span class="mw-step__badge-label">STEP</span></div>
+        <div class="mw-step__content">
+          <div class="mw-step__title">ご家族との共有・合意形成</div>
+          <div class="mw-step__desc">整理した情報をご家族で共有し、相続発生時にスムーズに対応できる体制を整えます。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- まとめ -->
+<section class="mw-section mw-section--alt">
+  <div class="mw-inner">
+    <div class="fade-up">
+      <div class="mw-summary">
+        <h2>後悔しない相続への第一歩</h2>
+        <p class="mw-summary__sub">相続と家じまいが複雑になる理由は、実はシンプルです。</p>
+        <ul class="mw-summary__list">
+          <li>税金だけで判断してしまう</li>
+          <li>現場だけで決めてしまう</li>
+          <li>両方をつなぐ視点がない</li>
+        </ul>
+        <div class="mw-summary__divider"></div>
+        <p class="mw-summary__catch">住まいと相続、<br>両方の視点で備える。</p>
+        <p class="mw-summary__msg">
+          税金だけで考えない。現場だけで決めない。<br>
+          両方の視点を合わせて、<br>
+          <span class="mw-msg-accent">ご家族にとって一番納得感のある形</span>を探す。<br><br>
+          それが、後悔しない相続への第一歩です。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related Services Banner -->
+<section class="mw-sbanner">
+  <div class="mw-sbanner__title fade-up">
+    <span class="mw-sbanner__eyebrow">RELATED SERVICES</span>
+    <h2 class="mw-sbanner__heading">あわせてご相談いただけるサービス</h2>
+  </div>
+  <div class="mw-sgrid fade-up">
+    <a href="/iejimai-support/" class="mw-scard">
+      <div class="mw-scard__icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div class="mw-scard__title">実家の家じまいサポート</div>
+      <p class="mw-scard__desc">煩雑な手続きや調整をフルサポート。前倒し相続と一番つながる導線です。まずは現状整理だけでも。</p>
+      <span class="mw-scard__link">詳細を見る</span>
+    </a>
+    <a href="/sumikae-support/" class="mw-scard">
+      <div class="mw-scard__icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18"/><path d="M3 17h18"/><polyline points="7 3 3 7 7 11"/><polyline points="17 13 21 17 17 21"/></svg>
+      </div>
+      <div class="mw-scard__title">住み替えサポート</div>
+      <p class="mw-scard__desc">住み替えはタイミングが命。売り先・買い先も計画的に。相続と連動させた動き方もご提案します。</p>
+      <span class="mw-scard__link">詳細を見る</span>
+    </a>
+    <a href="/yorozu-soudan/" class="mw-scard">
+      <div class="mw-scard__icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <div class="mw-scard__title">不動産よろず相談</div>
+      <p class="mw-scard__desc">「こんなこと聞いていいのかな？」と思う内容ほど遠慮なく。小さな疑問から整理します。</p>
+      <span class="mw-scard__link">詳細を見る</span>
+    </a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="mw-zcta-section">
+  <div class="mw-zcta fade-up">
+    <div class="mw-zcta__illust">
+      <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="30" r="2" fill="#62595a" opacity="0.25"/>
+        <circle cx="120" cy="40" r="2" fill="#62595a" opacity="0.25"/>
+        <circle cx="15" cy="100" r="2" fill="#62595a" opacity="0.25"/>
+        <circle cx="125" cy="110" r="2" fill="#62595a" opacity="0.25"/>
+        <path d="M35 140 Q35 95 70 90 Q105 95 105 140 Z" fill="#62595a"/>
+        <path d="M60 95 L70 115 L80 95 L75 92 L70 100 L65 92 Z" fill="#fdfdfd"/>
+        <path d="M68 100 L72 100 L74 130 L70 135 L66 130 Z" fill="#fd9227"/>
+        <rect x="64" y="80" width="12" height="12" fill="#F5D0A9"/>
+        <circle cx="70" cy="60" r="26" fill="#F5D0A9"/>
+        <path d="M44 58 Q44 32 70 30 Q96 32 96 58 Q96 45 70 42 Q50 44 44 58 Z" fill="#463f40"/>
+        <circle cx="60" cy="62" r="2" fill="#2d2628"/>
+        <circle cx="80" cy="62" r="2" fill="#2d2628"/>
+        <path d="M63 72 Q70 78 77 72" stroke="#2d2628" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="108" cy="100" r="12" fill="#F5D0A9"/>
+        <rect x="104" y="86" width="8" height="14" rx="4" fill="#F5D0A9"/>
+      </svg>
+    </div>
+    <div class="mw-zcta__content">
+      <h2 class="mw-zcta__title">まずは現状整理だけでも、お聞かせください。</h2>
+      <p class="mw-zcta__desc">住まいの代理人と提携税理士がチームで、ご家族の住まいと相続の現状を整理します。<br>売却前提ではありません。売り込みもありません。まずは次の一手だけ、お持ち帰りください。</p>
+      <div class="mw-zcta__buttons">
+        <a href="#" class="mw-zbtn mw-zbtn--line">
+          <span class="mw-zbtn__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.48 2 2 5.94 2 10.8c0 4.36 3.55 8.01 8.35 8.7.32.07.77.21.88.48.1.25.07.63.03.88l-.14.86c-.04.25-.2 1 .88.54 1.08-.45 5.79-3.41 7.9-5.84C21.39 14.78 22 12.9 22 10.8 22 5.94 17.52 2 12 2z"/></svg>
+          </span>
+          LINE
+        </a>
+        <a href="#" class="mw-zbtn mw-zbtn--chatwork">
+          <span class="mw-zbtn__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" fill="#ff5e5b"/><circle cx="16" cy="8" r="3" fill="#ffd166"/><circle cx="8" cy="16" r="3" fill="#06d6a0"/><circle cx="16" cy="16" r="3" fill="#118ab2"/></svg>
+          </span>
+          Chatwork
+        </a>
+        <a href="/contact/" class="mw-zbtn mw-zbtn--contact">
+          <span class="mw-zbtn__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          お問い合わせ
+        </a>
+      </div>
+      <p class="mw-zcta__note">※ご相談はすべて無料です。初回は30分のオンライン面談から始めていただけます。</p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var els = document.querySelectorAll('.maedaoshi-wp .fade-up');
+  if (!window.IntersectionObserver) {
+    els.forEach(function(el) { el.classList.add('visible'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { observer.observe(el); });
+})();
+</script>
+
+</div>
+<!-- ================= COPY END ================= -->

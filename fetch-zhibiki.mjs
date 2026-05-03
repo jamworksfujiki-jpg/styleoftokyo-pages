@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+import { fileURLToPath } from 'url';
+import path from 'path';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
+await page.goto('https://z-hibiki.jp/', { waitUntil: 'networkidle', timeout: 30000 });
+await page.waitForTimeout(2000);
+await page.screenshot({ path: path.join(__dirname, 'zhibiki-reference.png'), fullPage: false });
+console.log('done');
+await browser.close();

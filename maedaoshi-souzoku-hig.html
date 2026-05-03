@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, viewport-fit=cover">
+<title>前倒し相続 | 熊坂開基税理士事務所</title>
+<meta name="description" content="相続と家じまいを税務×不動産の両面から整理。前倒し相続で後悔しないための7つのポイントを解説します。">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== Apple HIG Design System ===== */
+:root {
+  /* Semantic Colors */
+  --color-primary: #0071E3;
+  --color-primary-dark: #0059B3;
+  --color-accent: #E85D1A;
+  --color-success: #34C759;
+  --color-warning: #FF9F0A;
+  --color-error: #FF3B30;
+
+  /* Text Colors */
+  --color-text-primary: #1D1D1F;
+  --color-text-secondary: #6E6E73;
+  --color-text-tertiary: #86868B;
+
+  /* Surface Colors */
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F5F7;
+  --color-surface-secondary: #FBFBFD;
+  --color-border: #D2D2D7;
+  --color-border-light: #E8E8ED;
+
+  /* Typography */
+  --font-sans: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", sans-serif;
+  --font-display: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing (8pt grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Layout */
+  --content-width: 720px;
+  --wide-width: 960px;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #2997FF;
+    --color-primary-dark: #5AAFFF;
+    --color-accent: #FF8C42;
+    --color-text-primary: #F5F5F7;
+    --color-text-secondary: #A1A1A6;
+    --color-text-tertiary: #6E6E73;
+    --color-bg: #000000;
+    --color-surface: #1C1C1E;
+    --color-surface-secondary: #131315;
+    --color-border: #38383A;
+    --color-border-light: #2C2C2E;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  line-height: 1.75;
+  font-size: 17px;             /* HIG Body size */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--color-primary); text-decoration: none; transition: color var(--transition-fast); }
+a:hover { color: var(--color-primary-dark); }
+
+/* ===== Header ===== */
+.l-header {
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--color-border-light);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+@media (prefers-color-scheme: dark) {
+  .l-header { background: rgba(0,0,0,0.72); }
+}
+.l-header__inner {
+  max-width: var(--wide-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-6);
+  min-height: 48px;
+}
+.c-logo {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+.c-logo small {
+  font-size: 11px;              /* HIG Caption 2 minimum */
+  color: var(--color-text-tertiary);
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.c-gnav__list { display: flex; list-style: none; gap: 0; }
+.c-gnav__list li a {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  font-size: 13px;              /* HIG Footnote */
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  min-height: 44px;             /* HIG touch target */
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.c-gnav__list li a:hover {
+  color: var(--color-primary);
+  background: var(--color-surface);
+}
+
+/* ===== Breadcrumb ===== */
+.p-breadcrumb {
+  max-width: var(--wide-width);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-6);
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+}
+.p-breadcrumb a { color: var(--color-text-tertiary); }
+.p-breadcrumb a:hover { color: var(--color-primary); }
+
+/* ===== Page Title ===== */
+.c-pageTitle {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6) var(--space-6);
+  font-size: 34px;              /* HIG Large Title */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+/* ===== Main Content ===== */
+.l-mainContent { max-width: 100%; }
+.l-article {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+.post_content p {
+  margin-bottom: 1.5em;
+  color: var(--color-text-primary);
+}
+.post_content ul {
+  margin: 0 0 1.5em var(--space-6);
+  padding: 0;
+}
+.post_content li {
+  margin-bottom: var(--space-2);
+  line-height: 1.7;
+}
+
+/* ===== Section ===== */
+.section {
+  padding: var(--space-16) 0;
+}
+.section--tinted {
+  background: var(--color-surface);
+}
+
+/* ===== Section Title (Apple-style) ===== */
+.section-title {
+  text-align: center;
+  margin-bottom: var(--space-10);
+}
+.section-title__eyebrow {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+.section-title__heading {
+  font-size: 28px;               /* HIG Title 1 */
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: var(--space-16) var(--space-6);
+  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 100%);
+}
+.hero__eyebrow {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+.hero__title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
+  color: var(--color-text-primary);
+}
+.hero__subtitle {
+  font-size: 20px;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ===== Info Box (replaces cap_box) ===== */
+.info-box {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--color-border-light);
+}
+.info-box__header {
+  padding: var(--space-3) var(--space-5);
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  background: var(--color-primary);
+}
+.info-box--warning .info-box__header { background: var(--color-error); }
+.info-box--accent .info-box__header { background: var(--color-accent); }
+.info-box__body {
+  padding: var(--space-5) var(--space-6);
+  background: var(--color-surface-secondary);
+}
+.info-box__body p { margin-bottom: 0.75em; font-size: 15px; }
+.info-box__body p:last-child { margin-bottom: 0; }
+.info-box__body ul { margin: var(--space-2) 0 var(--space-3) var(--space-5); }
+
+/* ===== Callout Box ===== */
+.callout {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--color-border-light);
+}
+.callout--warm { background: #FFF8F0; border-color: #F5E1CC; }
+@media (prefers-color-scheme: dark) {
+  .callout--warm { background: #2C2420; border-color: #3D3530; }
+}
+.callout p { margin-bottom: 0.75em; }
+.callout p:last-child { margin-bottom: 0; }
+
+/* ===== Card Grid ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+.card {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8) var(--space-6);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-light);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.card__title {
+  font-size: 17px;              /* HIG Headline */
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card li {
+  padding: var(--space-1) 0;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  position: relative;
+  padding-left: var(--space-5);
+}
+.card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0.5;
+}
+
+/* ===== Table ===== */
+.table-wrap {
+  overflow-x: auto;
+  margin-bottom: var(--space-6);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+}
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.table-wrap th {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+}
+.table-wrap td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border-light);
+}
+.table-wrap tr:last-child td { border-bottom: none; }
+
+/* ===== Step Flow ===== */
+.step-flow { counter-reset: step; }
+.step-item {
+  display: flex;
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+  align-items: flex-start;
+}
+.step-item:last-child { margin-bottom: 0; }
+.step-number {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  counter-increment: step;
+  font-family: var(--font-display);
+  line-height: 1;
+}
+.step-number__label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.step-number::after {
+  content: counter(step);
+  font-size: 18px;
+  font-weight: 700;
+}
+.step-content { flex: 1; padding-top: var(--space-1); }
+.step-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+  color: var(--color-text-primary);
+}
+.step-body {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ===== Summary Section ===== */
+.summary {
+  background: linear-gradient(135deg, #0055AA 0%, var(--color-primary) 100%);
+  color: #fff;
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  margin: var(--space-10) 0;
+}
+.summary h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: var(--space-5);
+  letter-spacing: -0.01em;
+}
+.summary__subtitle {
+  opacity: 0.8;
+  margin-bottom: var(--space-6);
+  font-size: 17px;
+}
+.summary__list {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 var(--space-6);
+}
+.summary__list li {
+  padding: var(--space-2) 0;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.summary__list li::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: var(--color-warning);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M6.5 11.5l-3-3 1-1 2 2 5-5 1 1z'/%3E%3C/svg%3E");
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.summary__divider {
+  width: 48px;
+  height: 2px;
+  background: rgba(255,255,255,0.25);
+  margin: var(--space-5) auto;
+  border-radius: 1px;
+}
+.summary__message {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.summary__message .highlight {
+  color: var(--color-warning);
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: var(--color-text-primary);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  color: #fff;
+}
+.cta h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+}
+.cta p {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: var(--space-6);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ===== Button ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  min-height: 48px;              /* HIG touch target + padding */
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  border: none;
+}
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn--primary:hover {
+  background: var(--color-primary-dark);
+  color: #fff;
+  transform: scale(1.02);
+}
+.btn--white {
+  background: #fff;
+  color: var(--color-primary);
+}
+.btn--white:hover {
+  background: #F5F5F7;
+  color: var(--color-primary);
+  transform: scale(1.02);
+}
+.btn--green {
+  background: var(--color-success);
+  color: #fff;
+}
+.btn--green:hover {
+  background: #2DB44D;
+  color: #fff;
+}
+
+/* ===== Text Utilities ===== */
+.text-emphasis { color: var(--color-primary); font-weight: 600; }
+.text-danger { color: var(--color-error); font-weight: 600; }
+.text-highlight {
+  background: linear-gradient(transparent 65%, rgba(255,159,10,0.2) 65%);
+  padding: 0 2px;
+}
+
+/* ===== Footer ===== */
+.l-footer {
+  background: var(--color-surface);
+  color: var(--color-text-tertiary);
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+  font-size: 13px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 735px) {
+  body { font-size: 16px; }
+  .c-gnav__list { display: none; }
+  .c-pageTitle { font-size: 28px; padding: var(--space-6) var(--space-5) var(--space-4); }
+  .hero { padding: var(--space-10) var(--space-5); }
+  .hero__title { font-size: 28px; }
+  .hero__subtitle { font-size: 17px; }
+  .section { padding: var(--space-10) 0; }
+  .section-title__heading { font-size: 22px; }
+  .l-article { padding: 0 var(--space-5); }
+  .card-grid { grid-template-columns: 1fr; }
+  .summary { padding: var(--space-8) var(--space-5); border-radius: var(--radius-lg); }
+  .summary h2 { font-size: 22px; }
+  .cta { padding: var(--space-8) var(--space-5); border-radius: var(--radius-lg); }
+  .step-item { gap: var(--space-4); }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header (Apple-style frosted glass) ===== -->
+<header class="l-header">
+  <div class="l-header__inner">
+    <div class="c-logo">
+      熊坂開基税理士事務所
+      <small>KUMASAKA TAX OFFICE</small>
+    </div>
+    <nav>
+      <ul class="c-gnav__list">
+        <li><a href="/demo/kumasaka/message/">代表挨拶</a></li>
+        <li><a href="/demo/kumasaka/our-service/">サービス紹介</a></li>
+        <li><a href="/demo/kumasaka/price/">料金表</a></li>
+        <li><a href="/demo/kumasaka/news/">お知らせ</a></li>
+        <li><a href="/demo/kumasaka/column/">お役立ち情報</a></li>
+        <li><a href="/demo/kumasaka/voice/">お客様の声</a></li>
+        <li><a href="/demo/kumasaka/about/">事務所概要</a></li>
+        <li><a href="/demo/kumasaka/contact/">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Breadcrumb ===== -->
+<div class="p-breadcrumb">
+  <a href="/demo/kumasaka/">ホーム</a> &gt;
+  <a href="/demo/kumasaka/our-service/">サービス紹介</a> &gt;
+  前倒し相続
+</div>
+
+<!-- ===== Page Title ===== -->
+<h1 class="c-pageTitle">前倒し相続</h1>
+
+<!-- ===== Main Content ===== -->
+<main class="l-mainContent">
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero__eyebrow">Advance Inheritance Planning</div>
+  <h2 class="hero__title">前倒し相続</h2>
+  <p class="hero__subtitle">税金と不動産、両方の視点で備える</p>
+</section>
+
+<!-- ===== はじめに ===== -->
+<section class="section">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Introduction</span>
+    <h2 class="section-title__heading">なぜ「前倒し」が必要なのか</h2>
+  </div>
+
+  <p><strong>「相続」と「親の家じまい」</strong>は、税金の話だけでも、不動産の話だけでも解決しません。税務と不動産の両方の視点がなければ、家族にとって最善の判断はできないのです。</p>
+
+  <div class="callout">
+    <p>相続や親の家に関する相談は、<span class="text-highlight">生前よりも亡くなった後に一気に増える</span>のが実態です。特に多いのは「東京に住んでいるが、地方や郊外に親の家が残っているケース」。親が住んでいた家を相続したが住む予定はなく、どう扱えばいいかわからない——こうした声が後を絶ちません。</p>
+  </div>
+
+  <p>相続では、税金・不動産の価値・家族関係・思い出や感情など、さまざまな問題が絡み合います。家じまいは単なる不動産の処分ではなく、<strong>家族の人生の整理</strong>でもあります。</p>
+  <p>だからこそ、<strong class="text-emphasis">相続が起きる前に「前倒し」で備えることが、家族を守る第一歩</strong>になるのです。</p>
+</div>
+</section>
+
+<!-- ===== POINT 01 ===== -->
+<section class="section section--tinted">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Point 01</span>
+    <h2 class="section-title__heading">「負動産」という現実</h2>
+  </div>
+
+  <p>近年、<strong>「負動産」</strong>という言葉が使われるようになっています。これは売れない不動産、あるいは<span class="text-highlight">お金を払ってでも手放さなければならない不動産</span>を指します。</p>
+  <ul>
+    <li>地方だけでなく、千葉県など首都圏でも発生</li>
+    <li>売却できず、管理費や固定資産税だけがかかる</li>
+    <li>相続税の計算ではプラスの財産なのに、実際にはマイナスの資産</li>
+  </ul>
+
+  <div class="info-box info-box--warning">
+    <div class="info-box__header">相続税との矛盾</div>
+    <div class="info-box__body">
+      <p>相続税の評価では、不動産は固定資産税評価額や路線価を基準に「資産」として計算されます。しかし現実には、<strong>評価はあるが売れない・お金を払って手放すべき不動産</strong>が確実に存在します。</p>
+      <p>相続では<strong>特定の財産だけを選んで放棄することはできません</strong>（相続放棄は全財産が対象）。そのため、現金は欲しいが不動産は不要——という選択ができず、問題が深刻化しやすいのです。</p>
+    </div>
+  </div>
+
+  <p>だからこそ、<strong class="text-emphasis">相続が発生する前に、処分できる不動産は先に整理しておく</strong>という考え方が重要です。相続が起きてからでは選択肢が限られてしまいます。</p>
+</div>
+</section>
+
+<!-- ===== POINT 02 ===== -->
+<section class="section">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Point 02</span>
+    <h2 class="section-title__heading">親の家、売るべき？残すべき？</h2>
+  </div>
+
+  <p>家じまいの判断で最初に考えるべきなのは、<strong>誰がその不動産を引き継ぐのか</strong>です。</p>
+  <ul>
+    <li>誰が住むのか</li>
+    <li>誰が管理するのか</li>
+    <li>誰が固定資産税を払うのか</li>
+  </ul>
+  <p>特に不動産が複数ある場合、実家・土地・投資物件などをどのように分けるかで兄弟姉妹の意見が分かれることがよくあります。</p>
+
+  <div class="callout callout--warm">
+    <p><strong>注意したいのは共同持分での賃貸運用。</strong>修繕費・管理・売却などの判断で揉めることが多く、トラブルの原因になります。誰も使わない家を残してしまうと、管理・修繕・固定資産税の負担だけが残ります。</p>
+  </div>
+
+  <p>不動産の価値は常に変動します。都市部の地価は上昇し、地方は下落する傾向がある中、<strong>「どの不動産を誰が相続するのか」</strong>によって将来の資産価値に大きな差が出ます。これもまた揉める原因です。</p>
+  <p><strong class="text-emphasis">まず何をどうするかを話すには、不動産の正しい情報を知ることが第一歩です。</strong></p>
+</div>
+</section>
+
+<!-- ===== POINT 03 ===== -->
+<section class="section section--tinted">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Point 03</span>
+    <h2 class="section-title__heading">相続登記の放置・空き家放置のリスク</h2>
+  </div>
+
+  <p>実務上、非常に多いのが以下のケースです。</p>
+  <ul>
+    <li>建物の相続登記は済んでいるが、<strong>私道や共有持分の登記が未了</strong></li>
+    <li>結果として売却不可に</li>
+  </ul>
+  <p><strong>2024年4月から相続登記が義務化</strong>されました。過去の相続分にも遡及適用され、施行日から3年以内（2027年3月末まで）に登記が必要です。放置すると<strong>10万円以下の過料</strong>が科される可能性があり、今後は大きなリスクになります。</p>
+
+  <div class="info-box info-box--warning">
+    <div class="info-box__header">空き家放置のリスク</div>
+    <div class="info-box__body">
+      <p>老朽化した空き家を放置すると——</p>
+      <ul>
+        <li><strong>特定空き家に指定</strong> → 固定資産税の住宅用地特例が解除（税額が最大6倍に）</li>
+        <li>行政から<strong>助言・指導・勧告・命令</strong>の段階的措置</li>
+        <li>改善されない場合は<strong>行政代執行による強制解体</strong> → 費用は所有者に請求</li>
+      </ul>
+      <p>解体費用は相続税の債務控除の対象にならず、兄弟間で「誰が払うのか」で揉める原因にもなります。</p>
+    </div>
+  </div>
+
+  <p><strong class="text-emphasis">空き家問題は、空き家になってからでは遅い。</strong>誰も住まなくなる前に、次の選択を考えておくことが大切です。</p>
+</div>
+</section>
+
+<!-- ===== POINT 04 ===== -->
+<section class="section">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Point 04</span>
+    <h2 class="section-title__heading">「誰も相続したくない」不動産の出口戦略</h2>
+  </div>
+
+  <p>固定資産税が安くても、子どもや孫へと負担を引き継がせてしまうことを懸念し、<strong>家じまいとセットで整理したい</strong>という人が増えています。</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card__title">引き取り業者</div>
+      <ul>
+        <li>境界確定が不要な場合もある</li>
+        <li>その分、費用は高額になりやすい</li>
+        <li>農地は法律の制限で引き取りが難しいケースも</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card__title">相続土地国庫帰属制度</div>
+      <ul>
+        <li>2023年4月開始。相続した土地を国に引き取ってもらう制度</li>
+        <li>境界確定・整地・建物なしなど厳しい条件あり</li>
+        <li>審査手数料（1.4万円）＋負担金（原則20万円〜）が必要</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>どちらにもメリット・デメリットがあるため、<strong class="text-emphasis">事前の現状把握が不可欠</strong>です。山林や農地が含まれる場合は、法律の制限・都市計画・利用状況によって対応方法が大きく変わるため、早めの状況確認が特に重要です。</p>
+</div>
+</section>
+
+<!-- ===== POINT 05 ===== -->
+<section class="section section--tinted">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Point 05</span>
+    <h2 class="section-title__heading">税理士だけでも、不動産屋だけでもダメ</h2>
+  </div>
+
+  <p>相続と家じまいで<strong>最も重要なポイント</strong>がここです。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>専門家</th>
+          <th>得意分野</th>
+          <th>見落としがちな点</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>税理士</strong></td>
+          <td>相続税の計算・申告<br>財産評価（路線価・固定資産税評価）</td>
+          <td>実際に売れるか・利用できるかの現場判断</td>
+        </tr>
+        <tr>
+          <td><strong>司法書士</strong></td>
+          <td>所有権移転・相続登記</td>
+          <td>私道持分の確認漏れ、不動産の全体像</td>
+        </tr>
+        <tr>
+          <td><strong>不動産会社</strong></td>
+          <td>売買・賃貸・活用方法</td>
+          <td>税務上の有利不利、売る予定がない物件の対応</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>現実には、<strong>「評価はあるが売れない」「税金はかかるが資産価値はない」</strong>というケースが確実に存在します。1つの不動産を、税務と不動産の両面から戦略的に考えることが本来あるべき姿です。</p>
+
+  <div class="callout">
+    <p>家じまいで最初に必要なのは<strong>「物件調査」</strong>です。土地の権利関係・道路の状況・法律上の制限・実際の価値を確認することで、税理士・司法書士・不動産会社すべてが<strong>同じ情報をもとに判断できる</strong>ようになります。</p>
+  </div>
+</div>
+</section>
+
+<!-- ===== POINT 06 ===== -->
+<section class="section">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Point 06</span>
+    <h2 class="section-title__heading">相続税の「小規模宅地等の特例」の落とし穴</h2>
+  </div>
+
+  <p>相続税には<strong>小規模宅地等の特例</strong>という制度があります。被相続人が住んでいた土地（<strong>330㎡まで</strong>）を一定の条件で相続する場合、<span class="text-highlight">土地の評価額を最大80％減額</span>できるという制度です。</p>
+  <p>例えば、330㎡以内で評価額1億円の土地なら、条件を満たせば2,000万円として計算される可能性があります。この特例が使えるかどうかで相続税額は大きく変わります。</p>
+
+  <div class="info-box info-box--warning">
+    <div class="info-box__header">老人ホーム・施設入所の注意点</div>
+    <div class="info-box__body">
+      <p>被相続人が老人ホームや介護施設に入っていた場合、この特例を使うには以下の<strong>すべての要件</strong>を満たす必要があります。</p>
+      <ul>
+        <li><strong>要介護認定・要支援認定</strong>等を受けていたこと</li>
+        <li>入所先が老人福祉法等に規定する<strong>一定の施設</strong>であること</li>
+        <li>自宅を<strong>賃貸など他の用途に供していない</strong>こと</li>
+      </ul>
+      <p>施設入所後に自宅を賃貸に出してしまうと、特例が使えなくなるケースがあります。<strong>税理士への早めの相談が必要</strong>です。</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== POINT 07 ===== -->
+<section class="section section--tinted">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Point 07</span>
+    <h2 class="section-title__heading">生前に決める・片付けることの重要性</h2>
+  </div>
+
+  <div class="callout" style="text-align:center;">
+    <p style="font-size:1.1em;"><strong>100万〜200万円かかるとしても、元気なうちに自分の財布から整理する。<br>その方が家族はもめない。</strong></p>
+  </div>
+
+  <p>これは不動産の現場で頻繁に聞かれる声です。相続は「お金の問題」だけではなく、<strong>家族関係の問題</strong>でもあります。親が元気なうちから考えておく方が圧倒的にスムーズです。</p>
+  <p>実家の片付けも同様です。長年暮らしてきた家には思い出の品がたくさんありますが、実際にはほとんどが使われていない物。荷物が片付いていなくても物件調査や査定は可能ですし、<strong>荷物が残ったまま売却する方法</strong>もあります。</p>
+  <p><strong class="text-emphasis">急いで決める必要はないが、少しずつ準備を始めること。</strong>不動産の情報を集め、状況を理解しておくだけでも、判断の準備・心の準備の両方ができます。</p>
+</div>
+</section>
+
+<!-- ===== FLOW ===== -->
+<section class="section">
+<div class="l-article">
+  <div class="section-title">
+    <span class="section-title__eyebrow">Flow</span>
+    <h2 class="section-title__heading">前倒し相続の進め方</h2>
+  </div>
+
+  <div class="step-flow">
+    <div class="step-item">
+      <div class="step-number"><span class="step-number__label">Step</span></div>
+      <div class="step-content">
+        <div class="step-title">不動産の現状把握</div>
+        <div class="step-body">物件調査で権利関係・道路状況・法律上の制限・実際の価値を確認します。</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-number"><span class="step-number__label">Step</span></div>
+      <div class="step-content">
+        <div class="step-title">税務シミュレーション</div>
+        <div class="step-body">相続税がいくらかかるか、小規模宅地等の特例が使えるか等を税理士が試算します。</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-number"><span class="step-number__label">Step</span></div>
+      <div class="step-content">
+        <div class="step-title">戦略の策定</div>
+        <div class="step-body">税務×不動産の両面から、売却・活用・引き取りなど最適な方針を決めます。</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-number"><span class="step-number__label">Step</span></div>
+      <div class="step-content">
+        <div class="step-title">生前整理の実行</div>
+        <div class="step-body">不動産の売却・登記整備・荷物の片付けなど、元気なうちに進めます。</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-number"><span class="step-number__label">Step</span></div>
+      <div class="step-content">
+        <div class="step-title">家族との共有・合意形成</div>
+        <div class="step-body">整理した情報を家族で共有し、相続発生時にスムーズに対応できる体制を作ります。</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== まとめ ===== -->
+<section class="section section--tinted">
+<div class="l-article">
+  <div class="summary">
+    <h2>後悔しない相続への第一歩</h2>
+    <p class="summary__subtitle">相続と家じまいが複雑になる理由は明確です。</p>
+    <ul class="summary__list">
+      <li>税金だけで判断してしまう</li>
+      <li>現場だけで決めてしまう</li>
+      <li>両方をつなぐ視点がない</li>
+    </ul>
+    <div class="summary__divider"></div>
+    <p class="summary__message">
+      税金だけで考えない。現場だけで決めない。<br>
+      両方の視点を合わせて、<br>
+      <span class="highlight">家族にとって一番納得感のある形</span>を探す。<br><br>
+      それが、後悔しない相続への第一歩です。
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+<div class="l-article">
+  <div class="cta">
+    <h2>まずは無料相談でお悩みをお聞かせください。</h2>
+    <p>不動産の状況整理から相続税シミュレーションまで、<br>税務×不動産の両面からアドバイスいたします。</p>
+    <a href="/demo/kumasaka/contact/" class="btn btn--white">お問い合わせフォーム</a>
+  </div>
+</div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="l-footer">
+  <p>&copy; 熊坂開基税理士事務所 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

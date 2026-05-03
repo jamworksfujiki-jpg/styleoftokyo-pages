@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: transparent;
+}
+.banner {
+  width: 1200px;
+  height: 180px;
+  background: #fff;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 56px;
+  color: #1a1a1a;
+  overflow: hidden;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.04);
+}
+
+/* 左の赤いアクセントライン */
+.banner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 24px;
+  width: 4px;
+  background: #ea6000;
+  border-radius: 0 2px 2px 0;
+}
+
+.label {
+  display: inline-block;
+  background: #ea6000;
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 40px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+}
+
+.content {
+  flex: 1;
+}
+.title {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.title .accent {
+  color: #ea6000;
+}
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  letter-spacing: 0.04em;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  padding: 20px 36px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  min-width: 220px;
+  margin-left: 40px;
+  flex-shrink: 0;
+}
+.btn-arrow {
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 1;
+}
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="content">
+    <div class="label">SPECIAL FEATURE</div>
+    <div class="title">前倒し相続<span style="font-size:22px; font-weight:700; margin-left:16px; color:#555;">— 税金<span class="accent">×</span>不動産で備える —</span></div>
+    <div class="subtitle">めちゃくちゃ複雑！相続と家じまい。両方の視点がないと失敗する。</div>
+  </div>
+  <div class="btn">
+    詳細を見る <span class="btn-arrow">→</span>
+  </div>
+</div>
+</body>
+</html>
