@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: transparent;
+}
+.banner {
+  width: 1480px;
+  height: 120px;
+  background: linear-gradient(135deg, #0F6E56 0%, #0a5742 100%);
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 32px;
+  color: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.04);
+}
+
+/* 左の縦アクセントライン */
+.banner::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: #FAEEDA;
+}
+
+/* 右側の装飾円 */
+.banner::after {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08) 4px,
+    transparent 4px,
+    transparent 10px
+  );
+  pointer-events: none;
+}
+
+.left-cluster {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.eyebrow-en {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1;
+}
+.eyebrow-chip {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #0F6E56;
+  background: #FAEEDA;
+  padding: 5px 12px;
+  border-radius: 2px;
+  line-height: 1.2;
+  width: fit-content;
+}
+
+.title-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title-main {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.title-sub {
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.5;
+}
+.title-sub .highlight {
+  color: #FAEEDA;
+  font-weight: 700;
+}
+
+.cta {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0F6E56;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 14px 26px;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cta .arrow {
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="left-cluster">
+    <div class="eyebrow-stack">
+      <div class="eyebrow-en">FOR&nbsp;TAX&nbsp;ACCOUNTANTS</div>
+      <div class="eyebrow-chip">前倒し相続パートナーシップ</div>
+    </div>
+    <div class="title-stack">
+      <div class="title-main">提携会計事務所募集</div>
+      <div class="title-sub">
+        紹介手数料は<span class="highlight">不動産仲介手数料の15%</span>。加盟金・月額費用ゼロで、税理士の先生方に新たな収益源と「家じまい」までの包括サポートを。
+      </div>
+    </div>
+  </div>
+  <div class="cta">詳細を見る<span class="arrow">→</span></div>
+</div>
+</body>
+</html>
