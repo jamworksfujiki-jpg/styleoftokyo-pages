@@ -26,29 +26,30 @@ body:has(.sot-subpage) .c-pageTitle{
 
 /* --- scoped CSS for 住宅会社からのご紹介の方へ --- */
 .sot-partners-page {
-  --bg-page: #FAF8F3;
+  /* ▼ styleoftokyo.jp 既存サイト互換（茶系メイン + オレンジアクセント） */
+  --bg-page: #fdfcf9;
   --bg-card: #FFFFFF;
-  --bg-soft: #F1EFE8;
-  --bg-pink: #FBEAF0;
-  --bg-teal-light: #E1F5EE;
-  --bg-amber: #FAEEDA;
-  --text-primary: #2C2C2A;
-  --text-secondary: #5F5E5A;
-  --text-tertiary: #888780;
-  --text-teal: #085041;
-  --text-pink: #72243E;
-  --text-amber: #633806;
-  --border-soft: #D3D1C7;
-  --border-teal: #0F6E56;
-  --border-amber: #854F0B;
-  --accent-teal: #0F6E56;
-  --serif: 'Noto Serif JP', serif;
+  --bg-soft: #f8f6f5;
+  --bg-pink: #faf3ee;
+  --bg-teal-light: #fdf6ec;
+  --bg-amber: #fdf3e3;
+  --text-primary: #333333;
+  --text-secondary: #62595a;
+  --text-tertiary: #9b918e;
+  --text-teal: #62595a;        /* メイン（旧グリーン→既存ロゴ茶グレー） */
+  --text-pink: #7a4a3a;
+  --text-amber: #8a5f25;
+  --border-soft: #e0d8d4;
+  --border-teal: #c5b9b4;       /* 旧グリーン→ニュートラルベージュ */
+  --border-amber: #d8b878;
+  --accent-teal: #fd9227;       /* 旧グリーン→既存サイトのオレンジ */
+  --serif: 'Noto Serif JP', "Hiragino Mincho ProN", "Yu Mincho", serif;
   --sans: 'Noto Sans JP', sans-serif;
 
-  font-family: var(--sans);
+  font-family: var(--serif);  /* 既存サイトに合わせて本文もセリフ */
   background: var(--bg-page);
   color: var(--text-primary);
-  line-height: 1.8;
+  line-height: 1.95;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
