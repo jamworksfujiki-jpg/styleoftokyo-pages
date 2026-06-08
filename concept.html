@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタイルオブ東京とは | STYLE OF TOKYO</title>
+  <meta name="description" content="不動産を買うことが、ゴールではない。楽しく暮らして初めて、いい物件を買ったことになる。スタイルオブ東京のコンセプトをご紹介します。">
+  <meta property="og:title" content="スタイルオブ東京とは | STYLE OF TOKYO">
+  <meta property="og:description" content="条件の奥にある、まだ言葉になっていない暮らしを想像する。スタイルオブ東京のコンセプトをご紹介します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://styleoftokyo.jp/concept/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== ページ全体の最低限のリセット ===== */
+    html, body { margin: 0; padding: 0; }
+    body { background: #faf9f5; }
+
+    /* ===== トップへ戻りナビ（最上部） ===== */
+    .sot-top-nav {
+      background: #fff;
+      border-bottom: 1px solid #e0d8d4;
+      padding: 14px 20px;
+      text-align: center;
+      font-family: "Noto Sans JP", sans-serif;
+    }
+    .sot-top-nav a {
+      color: #62595a;
+      font-size: 13px;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      margin: 0 14px;
+    }
+    .sot-top-nav a:hover { color: #fd9227; }
+    .sot-top-nav .sot-brand {
+      display: inline-block;
+      margin-right: 22px;
+      font-family: "Noto Serif JP", serif;
+      font-size: 15px;
+      letter-spacing: 0.18em;
+      color: #62595a;
+    }
+    @media (max-width: 560px) {
+      .sot-top-nav .sot-brand { display: block; margin: 0 0 6px; }
+      .sot-top-nav a { font-size: 12px; margin: 0 8px; }
+    }
+
+    /* ===== 末尾の補足フッタ ===== */
+    .sot-page-foot {
+      background: #62595a;
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      padding: 36px 20px 44px;
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+    }
+    .sot-page-foot a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      opacity: 0.85;
+    }
+    .sot-page-foot a:hover { opacity: 1; text-decoration: underline; }
+    .sot-page-foot .sot-foot-brand {
+      font-family: "Noto Serif JP", serif;
+      font-size: 15px;
+      letter-spacing: 0.18em;
+      display: block;
+      margin-bottom: 16px;
+    }
+    .sot-page-foot .sot-foot-partners {
+      display: block;
+      margin: 18px auto 0;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
+
+  <!-- ====== concept-paste.html 由来のスタイル（.sot-concept スコープ） ====== -->
+  <style>
+.sot-concept{
+    --ink:#252525;
+    --muted:#66645f;
+    --pale:#faf9f5;
+    --paper:#ffffff;
+    --line:#ded9cd;
+    --green:#1d7560;
+    --green-pale:#edf7f3;
+    --rose:#984864;
+    --rose-pale:#fbf1f4;
+    --gold:#9a6a21;
+    --gold-pale:#fbf4e7;
+    --blue-pale:#eef5fb;
+    --shadow:0 20px 50px rgba(42,38,30,.08);
+    --max:1040px;
+  }
+  .sot-concept{
+    margin:0;
+    font-family:"Noto Sans JP",sans-serif;
+    color:var(--ink);
+    background:var(--pale);
+    line-height:1.9;
+    letter-spacing:.02em;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sot-concept .sot-first-section{padding-top:72px}
+
+  .sot-concept, .sot-concept *{box-sizing:border-box}
+
+
+  .sot-concept a{color:inherit}
+  .sot-concept .serif{font-family:"Noto Serif JP",serif}
+  .sot-concept .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+  .sot-concept .hero{
+    background:linear-gradient(180deg,#fff 0%,#fbfaf6 100%);
+    text-align:center;
+    padding:66px 0 78px;
+  }
+  .sot-concept .eyebrow{
+    margin:0 0 12px;
+    color:var(--green);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.22em;
+  }
+  .sot-concept h1{
+    margin:0;
+    font-family:"Noto Serif JP",serif;
+    font-size:clamp(28px,4.8vw,48px);
+    line-height:1.55;
+    font-weight:700;
+  }
+  .sot-concept .hero-lead{
+    max-width:680px;
+    margin:34px auto 0;
+    font-family:"Noto Serif JP",serif;
+    font-size:clamp(18px,2.7vw,26px);
+    line-height:1.9;
+    font-weight:600;
+  }
+  .sot-concept .hero-copy{
+    max-width:660px;
+    margin:26px auto 0;
+    color:var(--muted);
+    font-size:16px;
+  }
+  .sot-concept .section{padding:82px 0}
+  .sot-concept .section.white{background:#fff}
+  .sot-concept .section.soft{background:var(--pale)}
+  .sot-concept .section-title{
+    margin:0 0 28px;
+    font-family:"Noto Serif JP",serif;
+    font-size:clamp(23px,3.4vw,34px);
+    line-height:1.6;
+    font-weight:700;
+  }
+  .sot-concept .lead{
+    max-width:780px;
+    margin:0 0 18px;
+    color:var(--muted);
+    font-size:16px;
+  }
+  .sot-concept .lead.strong{color:var(--ink);font-weight:500}
+  .sot-concept .concept-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:44px;
+    align-items:start;
+  }
+  .sot-concept .principle{
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:32px 0;
+    margin-top:34px;
+  }
+  .sot-concept .principle p{
+    margin:0;
+    font-family:"Noto Serif JP",serif;
+    font-size:clamp(18px,2.5vw,25px);
+    line-height:1.9;
+    font-weight:600;
+  }
+  .sot-concept .support-panel{
+    background:#fff;
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+    padding:34px;
+  }
+  .sot-concept .support-panel h3{
+    margin:0 0 22px;
+    text-align:center;
+    font-family:"Noto Serif JP",serif;
+    font-size:21px;
+  }
+  .sot-concept .support-list{
+    display:grid;
+    gap:12px;
+  }
+  .sot-concept .support-item{
+    display:grid;
+    grid-template-columns:58px 1fr;
+    gap:16px;
+    align-items:center;
+    padding:16px;
+    border:1px solid #ebe7dd;
+    background:#fffdfa;
+  }
+  .sot-concept .support-icon{
+    width:58px;
+    height:58px;
+    display:grid;
+    place-items:center;
+    border:1px solid #cfc8bb;
+    border-radius:50%;
+    font-family:"Noto Serif JP",serif;
+    font-size:24px;
+    color:var(--green);
+  }
+  .sot-concept .support-item b{display:block;font-size:15px;line-height:1.5}
+  .sot-concept .support-item span{display:block;color:var(--muted);font-size:13px;line-height:1.7;margin-top:3px}
+  .sot-concept .flow{
+    max-width:820px;
+    margin:46px auto 0;
+  }
+  .sot-concept .flow-block{
+    border:1px solid var(--line);
+    background:#fff;
+    padding:28px;
+  }
+  .sot-concept .flow-block.input{background:#f4f2ec}
+  .sot-concept .flow-block.imagine{background:var(--rose-pale);border-color:#ead4db}
+  .sot-concept .flow-block.output{background:var(--gold-pale);border-color:#eadfbf;text-align:center}
+  .sot-concept .flow-label{
+    display:block;
+    margin-bottom:12px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.12em;
+    color:var(--muted);
+  }
+  .sot-concept .flow-block.imagine .flow-label{color:var(--rose)}
+  .sot-concept .flow-main{
+    margin:0;
+    font-family:"Noto Serif JP",serif;
+    font-size:clamp(18px,2.7vw,25px);
+    line-height:1.55;
+    font-weight:700;
+  }
+  .sot-concept .flow-note{
+    margin:8px 0 0;
+    color:var(--muted);
+    font-size:14px;
+  }
+  .sot-concept .flow-arrow{
+    display:grid;
+    place-items:center;
+    min-height:54px;
+    color:var(--muted);
+    font-size:12px;
+    letter-spacing:.12em;
+    position:relative;
+  }
+  .sot-concept .flow-arrow:before{
+    content:"";
+    position:absolute;
+    width:1px;
+    top:8px;
+    bottom:8px;
+    background:var(--line);
+  }
+  .sot-concept .flow-arrow span{
+    position:relative;
+    background:var(--pale);
+    padding:3px 12px;
+  }
+  .sot-concept .story-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-top:20px;
+  }
+  .sot-concept .story-card{
+    background:#fff;
+    border:1px solid #ead4db;
+    padding:18px;
+  }
+  .sot-concept .story-card b{
+    display:block;
+    color:#713248;
+    font-size:15px;
+    margin-bottom:8px;
+  }
+  .sot-concept .story-card p{
+    margin:0;
+    color:#5d3341;
+    font-size:13px;
+    line-height:1.75;
+  }
+  .sot-concept .case{
+    padding:54px 0;
+    border-top:1px solid var(--line);
+  }
+  .sot-concept .case:first-of-type{border-top:none;padding-top:22px}
+  .sot-concept .case-kicker{
+    margin:0 0 8px;
+    color:var(--green);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.16em;
+  }
+  .sot-concept .case h3{
+    margin:0 0 22px;
+    font-family:"Noto Serif JP",serif;
+    font-size:clamp(21px,3vw,31px);
+    line-height:1.55;
+  }
+  .sot-concept .case-intro{
+    max-width:820px;
+    margin:0 0 28px;
+    color:var(--muted);
+  }
+  .sot-concept .case-map{
+    margin-top:30px;
+    border:1px solid var(--line);
+    background:#fff;
+    box-shadow:var(--shadow);
+    padding:24px;
+  }
+  .sot-concept .map-head{
+    display:grid;
+    grid-template-columns:120px 1fr 1fr;
+    gap:14px;
+    align-items:end;
+    margin-bottom:14px;
+  }
+  .sot-concept .map-head .blank{height:1px}
+  .sot-concept .map-title{
+    border-bottom:1px solid var(--line);
+    padding:0 0 12px;
+  }
+  .sot-concept .map-title span{
+    display:block;
+    font-size:12px;
+    letter-spacing:.14em;
+    color:var(--muted);
+    font-weight:700;
+    margin-bottom:6px;
+  }
+  .sot-concept .map-title b{
+    display:block;
+    font-family:"Noto Serif JP",serif;
+    font-size:20px;
+    line-height:1.45;
+  }
+  .sot-concept .map-title.good b{color:var(--green)}
+  .sot-concept .map-title.bad b{color:#74613e}
+  .sot-concept .map-row{
+    display:grid;
+    grid-template-columns:120px 1fr 1fr;
+    gap:14px;
+    align-items:stretch;
+    margin-top:14px;
+  }
+  .sot-concept .map-stage{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:94px;
+    border:1px solid #e7e2d8;
+    background:#fbfaf6;
+    color:var(--muted);
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.08em;
+  }
+  .sot-concept .map-card{
+    border:1px solid #e4ded2;
+    background:#faf8f2;
+    padding:18px 20px;
+    min-height:94px;
+  }
+  .sot-concept .map-card.good{
+    border-color:#cfdfd8;
+    background:#f8fdfb;
+  }
+  .sot-concept .map-card h4{
+    margin:0 0 8px;
+    font-size:16px;
+    line-height:1.55;
+    font-weight:700;
+  }
+  .sot-concept .map-card.good h4{color:var(--green)}
+  .sot-concept .map-card p{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.75;
+  }
+  .sot-concept .map-conclusion{
+    margin-top:18px;
+    padding:22px 24px;
+    border:1px solid #eadfbf;
+    background:var(--gold-pale);
+    color:#6d4b18;
+    text-align:center;
+  }
+  .sot-concept .map-conclusion b{
+    display:block;
+    font-family:"Noto Serif JP",serif;
+    font-size:19px;
+    line-height:1.65;
+    margin-bottom:6px;
+  }
+  .sot-concept .map-conclusion span{
+    display:block;
+    color:#7d6335;
+    font-size:14px;
+    line-height:1.75;
+  }
+  .sot-concept .case-video{
+    margin:26px auto 0;
+    max-width:760px;
+    border:1px solid var(--line);
+    background:#fff;
+    padding:12px;
+    box-shadow:var(--shadow);
+  }
+  .sot-concept .case-video-frame{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    background:#f4f2ec;
+    overflow:hidden;
+  }
+  .sot-concept .case-video-frame iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+  }
+  .sot-concept .value-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+    margin-top:38px;
+  }
+  .sot-concept .value{
+    background:#fff;
+    border:1px solid var(--line);
+    padding:26px 22px;
+  }
+  .sot-concept .value .num{
+    font-family:"Noto Serif JP",serif;
+    color:var(--green);
+    font-size:34px;
+    line-height:1;
+    margin-bottom:18px;
+  }
+  .sot-concept .value h3{
+    margin:0 0 12px;
+    font-size:16px;
+    line-height:1.6;
+  }
+  .sot-concept .value p{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.8;
+  }
+  .sot-concept .closing{
+    background:#fff;
+    text-align:center;
+    padding:82px 0 104px;
+  }
+  .sot-concept .closing-box{
+    max-width:760px;
+    margin:0 auto;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:42px 0;
+  }
+  .sot-concept .closing-box p{
+    margin:0 0 12px;
+    font-family:"Noto Serif JP",serif;
+    font-size:clamp(18px,2.7vw,27px);
+    line-height:1.9;
+    font-weight:600;
+  }
+  .sot-concept .cta-row{
+    display:flex;
+    gap:14px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:42px;
+  }
+  .sot-concept .btn{
+    min-width:220px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:14px 26px;
+    border:1px solid var(--ink);
+    background:var(--ink);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+  }
+  .sot-concept .btn.line{background:#06c755;border-color:#06c755}
+
+  /* concept ページ末尾のパートナー誘導パネル */
+  .sot-concept .partners-bridge{
+    max-width:760px;
+    margin:48px auto 0;
+    border:1px solid var(--line);
+    background:#fff;
+    padding:24px 26px;
+    display:flex;
+    gap:18px;
+    align-items:center;
+    text-decoration:none;
+    color:var(--ink);
+  }
+  .sot-concept .partners-bridge:hover{border-color:var(--green);background:#f8fdfb}
+  .sot-concept .partners-bridge .pb-eyebrow{display:block;font-size:11px;letter-spacing:.2em;color:var(--green);margin-bottom:6px;font-weight:700}
+  .sot-concept .partners-bridge .pb-title{font-family:"Noto Serif JP",serif;font-size:17px;line-height:1.55;font-weight:600;margin:0}
+  .sot-concept .partners-bridge .pb-arrow{margin-left:auto;color:var(--green);font-size:20px;flex-shrink:0}
+  @media (max-width:560px){
+    .sot-concept .partners-bridge{padding:20px;gap:12px}
+    .sot-concept .partners-bridge .pb-title{font-size:15px}
+  }
+
+  @media (max-width:840px){
+    .sot-concept .concept-grid{grid-template-columns:1fr;gap:34px}
+    .sot-concept .story-cards{grid-template-columns:1fr}
+    .sot-concept .value-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:720px){
+    .sot-concept .map-head{grid-template-columns:1fr 1fr}
+    .sot-concept .map-head .blank{display:none}
+    .sot-concept .map-row{grid-template-columns:1fr}
+    .sot-concept .map-stage{min-height:auto;padding:10px 14px;justify-content:flex-start}
+  }
+  @media (max-width:560px){
+    .sot-concept .wrap{padding:0 20px}
+    .sot-concept h1{font-size:26px}
+    .sot-concept .hero{padding:48px 0 62px}
+    .sot-concept .section{padding:62px 0}
+    .sot-concept .support-panel{padding:24px 18px}
+    .sot-concept .support-item{grid-template-columns:48px 1fr;padding:14px}
+    .sot-concept .support-icon{width:48px;height:48px;font-size:20px}
+    .sot-concept .flow-block{padding:22px 18px}
+    .sot-concept .case-map{padding:18px 14px}
+    .sot-concept .map-head{grid-template-columns:1fr;gap:12px}
+    .sot-concept .map-title b{font-size:18px}
+    .sot-concept .map-card{padding:16px}
+    .sot-concept .map-conclusion{padding:18px 16px;text-align:left}
+    .sot-concept .case-video{padding:8px}
+    .sot-concept .value-grid{grid-template-columns:1fr}
+  }
+  </style>
+</head>
+<body>
+
+<!-- 上部ナビ -->
+<nav class="sot-top-nav">
+  <span class="sot-brand">STYLE OF TOKYO</span>
+  <a href="index.html">トップへ戻る</a>
+  <a href="guide.html">かんたんガイド</a>
+  <a href="https://styleoftokyo.jp/contact/">お問い合わせ</a>
+</nav>
+
+<div class="sot-concept">
+<section class="hero sot-first-section">
+    <div class="wrap">
+      <p class="eyebrow">CONCEPT</p>
+      <h1>スタイルオブ東京とは</h1>
+      <p class="hero-lead">不動産を買うことが、ゴールではない。<br>楽しく暮らして初めて、いい物件を買ったことになる。</p>
+      <p class="hero-copy">購入も、売却も、住み替えも、相続も。条件だけで判断せず、買った後の毎日から逆算して、その人にとっての最適解を提案します。</p>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="wrap concept-grid">
+      <div>
+        <p class="eyebrow">OUR CONCEPT</p>
+        <h2 class="section-title">想いの整理と決断はお客様の担当。<br>専門分野は、プロと伴走する。</h2>
+        <p class="lead strong">スタイルオブ東京では、購入・売却・建築・相続など、単発のご相談からフルサポートまでお引き受けします。</p>
+        <p class="lead">ただ物件を紹介するだけではありません。暮らし方、予算、将来の変化、家族の気持ち、工事やローンの現実まで一緒に見ながら、進む道を整えます。</p>
+        <div class="principle">
+          <p>条件の奥にある、まだ言葉になっていない暮らしを想像する。</p>
+        </div>
+      </div>
+
+      <aside class="support-panel">
+        <h3>実績豊富なプロによるサポート</h3>
+        <div class="support-list">
+          <div class="support-item">
+            <div class="support-icon">想</div>
+            <div><b>想いの整理</b><span>希望条件の前に、暮らし方と優先順位を整えます。</span></div>
+          </div>
+          <div class="support-item">
+            <div class="support-icon">地</div>
+            <div><b>土地探し</b><span>不動産事業者として、取得前の調査と判断を支えます。</span></div>
+          </div>
+          <div class="support-item">
+            <div class="support-icon">資</div>
+            <div><b>資金計画・ローン</b><span>将来にわたる資金計画とローン選定を伴走します。</span></div>
+          </div>
+          <div class="support-item">
+            <div class="support-icon">建</div>
+            <div><b>建築・リフォーム</b><span>建築会社との折衝や価格交渉もサポートします。</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <p class="eyebrow">HOW WE THINK</p>
+      <h2 class="section-title">私たちの仕事は、お客様が言葉にしていない未来を想像し、そこから逆算することから始まります。</h2>
+      <p class="lead">家を買いたい。次に来るのは、たいてい「条件」です。予算、エリア、間取り。もちろん大切ですが、そこだけでは本当に楽しい暮らしには届きません。</p>
+      <p class="lead">お子さんが生まれて庭でプールがしたい。夫婦で街歩きを楽しみたい。ドラムを気兼ねなく叩きたい。初対面では言葉にならない未来まで想像し、提案に盛り込みます。</p>
+
+      <div class="flow">
+        <div class="flow-block input">
+          <span class="flow-label">STEP 1　お客様が話してくれること</span>
+          <p class="flow-main">予算・エリア・間取り・希望条件</p>
+          <p class="flow-note">言葉になっているもの。ここまでは、誰でも聞けます。</p>
+        </div>
+        <div class="flow-arrow"><span>その先を想像する</span></div>
+        <div class="flow-block imagine">
+          <span class="flow-label">STEP 2　私たちが想像していること</span>
+          <p class="flow-main">まだ言葉になる前の、楽しい暮らしの気配</p>
+          <div class="story-cards">
+            <div class="story-card"><b>音を楽しむ暮らし</b><p>好きな音を遠慮せず楽しめる場所。今だけでなく、将来の変化まで見据えて考える。</p></div>
+            <div class="story-card"><b>街を味わう暮らし</b><p>休日の散歩、行きつけのお店、手を加える楽しさ。家の中だけでなく、街との相性まで想像する。</p></div>
+            <div class="story-card"><b>家族の時間が育つ暮らし</b><p>働く場所、遊ぶ場所、子どもと過ごす場所。毎日の時間が自然に重なる住まいを考える。</p></div>
+          </div>
+        </div>
+        <div class="flow-arrow"><span>提案に盛り込む</span></div>
+        <div class="flow-block output">
+          <p class="flow-main">楽しい暮らしをゴールに置き、取得・建築・資金計画を組み立てる</p>
+          <p class="flow-note">これが、AIにも他社にも真似できない、私たちの仕事です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="wrap">
+      <p class="eyebrow">REAL STORIES</p>
+      <h2 class="section-title">実例で見る、進む未来と進まない未来</h2>
+      <p class="lead">同じ希望でも、最初の一手が違うだけで未来は変わります。普通の進め方と、私たちが伴走する進め方を並べて見ると、その違いがはっきりします。</p>
+
+      <article class="case">
+        <p class="case-kicker">CASE 01　音を楽しむ暮らし</p>
+        <h3>ドラム防音室を作りたい。全体予算から逆算する。</h3>
+        <p class="case-intro">防音室は「作れるか」だけでなく、土地・建物・将来の住み替えまで含めて考える必要があります。</p>
+        <div class="case-map">
+          <div class="map-head">
+            <div class="blank"></div>
+            <div class="map-title bad"><span>STANDARD</span><b>予算の中で、土地と建物を買う</b></div>
+            <div class="map-title good"><span>STYLE OF TOKYO</span><b>全体予算から、逆算して組み立てる</b></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">最初の一手</div>
+            <div class="map-card"><h4>土地探しから始める</h4><p>建築会社を何件もまわる。予算の確定はまだできない。</p></div>
+            <div class="map-card good"><h4>防音室の会社と先に話す</h4><p>施工範囲・タイミングを確認し、全体予算から逆算する。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">建築会社</div>
+            <div class="map-card"><h4>別工事扱いになる</h4><p>ハウスメーカーは施工後対応。工務店も工事中は難しい。</p></div>
+            <div class="map-card good"><h4>工程まで含めて選定</h4><p>防音工事のタイミングに合わせ、ボードを貼らない工程に調整。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">予算</div>
+            <div class="map-card"><h4>予算が膨らむ</h4><p>追加工事で防音費が上振れ。ローン条件も後手にまわる。</p></div>
+            <div class="map-card good"><h4>配分が最初から決まる</h4><p>建築・防音・内装の比率を設計し、支払条件もセットで見る。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">内装</div>
+            <div class="map-card"><h4>内装にお金がまわらない</h4><p>防音と土地で予算を使い切り、妥協が積み重なる。</p></div>
+            <div class="map-card good"><h4>内装にも余白を残す</h4><p>土地の選び方で建築費を抑え、こだわりに予算を残す。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">入居</div>
+            <div class="map-card"><h4>家は建った。けれど…</h4><p>音漏れ・予算超過・妥協。「楽しく暮らす」までは遠い。</p></div>
+            <div class="map-card good"><h4>想いどおりの家になる</h4><p>ドラムが気兼ねなく叩ける。楽しく暮らせている。</p></div>
+          </div>
+          <div class="map-conclusion">
+            <b>最初の一手が違うだけで、3年後の景色は変わります。</b>
+            <span>物件情報だけでは見えない裏側を発見し、お客様の代理人として自分ごとで解決していきます。</span>
+          </div>
+        </div>
+        <div class="case-video">
+          <div class="case-video-frame">
+            <iframe src="https://www.youtube.com/embed/0rI5QNckIhI" title="音を楽しむ暮らしの事例インタビュー" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </article>
+
+      <article class="case">
+        <p class="case-kicker">CASE 02　街を味わう暮らし</p>
+        <h3>街を楽しみ、リノベにも参加する。暮らし方から物件を選ぶ。</h3>
+        <p class="case-intro">立地や価格だけでなく、その街でどう過ごしたいか、工事にどこまで関わりたいかまで見ていきます。</p>
+        <div class="case-map">
+          <div class="map-head">
+            <div class="blank"></div>
+            <div class="map-title bad"><span>STANDARD</span><b>買ってから、売る</b></div>
+            <div class="map-title good"><span>STYLE OF TOKYO</span><b>売るストーリーから、設計する</b></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">予算の組み方</div>
+            <div class="map-card"><h4>リノベ予算から逆算</h4><p>マンション予算が下がり、希望エリアを諦めやすくなる。</p></div>
+            <div class="map-card good"><h4>売却価格を先に読む</h4><p>家具付き居住中販売を前提に、購入予算を上げて考える。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">リノベ会社</div>
+            <div class="map-card"><h4>高いプランナー会社を検討</h4><p>デザインも込みで依頼し、費用がさらに上がる。</p></div>
+            <div class="map-card good"><h4>担当者の対応で選ぶ</h4><p>自分たちのセンスを活かす前提で、施工は安心、費用は抑える。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">リノベ中</div>
+            <div class="map-card"><h4>プランナーにお任せ</h4><p>作る満足は得られず、テイストが他人事になりがち。</p></div>
+            <div class="map-card good"><h4>一つひとつ自分で選ぶ</h4><p>作る満足も同時に手に入り、こだわりの詰まった一室に。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">売却</div>
+            <div class="map-card"><h4>空室で売る</h4><p>家具がないと魅力が伝わりにくく、売値も時間も妥協しやすい。</p></div>
+            <div class="map-card good"><h4>居住中で家具付き販売</h4><p>引越し時期が見えたタイミングで、強気の価格で売り出す。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">住み替え</div>
+            <div class="map-card"><h4>ただ移動するだけになる</h4><p>街歩きを諦め、売却でも時間と価格を妥協する。</p></div>
+            <div class="map-card good"><h4>街を楽しめる暮らしへ</h4><p>早期成約で引越し後すぐ売却完了。街を味わう毎日へ進む。</p></div>
+          </div>
+          <div class="map-conclusion">
+            <b>住み替えは、売るストーリーまで読めて初めて大成功になる。</b>
+            <span>買う・売る・直すを別々に進めず、ひとつのストーリーとして設計します。</span>
+          </div>
+        </div>
+        <div class="case-video">
+          <div class="case-video-frame">
+            <iframe src="https://www.youtube.com/embed/Wcs_92eRfCw" title="街を味わう暮らしの事例インタビュー" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </article>
+
+      <article class="case">
+        <p class="case-kicker">CASE 03　家族の時間が育つ暮らし</p>
+        <h3>完全リモートと子育て。家族の時間から逆算する。</h3>
+        <p class="case-intro">仕事場としての快適さと、子供との時間を楽しむ場所。その両方が成立するように組み立てます。</p>
+        <div class="case-map">
+          <div class="map-head">
+            <div class="blank"></div>
+            <div class="map-title bad"><span>STANDARD</span><b>自分たちで条件を絞ってから動く</b></div>
+            <div class="map-title good"><span>STYLE OF TOKYO</span><b>条件を絞るところから、一緒に</b></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">最初の相談</div>
+            <div class="map-card"><h4>ハウスメーカーへ直接</h4><p>場所を絞るよう求められ、その会社の商品ありきで進む。</p></div>
+            <div class="map-card good"><h4>フラットな立場で対話</h4><p>何が大事かを一緒に言語化。商品ありきの提案ではない。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">判断軸</div>
+            <div class="map-card"><h4>軸が見つからない</h4><p>選択肢が広いまま迷い続け、時間だけが過ぎていく。</p></div>
+            <div class="map-card good"><h4>3つの軸が見えた</h4><p>実家との距離、予算、広さ、断熱性のバランスが整理される。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">物件選び</div>
+            <div class="map-card"><h4>注文か建売か中古か</h4><p>それぞれを別々に検討し、時間も労力も分散する。</p></div>
+            <div class="map-card good"><h4>条件に合う形へ絞る</h4><p>新築建売をピンポイントで提案。迷いが選択へ変わる。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">内見</div>
+            <div class="map-card"><h4>候補が多くて疲れる</h4><p>何を基準に比べるかも曖昧で、どれもよく見える。</p></div>
+            <div class="map-card good"><h4>ここだと直感できる</h4><p>正面が公園、閑静な住宅街。入った瞬間に気持ちが上がる。</p></div>
+          </div>
+          <div class="map-row">
+            <div class="map-stage">引渡し後</div>
+            <div class="map-card"><h4>あとはご自身で、になる</h4><p>クロス・カーテン選びは独力。新居なのに気分が下がる。</p></div>
+            <div class="map-card good"><h4>引渡し後も並走する</h4><p>ローン手続きから内装まで、暮らしが始まるところまで支える。</p></div>
+          </div>
+          <div class="map-conclusion">
+            <b>条件を絞れないのは、お客様のせいではありません。</b>
+            <span>どこに住むか、何を買うかが決まる前から、判断軸そのものを一緒に作ります。</span>
+          </div>
+        </div>
+        <div class="case-video">
+          <div class="case-video-frame">
+            <iframe src="https://www.youtube.com/embed/3gUhWt1h9A0" title="家族の時間が育つ暮らしの事例インタビュー" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2 class="section-title">3つの事例に共通する、私たちの仕事は4つです。</h2>
+      <div class="value-grid">
+        <div class="value">
+          <div class="num">1</div>
+          <h3>表面化されていない課題を発見する</h3>
+          <p>ネットに出ている情報だけでなく、背景や見えない条件まで調べます。</p>
+        </div>
+        <div class="value">
+          <div class="num">2</div>
+          <h3>細かいサポートを即解決する</h3>
+          <p>契約書に書かれていない細かな作業も、その場で整理しながら進めます。</p>
+        </div>
+        <div class="value">
+          <div class="num">3</div>
+          <h3>根拠ある最適解を提供する</h3>
+          <p>なんとなくではなく、なぜ良いのかを根拠とセットで伝えます。</p>
+        </div>
+        <div class="value">
+          <div class="num">4</div>
+          <h3>代理人として自分ごとで解決する</h3>
+          <p>売主、建築会社、ローン担当にも、お客様の側に立って交渉します。</p>
+        </div>
+      </div>
+
+      <a class="partners-bridge" href="partners.html">
+        <div>
+          <span class="pb-eyebrow">FOR PARTNERS</span>
+          <p class="pb-title">住宅会社からのご紹介でお越しの方は、専用のご案内ページがあります</p>
+        </div>
+        <span class="pb-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <div class="closing-box">
+        <p>取得の過程でのストレスや課題は、誰も予測できない。</p>
+        <p>だから私たちは、予測できない未来に並走する。</p>
+        <p>比較できないほど細かい仕事を、毎日積み重ねています。</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="https://styleoftokyo.jp/contact/">お問い合わせフォーム</a>
+        <a class="btn line" href="https://lin.ee/rjkmG2g">LINEでお問い合わせ</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="sot-page-foot">
+  <span class="sot-foot-brand">STYLE OF TOKYO</span>
+  <a href="index.html">トップ</a>
+  <a href="guide.html">かんたんガイド</a>
+  <a href="https://styleoftokyo.jp/contact/">お問い合わせ</a>
+  <span class="sot-foot-partners">住宅会社のご紹介でお越しの方は <a href="partners.html" style="text-decoration:underline;">こちら</a></span>
+</footer>
+
+</body>
+</html>
