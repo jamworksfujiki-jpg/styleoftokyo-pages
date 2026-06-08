@@ -1,0 +1,14 @@
+# 認証情報・秘密ファイル（絶対にgitに上げない）
+wp-credentials.txt
+.wp-credentials.env
+*.env
+*.env.local
+.env*
+!.env.example
+
+# Node modules
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
