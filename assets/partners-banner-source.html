@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: transparent;
+}
+.banner {
+  width: 1480px;
+  height: 160px;
+  background: linear-gradient(135deg, #5D4A2E 0%, #3F3220 100%);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px 0 40px;
+  color: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.04);
+}
+
+/* 左の縦アクセントライン */
+.banner::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+  background: #FAEEDA;
+}
+
+/* 右側の装飾円 */
+.banner::after {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08) 4px,
+    transparent 4px,
+    transparent 10px
+  );
+  pointer-events: none;
+}
+
+.left-cluster {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.eyebrow-en {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1;
+}
+.eyebrow-chip {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #5D4A2E;
+  background: #FAEEDA;
+  padding: 10px 22px;
+  border-radius: 4px;
+  line-height: 1.2;
+  width: fit-content;
+}
+
+.title-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.title-main {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.cta {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5D4A2E;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 18px 32px;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cta .arrow {
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="left-cluster">
+    <div class="eyebrow-stack">
+      <div class="eyebrow-en">FOR&nbsp;PARTNERS</div>
+      <div class="eyebrow-chip">住宅会社からのご紹介</div>
+    </div>
+  </div>
+  <div class="title-stack">
+    <div class="title-main">わたしたちの仕事</div>
+  </div>
+  <div class="cta">詳細を見る<span class="arrow">→</span></div>
+</div>
+</body>
+</html>
