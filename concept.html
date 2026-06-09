@@ -78,6 +78,14 @@ body:has(.sot-subpage) .c-pageTitle{
     line-height:1.55;
     font-weight:700;
   }
+  .sot-concept h1 .hero-sub-title{
+    display:inline-block;
+    margin-top:10px;
+    font-size:clamp(13px,1.6vw,17px);
+    font-weight:500;
+    color:var(--muted);
+    letter-spacing:.04em;
+  }
   .sot-concept .hero-lead{
     max-width:680px;
     margin:34px auto 0;
@@ -457,6 +465,52 @@ body:has(.sot-subpage) .c-pageTitle{
   }
   .sot-concept .btn.line{background:#06c755;border-color:#06c755}
 
+  /* FAQ セクション */
+  .sot-concept .faq-list{
+    max-width:840px;
+    margin:0 auto;
+    border-top:1px solid var(--line);
+  }
+  .sot-concept .faq-item{
+    border-bottom:1px solid var(--line);
+    padding:24px 4px;
+  }
+  .sot-concept .faq-q{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    font-family:"Noto Serif JP",serif;
+    font-size:clamp(16px,2vw,19px);
+    font-weight:600;
+    color:var(--ink);
+    line-height:1.6;
+  }
+  .sot-concept .faq-q::before{
+    content:"Q.";
+    color:var(--green);
+    font-weight:700;
+    flex-shrink:0;
+  }
+  .sot-concept .faq-a{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    margin-top:12px;
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.9;
+  }
+  .sot-concept .faq-a::before{
+    content:"A.";
+    color:var(--rose);
+    font-weight:700;
+    flex-shrink:0;
+  }
+  @media (max-width:560px){
+    .sot-concept .faq-item{padding:20px 2px}
+    .sot-concept .faq-a{font-size:14px}
+  }
+
   /* concept ページ末尾のパートナー誘導パネル */
   .sot-concept .partners-bridge{
     max-width:760px;
@@ -513,9 +567,9 @@ body:has(.sot-subpage) .c-pageTitle{
 <section class="hero sot-first-section">
     <div class="wrap">
       <p class="eyebrow">CONCEPT</p>
-      <h1>スタイルオブ東京とは</h1>
+      <h1>スタイルオブ東京とは<br><span class="hero-sub-title">— 中立な不動産エージェント・お客様の代理人として</span></h1>
       <p class="hero-lead">不動産を買うことが、ゴールではない。<br>楽しく暮らして初めて、いい物件を買ったことになる。</p>
-      <p class="hero-copy">購入も、売却も、住み替えも、相続も。条件だけで判断せず、買った後の毎日から逆算して、その人にとっての最適解を提案します。</p>
+      <p class="hero-copy">東京で土地探し・住み替え・相続・空き家まで。中立な不動産エージェントとして、お客様の代理人の立場で、買った後の毎日から逆算して最適解を提案します。物件のセカンドオピニオン、住宅会社・住宅ローンの横断比較も、仲介手数料の範囲でお受けします。</p>
     </div>
   </section>
 
@@ -770,6 +824,35 @@ body:has(.sot-subpage) .c-pageTitle{
         </div>
         <span class="pb-arrow">→</span>
       </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="section-title">よくあるご質問</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">スタイルオブ東京はどんな会社ですか？</div>
+          <div class="faq-a">東京の不動産エージェント会社です。物件を「売る」のではなく、お客様の代理人として、不動産の購入・売却・住み替え・相続・空き家・建築リフォームまで、暮らし全体から逆算してサポートします。中立な立場で、住宅会社や金融機関とも横並びで関わります。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">普通の不動産会社と何が違うのですか？</div>
+          <div class="faq-a">私たちは売主側ではなく、お客様側に立つ代理人です。物件のおすすめではなく、お客様が言葉にしていない暮らしの優先順位を整理し、そこから物件・住宅会社・ローンを横断して比較・交渉します。仲介手数料の範囲で、契約書に載らない細かな調査・通訳・調整まで行います。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">どんな相談ができますか？</div>
+          <div class="faq-a">土地探し、戸建ての購入、マンション購入、住み替え、相続、空き家、建築会社選び、リフォーム、住宅ローンの組み方など、不動産にまつわるご相談を幅広くお受けしています。「買う・買わない」が決まっていない段階のご相談も歓迎です。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">相談は有料ですか？</div>
+          <div class="faq-a">ご相談自体は無料です。最終的にご契約に至った場合のみ、法定の仲介手数料を頂戴します。物件調査・住宅会社との連携・専門用語の通訳など、契約書に書かれていない細かな仕事も、すべて仲介手数料の範囲で対応します。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Zoomやオンラインでも相談できますか？</div>
+          <div class="faq-a">はい。Zoomでの無料相談を受け付けています。遠方の方や、日中はお時間が取りにくい方も、まずはオンラインで暮らしの構想や気になる物件についてお話しください。お問い合わせフォームまたはLINEからご予約いただけます。</div>
+        </div>
+      </div>
     </div>
   </section>
 
